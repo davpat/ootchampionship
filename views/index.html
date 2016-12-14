@@ -69,7 +69,7 @@
 
 	$.ajax({
 		type: 'GET',
-		url: "http://localhost/scoresboard/Scoresboard.xml",
+		url: "http://www.ootchampionship.com/scoresboard/Scoresboard.xml",
 		dataType: "xml"
 	}).done(function (data) {
 
@@ -79,11 +79,6 @@
 				return parseFloat(b.PScore) - parseFloat(a.PScore);
 			});
 			
-			//var obj = $.parseXML(data);
-			//obj.Scoresboard.Score.sort(function (a, b) {
-			//    return parseFloat(b.PScore) - parseFloat(a.PScore);
-			//});
-
 			var cpt = 0;
 			while (cpt < Scoretable.length) {
 				$('#ScoresboardTable').append("<tr><td><b>" + (Scoretable[cpt].getElementsByTagName("Rank")[0].innerHTML) + '</b></td><th><a target="_blank" href="' + Scoretable[cpt].getElementsByTagName("Twitch")[0].innerHTML + '">' + Scoretable[cpt].getElementsByTagName("Player")[0].innerHTML + '</a></th><td class="hidden-xs"><b>' + Scoretable[cpt].getElementsByTagName("Country")[0].innerHTML + "</b></td><td><b>" + Scoretable[cpt].getElementsByTagName("PScore")[0].innerHTML + '</b></td><td class="hidden-xs"><b>' + Scoretable[cpt].getElementsByTagName("NRace")[0].innerHTML + "</b></td></tr>");
