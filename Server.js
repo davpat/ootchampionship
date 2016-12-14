@@ -26,9 +26,8 @@ router.get("/about",function(req,res){
 router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
-
-router.get("/contact",function(req,res){
-  res.sendFile(path + "contact.html");
+router.get("/halloffame",function(req,res){
+  res.sendFile(path + "halloffame.html");
 });
 
 router.get("/clue8",function(req,res){
