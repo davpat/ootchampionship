@@ -2,29 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Single page web app using Angularjs</title>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+<title>OCS - Leaderboard</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <div>
-<div>
-<nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-       <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-      <li><a href="/about">About us</a></li>
-      <li><a href="/contact">Contact us</a></li>
-    </ul>
-</nav>
-</div>
-<br/>
-<div class="jumbotron"> <p>
-This is place to put content. You can put slider, short description about your website and place some links for navigation.
-</p></div>
+	<div>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		 <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Leaderboard</a>
+            </div>
+            <div class="navbar-collapse collapse">  
+                <ul class="nav navbar-nav">
+					<li><a href="/about">Challenges</a></li>
+					<li><a href="/about">Information</a></li>
+					<li><a href="/about">Highlights</a></li>
+					<li><a href="/contact">Hall of Fame</a></li>
+					<li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="container body-content">
+		<div id="backgroundDiv"></div>
+		<div class="updiv row hidden-xs text-center">
+			<h1 class="title">OoT Championship Series - Season 1 Leaderboard </h1>
+		</div>
+		<div class="updiv row">
+			<div>
+				<table class="table table-bordered table-responsive table-striped">
+					<thead>
+						<tr class="table-header">
+							<th onclick="sort_table(people, 0, asc1, true); asc1 *= -1; asc2 = 1; asc3 = 1; asc4 = 1; asc5 = 1;">Rank<span class="glyphicon glyphicon-sort pull-right" aria-hidden="true"></span></th>
+							<th onclick="sort_table(people, 1, asc2, false); asc2 *= -1; asc3 = 1; asc1 = 1; asc4 = 1; asc5 = 1;">Player<span class="glyphicon glyphicon-sort pull-right" aria-hidden="true"></span></th>
+							<th onclick="sort_table(people, 2, asc3, false); asc3 *= -1; asc1 = 1; asc2 = 1; asc4 = 1; asc5 = 1;" class="hidden-xs">Country <span class="glyphicon glyphicon-sort pull-right" aria-hidden="true"></span></th>
+							<th onclick="sort_table(people, 3, asc4, true); asc4 *= -1; asc1 = 1; asc2 = 1; asc3 = 1; asc5 = 1;">Score<span class="glyphicon glyphicon-sort pull-right" aria-hidden="true"></span></th>
+							<th onclick="sort_table(people, 4, asc5, true); asc5 *= -1; asc1 = 1; asc2 = 1; asc4 = 1; asc3 = 1;" class="hidden-xs"># of Races<span class="glyphicon glyphicon-sort pull-right" aria-hidden="true"></span></th>
+						</tr>
+					</thead>
+					<tbody id="ScoresboardTable">
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+    </div>
 </div>
 </body>
+<script src="/scoresboard/scoresboard.js"></script>
 </html>

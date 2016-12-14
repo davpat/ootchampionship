@@ -1,0 +1,110 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid black !important;
+ }
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #DDDDDD;
+}
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #ffffff;
+}
+
+#backgroundDiv{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:-100; 
+    background-image:url(/images/Windmill.png);
+    background-color:black;
+}
+#backgroundDivClue{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:-100; 
+    background-image:url(/images/Clue/Clue5.png);
+    background-color:black;
+}
+.updiv{
+    z-index:100;
+}
+.title{
+    color:white;
+    text-shadow: 1px 1px 1px #000000;
+}
+.table-header{
+    background-color:#222;
+    color:white;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+  text-shadow:0px 0px 3px white;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+  text-shadow:0px 0px 3px white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
+.table-padding{
+    padding-top: 20px;
+}
+.table-customstyle{
+    background-color:white;
+    color:black;
+}
+.ul-customstyle{
+    font-size: 20px;
+}
+.h-marginfix{
+    margin-top:10px;
+}
