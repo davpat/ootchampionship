@@ -16,6 +16,9 @@ router.get("/",function(req,res){
 router.get("/challenges",function(req,res){
   res.sendFile(path + "challenges.html");
 });
+router.get("/information",function(req,res){
+  res.sendFile(path + "information.html");
+});
 router.get("/about",function(req,res){
   res.sendFile(path + "about.html");
 });
