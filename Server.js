@@ -22,7 +22,6 @@ router.get("/information",function(req,res){
 router.get("/highlights",function(req,res){
   res.sendFile(path + "highlights.html");
 });
-
 router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
@@ -30,11 +29,31 @@ router.get("/halloffame",function(req,res){
   res.sendFile(path + "halloffame.html");
 });
 
-router.get("/clue8",function(req,res){
-  res.sendFile(path + "clue8.html");
+router.get("/recap1",function(req,res){
+  res.sendFile(path + "recap1.html");
 });
+router.get("/recap2",function(req,res){
+  res.sendFile(path + "recap2.html");
+});
+router.get("/recap3",function(req,res){
+  res.sendFile(path + "recap3.html");
+});
+router.get("/recap4",function(req,res){
+  res.sendFile(path + "recap4.html");
+});
+router.get("/recap5",function(req,res){
+  res.sendFile(path + "recap5.html");
+});
+router.get("/recap6",function(req,res){
+  res.sendFile(path + "recap6.html");
+});
+
+
 router.get("/clue5",function(req,res){
   res.sendFile(path + "clue5.html");
+});
+router.get("/clue8",function(req,res){
+  res.sendFile(path + "clue8.html");
 });
 
 app.use("/",router);
