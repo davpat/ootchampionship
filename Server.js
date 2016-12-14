@@ -28,6 +28,10 @@ router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
 
+router.get("/clue8",function(req,res){
+  res.sendFile(path + "clue8.html");
+});
+
 app.use("/",router);
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.static('public'))

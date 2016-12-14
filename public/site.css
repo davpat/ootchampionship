@@ -108,3 +108,19 @@ textarea {
 .h-marginfix{
     margin-top:10px;
 }
+#clue8background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:-100; 
+    background-image:url(/clue/clue8.png);
+    background-color:black;
+}
+canvas {
+	display: block;
+}
