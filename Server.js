@@ -31,6 +31,9 @@ router.get("/contact",function(req,res){
 router.get("/clue8",function(req,res){
   res.sendFile(path + "clue8.html");
 });
+router.get("/clue5",function(req,res){
+  res.sendFile(path + "clue5.html");
+});
 
 app.use("/",router);
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
