@@ -10,20 +10,30 @@ $(document).ready(function() {
             $.ajax({
                 type: 'GET',
                 url: "http://localhost/scoresboard/Scoresboard.xml",
+				dataType: "xml"
             }).done(function (data) {
-                var obj = $.parseXML(data);
-                obj.Scoresboard.Score.sort(function (a, b) {
-                    return parseFloat(b.PScore) - parseFloat(a.PScore);
-                });
 
-                var cpt = 0;
-                while (cpt < obj.Scoresboard.Score.length) {
-                    $('#ScoresboardTable').append("<tr><td><b>" + (obj.Scoresboard.Score[cpt].Rank) + '</b></td><th><a target="_blank" href="' + obj.Scoresboard.Score[cpt].Twitch + '">' + obj.Scoresboard.Score[cpt].Player + '</a></th><td class="hidden-xs"><b>' + obj.Scoresboard.Score[cpt].Country + "</b></td><td><b>" + obj.Scoresboard.Score[cpt].PScore + '</b></td><td class="hidden-xs"><b>' + obj.Scoresboard.Score[cpt].NRace + "</b></td></tr>");
-                    cpt++;
-                }
-                people = document.getElementById("ScoresboardTable");
+				$(data).find('Scoresboard').each(function(){
+					var Scoretable = $(this).find("Score");
+                    $(this).find("Score").sort(function (a, b) {
+						return parseFloat(b.PScore) - parseFloat(a.PScore);
+					});
+					
+					//var obj = $.parseXML(data);
+					//obj.Scoresboard.Score.sort(function (a, b) {
+					//    return parseFloat(b.PScore) - parseFloat(a.PScore);
+					//});
+
+					var cpt = 0;
+					while (cpt < Scoretable.length) {
+						$('#ScoresboardTable').append("<tr><td><b>" + (Scoretable[cpt].getElementsByTagName("Rank")[0].innerHTML) + '</b></td><th><a target="_blank" href="' + Scoretable[cpt].getElementsByTagName("Twitch")[0].innerHTML + '">' + Scoretable[cpt].getElementsByTagName("Player")[0].innerHTML + '</a></th><td class="hidden-xs"><b>' + Scoretable[cpt].getElementsByTagName("Country")[0].innerHTML + "</b></td><td><b>" + Scoretable[cpt].getElementsByTagName("PScore")[0].innerHTML + '</b></td><td class="hidden-xs"><b>' + Scoretable[cpt].getElementsByTagName("NRace")[0].innerHTML + "</b></td></tr>");
+						cpt++;
+					}
+					people = document.getElementById("ScoresboardTable");
+		    });
 
             }).fail(function (jqXHR, textStatus, errorThrown) { });
+});
 
             function sort_table(tbody, col, asc, number) {
                 var rows = tbody.rows,
@@ -67,4 +77,3 @@ $(document).ready(function() {
                     rows[i].innerHTML = "<td><b>" + arr[i][0] + '</b></td><th>' + myMap.get(i) + '</th><td class="hidden-xs"><b>' + arr[i][2] + "</b></td><td><b>" + arr[i][3] + '</b></td><td class="hidden-xs"><b>' + arr[i][4] + "</b></td>";
                 }
             }
-});
