@@ -19,6 +19,11 @@ router.get("/challenges",function(req,res){
 router.get("/information",function(req,res){
   res.sendFile(path + "information.html");
 });
+
+router.get("/revision",function(req,res){
+  res.sendFile(path + "revision.html");
+});
+
 router.get("/highlights",function(req,res){
   res.sendFile(path + "highlights.html");
 });
