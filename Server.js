@@ -52,7 +52,9 @@ router.get("/recap5",function(req,res){
 router.get("/recap6",function(req,res){
   res.sendFile(path + "recap6.html");
 });
-
+router.get("/recap7",function(req,res){
+  res.sendFile(path + "recap7.html");
+});
 
 router.get("/clue5",function(req,res){
   res.sendFile(path + "clue5.html");
