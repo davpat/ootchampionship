@@ -9,8 +9,8 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
 */
 .dl-horizontal dt {
     white-space: normal;
@@ -46,8 +46,8 @@ textarea {
     z-index: 0;
     background-repeat:no-repeat;
     background-size:cover;
-    z-index:-100; 
-    background-image:url(/images/Windmill_Winter.png);
+    z-index:-100;
+    background-image:url(/images/Windmill.png);
     background-color:black;
 }
 #clue5background{
@@ -59,7 +59,7 @@ textarea {
     z-index: 0;
     background-repeat:no-repeat;
     background-size:cover;
-    z-index:-100; 
+    z-index:-100;
     background-image:url(/clue/Clue5.png);
     background-color:black;
 }
@@ -117,7 +117,7 @@ textarea {
     z-index: 0;
     background-repeat:no-repeat;
     background-size:cover;
-    z-index:-100; 
+    z-index:-100;
     background-image:url(/clue/Clue8.png);
     background-color:black;
 }
