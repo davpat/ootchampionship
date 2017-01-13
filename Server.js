@@ -65,15 +65,7 @@ router.get("/clue5",function(req,res){
 router.get("/clue8",function(req,res){
   res.sendFile(path + "clue8.html");
 });
-router.get("/clue9-1",function(req,res){
-  res.sendFile(path + "clue9-1.html");
-});
-router.get("/clue9-2",function(req,res){
-  res.sendFile(path + "clue9-2.html");
-});
-router.get("/clue9-triforce",function(req,res){
-  res.sendFile(path + "clue9-triforce.html");
-});
+
 
 app.use("/",router);
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
