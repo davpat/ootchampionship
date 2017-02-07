@@ -63,6 +63,19 @@ textarea {
     background-image:url(/clue/Clue5.png);
     background-color:black;
 }
+#Rbackground{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:-100;
+    background-image:url(/images/Sand.gif);
+    background-color:black;
+}
 .updiv{
     z-index:100;
 }
