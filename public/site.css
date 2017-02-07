@@ -41,13 +41,13 @@ textarea {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0px;
+    top: 50px;
     left: 0px;
     z-index: 0;
     background-repeat:no-repeat;
     background-size:cover;
     z-index:-100;
-    background-image:url(/images/Windmill.png);
+    background-image:url(/images/Windmill.gif);
     background-color:black;
 }
 #clue5background{
