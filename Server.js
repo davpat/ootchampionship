@@ -27,8 +27,8 @@ router.get("/revision",function(req,res){
 router.get("/highlights",function(req,res){
   res.sendFile(path + "highlights.html");
 });
-router.get("/contact",function(req,res){
-  res.sendFile(path + "contact.html");
+router.get("/about",function(req,res){
+  res.sendFile(path + "about.html");
 });
 router.get("/halloffame",function(req,res){
   res.sendFile(path + "halloffame.html");
@@ -57,6 +57,9 @@ router.get("/recap7",function(req,res){
 });
 router.get("/recap8",function(req,res){
   res.sendFile(path + "recap8.html");
+});
+router.get("/recap9",function(req,res){
+  res.sendFile(path + "recap9.html");
 });
 
 router.get("/clue5",function(req,res){
