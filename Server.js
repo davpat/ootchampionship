@@ -61,6 +61,9 @@ router.get("/recap8",function(req,res){
 router.get("/recap9",function(req,res){
   res.sendFile(path + "recap9.html");
 });
+router.get("/recap10",function(req,res){
+  res.sendFile(path + "recap10.html");
+});
 
 router.get("/clue5",function(req,res){
   res.sendFile(path + "clue5.html");
