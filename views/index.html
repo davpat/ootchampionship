@@ -22,7 +22,7 @@
                 </button>
                 <a href="/" class="navbar-brand">Leaderboard</a>
             </div>
-            <div class="navbar-collapse collapse">  
+            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
 					<li><a href="/challenges">Challenges</a></li>
 					<li><a href="/information">Information</a></li>
@@ -37,7 +37,7 @@
 	<div class="container body-content">
 		<div id="backgroundDiv"></div>
 		<div class="updiv row hidden-xs text-center">
-			<h1 class="title">OoT Championship Series - Season 1 - Playoff</h1>
+			<h1 class="title">OoT Championship Series - S1 - Playoff</h1>
 		</div>
 		<div class="updiv row">
 			<div>
@@ -47,8 +47,8 @@
 							<th>Exodus</th>
 							<th>Sniping</th>
 							<th>Marco</th>
-							<th>Amateseru</th>
 							<th>Hyperion64</th>
+							<th>Tob3000</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -56,15 +56,15 @@
 							<td><img style="display: block; margin-left:auto; margin-right:auto;" src="images/PlayersIcone/exodus.png" class="img-responsive" alt="exodus.png"></td>
 							<td><img style="display: block; margin-left:auto; margin-right:auto;" src="images/PlayersIcone/sniping.png" class="img-responsive" alt="sniping.png"></td>
 							<td><img style="display: block; margin-left:auto; margin-right:auto;" src="images/PlayersIcone/Marco.jpeg" class="img-responsive" alt="Marco.jpeg"></td>
-							<td><img style="display: block; margin-left:auto; margin-right:auto;" src="images/PlayersIcone/Ama.jpeg" class="img-responsive" alt="Ama.jpeg"></td>
 							<td><img style="display: block; margin-left:auto; margin-right:auto;" src="images/PlayersIcone/hyperion64.png" class="img-responsive" alt="hyperion64.png"></td>
+							<td><img style="display: block; margin-left:auto; margin-right:auto;" src="images/PlayersIcone/Tob3000.png" class="img-responsive" alt="Tob3000.png"></td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 		<div class="updiv row hidden-xs text-center">
-			<h1 class="title">OoT Championship Series - Season 1 - Leaderboard</h1>
+			<h1 class="title">OoT Championship Series - S1 - Leaderboard</h1>
 		</div>
 		<div class="updiv row">
 			<div>
@@ -88,7 +88,7 @@
 </div>
 </body>
 <script>
-	var people, 
+	var people,
     asc1 = 1,
     asc2 = 1,
     asc3 = 1,
@@ -106,7 +106,7 @@
 			$(this).find("Score").sort(function (a, b) {
 				return parseFloat(b.PScore) - parseFloat(a.PScore);
 			});
-			
+
 			var cpt = 0;
 			while (cpt < Scoretable.length) {
 				$('#ScoresboardTable').append("<tr><td><b>" + (Scoretable[cpt].getElementsByTagName("Rank")[0].innerHTML) + '</b></td><th><a target="_blank" href="' + Scoretable[cpt].getElementsByTagName("Twitch")[0].innerHTML + '">' + Scoretable[cpt].getElementsByTagName("Player")[0].innerHTML + '</a></th><td class="hidden-xs"><b>' + Scoretable[cpt].getElementsByTagName("Country")[0].innerHTML + "</b></td><td><b>" + Scoretable[cpt].getElementsByTagName("PScore")[0].innerHTML + '</b></td><td class="hidden-xs"><b>' + Scoretable[cpt].getElementsByTagName("NRace")[0].innerHTML + "</b></td></tr>");
@@ -117,8 +117,8 @@
 	});
 
 	}).fail(function (jqXHR, textStatus, errorThrown) { });
-			 
-			 
+
+
 	function sort_table(tbody, col, asc, number) {
 		var rows = tbody.rows,
 			rlen = rows.length,
