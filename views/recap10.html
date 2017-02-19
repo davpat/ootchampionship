@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OCS - Recap Race #10</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+	<div>
+		<div>
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="/" class="navbar-brand">Leaderboard</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="/challenges">Challenges</a></li>
+							<li><a href="/information">Information</a></li>
+							<li><a href="/revision">Race Revision</a></li>
+							<li><a href="/highlights">Highlights</a></li>
+							<li><a href="/halloffame">Hall of Fame</a></li>
+							<li><a href="/about">About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container body-content">
+				<div id="backgroundDiv"></div>
+				<div class="updiv row table-padding">
+					<div>
+						<table class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Race #10 - OCS Bingo</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h2><strong>Participation Statistics:</strong></h2>
+									<h3>
+										It was finally the last race of the Ocarina of Time Championship Series regular season.
+										<br /><br />
+										28 players joined but only 20 finished.
+										<br /><br />
+										The goal was just to complete any row, column or diagonal from a bingo card, but it was not any bingo card.
+										<br /><br />
+										This card had multiple goals that referenced previous OCS races or goals that had special restrictions.
+										<br /><br />
+										None of the goals on the card are current goals in Normal v9 Bingo.
+										<br /><br />
+									</td>
+									<td class="table-customstyle" style="width:50%;">
+										<h2 style="text-align:center;" ><strong>Click to go on goal</strong></h2>
+										<table class="bingo bingo-element">
+											<tbody><tr>
+												<td id="tlbr" class="header tlbr">TL-BR</td>
+
+												<td id="col0" class="header col0">COL1</td>
+
+												<td id="col1" class="header col1">COL2</td>
+
+												<td id="col2" class="header col2">COL3</td>
+
+												<td id="col3" class="header col3">COL4</td>
+
+												<td id="col4" class="header col4">COL5</td>
+
+											</tr>
+
+											<tr>
+												<td id="row0" class="header row0">ROW1</td>
+
+												<td id="square0" class="square row0 col0 tlbr">Beat Jabu-Jabu's Belly (no damage)</td>
+
+												<td id="square1" class="square row0 col1  ">Finish with no shields</td>
+
+												<td id="square2" class="square row0 col2  ">Shoot all 4 eye switches in Forest Temple</td>
+
+												<td id="square3" class="square row0 col3  ">Get the golden rupee in Fire Temple</td>
+
+												<td id="square4" class="square row0 col4  bltr">Defeat all 11 Re-Deads and Gibdos in Shadow Temple</td>
+
+											</tr>
+
+											<tr>
+												<td id="row1" class="header row1">ROW2</td>
+
+												<td id="square5" class="square row1 col0">Get to the end of any trial</td>
+
+												<td id="square6" class="square row1 col1 tlbr ">Get Fairy Bow with Iron Boots equipped</td>
+
+												<td id="square7" class="square row1 col2  ">Talk to the owl in Desert Colossus</td>
+
+												<td id="square8" class="square row1 col3  bltr">Defeat four different Like-Likes</td>
+
+												<td id="square9" class="square row1 col4  ">Beat the Fire Temple no Goron Tunic</td>
+
+											</tr>
+
+											<tr>
+												<td id="row2" class="header row2">ROW3</td>
+
+												<td id="square10" class="square row2 col0">Plant 6 Magic Beans</td>
+
+												<td id="square11" class="square row2 col1  ">Open the purple rupee chest in Haunted Wasteland</td>
+
+												<td id="square12" class="square row2 col2 tlbr bltr">8 unique unused keys in GTG (no damage)</td>
+
+												<td id="square13" class="square row2 col3  ">Finish by defeating Ganon</td>
+
+												<td id="square14" class="square row2 col4  ">Milk the cow in Link's house</td>
+
+											</tr>
+
+											<tr>
+												<td id="row3" class="header row3">ROW4</td>
+
+												<td id="square15" class="square row3 col0">Defeat 4 Bosses</td>
+
+												<td id="square16" class="square row3 col1  bltr">Open all 16 chests in Ganon's Castle and Tower</td>
+
+												<td id="square17" class="square row3 col2  ">Buy 10 bombchus from the Bombchu shop</td>
+
+												<td id="square18" class="square row3 col3 tlbr ">Defeat all 4 Lizalfos in Spirit Temple</td>
+
+												<td id="square19" class="square row3 col4  ">Have the water level in Water Temple at the middle level</td>
+
+											</tr>
+
+											<tr>
+												<td id="row4" class="header row4">ROW5</td>
+
+												<td id="square20" class="square row4 col0  bltr">Get 500 points from the guy that collects Big Poes</td>
+
+												<td id="square21" class="square row4 col1  ">20 unique Skulltulas</td>
+
+												<td id="square22" class="square row4 col2  ">6 unused keys in Water Temple</td>
+
+												<td id="square23" class="square row4 col3  ">Beat Shadow Temple no Hover Boots</td>
+
+												<td id="square24" class="square row4 col4 tlbr ">Break 6 walls in Dodongo's Cavern using Blue Fire</td>
+
+											</tr>
+
+											<tr>
+												<td id="bltr" class="header bltr">BL-TR</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td class="table-customstyle" colspan="2">
+									<h3>
+										This meant that the racers had to make important decisions very early in the run even though they did not necessarily know how to do most goals at first glance.
+										<br /><br />
+										This recap will try to go through the goals and give a quick explanation for each one.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="JabuGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Beat Jabu-Jabu’s Belly (no damage)</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										There was going to be at least one no damage goal and one of them ended up being Jabu-Jabu’s Belly.
+										<br /><br />
+										The no damage part might have scared some people away but you need to realize that the only time you usually get damaged in this dungeon is when you get hit by a Shabom.
+										<br /><br />
+										An easy strategy was to grab a few more Deku Nuts and throw them anytime you had a Shabom in your way. The rest was just dodging Biris and not failing the megaflip.
+										<br /><br />
+										You could fight Barinade the same way you always do, you just had to make sure you timed your roll invincibility well enough during the second phase.
+										<br /><br />
+										Some people ended up having trouble with this part because they were not confident in rolling into him, but if you run around and wait for him to pop back out, he shoots electricity bolts at you for a while, which makes it harder to not get hit.
+										<br /><br />
+										Overall, this goal was the same as Beat Jabu-Jabu’s Belly normally but it added a little challenge for what is otherwise a pretty free dungeon.
+										<br /><br />
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=jenslang/MushyBoarPermaSmug&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=runnerguy2489/DeterminedCurlewSuperVinlin&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="NoShieldGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Finish with no shields</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										This goal was inspired a bit by the 7th OCS race which required you to get rid of your shield before entering the Forest Temple.
+										This goal could not be in a row that requires Mirror Shield but if you wanted to use both the Deku Shield and the Hylian Shield, you could not have them in your inventory at the end of your run.
+										<br /><br />
+										The most common way to lose your shield would be to get eaten by a Like-Like but the Deku Shield can also get burnt away. In row 1, you wanted the Deku Shield for Jabu-Jabu, but then you would need to stop in Bottom of the Well before going adult.
+										<br /><br />
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=amateseru/BrightOysterUnSane&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<h3>
+										Amateseru also had the good idea of going inside Dodongo’s Cavern and die in the lava, but he ended up not having enough Bombchus for that plan to work.
+										<br /><br />
+										As adult, it was easy to lose your Hylian Shield in Fire Temple after getting the Golden rupee if that was your last goal.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="4EyeSwitchesGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Shoot all 4 eye switches in Forest Temple</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										This one is also a bit inspired by the defeat Meg and Phantom Ganon goal. It requires a lot of knowledge about the layout of the dungeon.
+										<br /><br />
+										First, there are 2 switches that twist or untwist the hallways and there is one switch that is in the big main room that opens up the door to the right courtyard.
+										The last one is not as known, we never get to use it but we go past it all the time, it’s in the block puzzle room and it makes an arrow chest appear.
+										<br /><br />
+										The route Amateseru did was interesting, he did the dungeon normally up to Fairy Bow and continued through the compass room to get to the frozen eye room.
+										He then dropped out in the falling ceiling room but took the shortcut back to the courtyard to make his way back to the block puzzle area which he did in its entirety again to shoot the last two switches.
+										<br /><br />
+										If you RBA’d a quiver and got Ice Arrows, you could go through the dungeon normally and just shoot the eyes you see, it did not require any backtracking.
+									</h3>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=amateseru/GracefulWhaleBigBrother&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="GoldenRupeeFireTempleGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Get the Golden Rupee in Fire Temple</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										The rupee is in a chest at the top of the Fire Temple where you would usually get two Gold Skulltulas. It requires Scarecrow’s song, Longshot or extensive hovering.
+										<br /><br />
+										It’s basically a shorter version of the 5 Skulltulas in Fire Temple goal, but you still need to do the puzzle in that room.
+										<br /><br />
+										It mirrors the other highest room in the dungeon where you hit a switch that removes the flames from around the Megaton Hammer chest but only for a couple seconds.
+										<br /><br />
+										It is the same thing here except there is no quick path up to the chest, the room is made of slopes and you normally can’t just walk all the way up.
+										<br /><br />
+										You either need to walk halfway up and use the hookshot tower or use the Longshot which would also be useful to even get to this room.
+									</h3>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=exodus122/DifferentEagleDOOMGuy&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=hyperion64/AverageMouseSoonerLater&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="ReDeadsShadowGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Defeat all 11 Re-Deads and Gibdos in Shadow Temple</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										We wanted goals that required extensive temple knowledge and this is the best we came up with for the Shadow Temple.
+										<br /><br />
+										There is 1 Re-Dead in the map room, 2 Gibdos in the compass room and 2 Re-Deads in one of the silver rupee rooms.
+										There are 2 Gibdos in the room right before the boat where you can find a small key by blowing up a pile of dirt.
+										There 7 are the ones that normally people did not have any trouble remembering.
+										There are 2 more in the room at the end of the corridor with the fans.
+										<br /><br />
+										You never usually go in this room because if you kill both Re-Deads all that happens is the door gets unbarred, but you can play Sun’s Song and get a fairy.
+										<br /><br />
+										Everyone knows there is a Re-Dead in the Boss key room but not everyone knows that there is a second one on the opposite side (guarding an arrow chest.)
+										<br /><br />
+										You can get to him the same way you would for the boss key one by clipping through the spikes when he freezes you. A weird shot always works there too.
+										<br /><br />
+										One thing that was fun about this goal is that you could do the dungeon in reverse up to a certain point.
+										Once you get the ones in the map and compass rooms, you can enter the Gibdo room near the boat and go backwards through those rooms to kill all the Re-Deads on that path.
+										Once you were done in the silver rupee room, you could back the way you just came and go ride the boat.
+										<br /><br />
+										This goal required Zelda’s Lullaby so it was like a longer « 5 Skulltulas in Shadow Temple » or « Get all small keys in Shadow Temple. »
+										<br /><br />
+									</h3>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=amateseru/DifficultParrotNinjaTroll&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=amateseru/HilariousHedgehogBrainSlug&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=amateseru/AnnoyingHornetPoooound&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="End1TrialGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Get to the end of any trial</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										The cool part about this goal is that you get to pick which trial you want to do. If you are not confident in a certain trial, you can go out of your way to get more items to finish a trial that you are more comfortable with.
+										<br /><br />
+										Most people would do the Fire Trial like they did in the last race since it requires the least amount of items.
+										<br /><br />
+										If you were doing row 2, you had the option of doing Shadow, Water or Fire Trial since that row required the hammer. It could be a fun goal for regular bingo but it would be too hard to balance for now.
+									</h3>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=marco8641/SmilingChimpanzeeShadyLulu&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="IronBootAndBowGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Get Fairy Bow with Iron Boots equipped</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										This goal was also a shoutout to the 7th race. This one directly referenced the old challenge goal from 2012 that was to defeat Meg while having Iron Boots and Broken Knife equipped during the entirety of the temple.
+										<br /><br />
+										This version was a lot easier since you still had Master Sword and you could have a shield. The only difference was that you needed strength to push the blocks and you needed an extra small key.
+										<br /><br />
+										One part that people did not necessarily think of is the room after the first twisted corridor. You can’t make those jumps with Iron Boots equipped but you can climb the wall on the right and sidehop down.
+										MikeKatz did not know that so he ended up doing a clutch megaflip with his last bomb while also trying to dodge the Wallmaster.
+										<br /><br />
+										It also required you to actually get the Iron Boots so this was an Ice Cavern and a Forest Temple goal.
+									</h3>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=mikekatz45/LuckyMuleTheThing&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=whatthehellshappened/BeautifulWolfTriHard&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="OwlDesertColoGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Talk to the owl in Desert Colossus</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										The fourth OCS race was the Halloween themed one where you had to talk to 4 different NPCs while having a different mask everytime. One of the people you had to talk to was the owl at the top of the Spirit Temple.
+										<br /><br />
+										This required you to go through the entire child side of the Spirit Temple and to make it to the Silver Gauntlets chest. This goal only required Bombchus and a Deku Stick, but it is a fairly long child segment.
+										<br /><br />
+										The reason the goal is not just Silver Gauntlets is that the owl does not appear when you are adult so it forces you to do it as child.
+										<br /><br />
+									</h3>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="4likelikeGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Defeat 4 different Like-Likes</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Defeating X amount of different enemies is a type of a goal that has been discussed for a while among bingo players. Objectives like X maps, compasses, boss keys are already popular, probably because they are the goals that require the most routing.
+										<br /><br />
+										There are 11 Like-Likes in the game (1 in the Well, 2 in Fire Temple, 1 in Water Temple, 1 in Shadow Temple, 2 in Spirit Temple, 3 in Gerudo Training Grounds and 1 in Ganon’s Castle) so you just had to decide which 4 you wanted to defeat.
+										<br /><br />
+										The one in Bottom of the Well was right there on your way if you were going to vineclip but if you were doing BL-TR you already had 3 free ones in Gerudo Training Grounds.
+										<br /><br />
+									</h3>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="FireTempleNoTunicGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Beat the Fire Temple (no Goron Tunic)</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										In most categories (like MST or All Dungeons) you do not get the Goron Tunic before Fire Temple. You either have a couple more Heart Containers or a Bottled Fairy.
+										<br /><br />
+										Most of the time you will see Bingo players get the tunic since it is faster than getting more hearts and fighting Volvagia with 3 hearts and a fairy can be very risky.
+										<br /><br />
+										If the goal is in Fire Temple but does not require defeating the boss it is relatively easy to skip the Tunic and more and more bingo players have been doing that lately.
+										<br /><br />
+										If you stocked up on hearts and fairies, this goal was not as bad as it sounded though. You could still get the Goron Tunic if you wanted but you could just not equip it inside the Fire Temple.
+										Death Mountain Crater and Fire Trial were two places where you could want to wear it.
+										<br /><br />
+									</h3>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="Plan6BeanGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Plant 6 Magic Beans</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Already a short bingo goal since v9 Bingo, planting 6 beans is a variation of the usual « Buying X beans » goal.
+										<br /><br />
+										You still have to route the rupee management and the trips to Zora’s River but you also have to plan out where you are going to plant the beans.
+										<br /><br />
+										If you do not have a child 2 segment or a Spirit Temple goal, you probably will not plant any beans there.
+										<br /><br />
+										The most popular spots were in Kokiri Forest, 2 in Lost Woods, one in Zora’s River next to the salesman, one in the Graveyard, one in Lake Hylia and the one in front of Dodongo’s Cavern.
+										<br /><br />
+										A cool idea you could have if you were doing col 1 was to skip the bottle in Kakariko to instead get Ruto’s Letter and plant a bean in Lake Hylia while you were there.
+										<br /><br />
+										This goal is the one that probably has the most chances of eventually making it to regular Bingo.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="PurpleRupeeGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Open the purple rupee chest in the Haunted Wasteland</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Yes there is a chest in the Wasteland. People always get the Gold Skulltula in the shelter when doing Bingos or 100% but they never stop to think what would happen if you were to light those torches.
+										<br /><br />
+										Since stick on B is banned in Bingo, you needed a souPrce of fire, so magic and Fire Arrows or Din’s Fire. Getting Fire Arrows could feel a bit slow since if you needed to RBA a quiver and get Ice Arrows first, it would require two trips to Gerudo Fortress.
+										<br /><br />
+										Col 2 had a free Fairy Bow so you did not have this problem and you could also use the Fire Arrows to help you in Shadow Trial to get the Golden Gauntlets.
+										<br /><br />
+										You needed Zelda’s Lullaby for this goal so for row 3 it could have been good to get it as child while also getting Epona’s Song.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="8uniquekeysGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>8 unique keys in Gerudo Training Grounds (No damage)</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										8 keys in GTG is already a popular normal bingo goal but here it had the added no damage twist. Gerudo Training Grounds is a place where many enemies are after you and you can fall in lava pits or get hit by firewalls or boulders.
+										<br /><br />
+										The Dinofos and Stalfos room are pretty self-explanatory, you just had to dodge the enemies and not get hit.
+										<br /><br />
+										You could use the same strats people used during the Glass Ganon race which were Deku Nuts on Dinofos and Hookshot to stun the Stalfos.
+										<br /><br />
+										If you got hit you had to reset back to the entrance but since the rooms are so close you would only lose around 30 seconds.
+										<br /><br />
+										The room with the silver rupees and the boulders could be a bit tricky but as long as you took your time and did not rush things you could make it unscathed.
+										<br /><br />
+										The room with the four Wolfos could be annoying since these enemies are pretty weak but it doesn’t matter how strong they are if you can’t get hit at all!
+										<br /><br />
+										One strategy was to back up a little bit when you see they are about to attack and then hit them in the back.
+										<br /><br />
+										Once you got to the room where you have to shoot all four eyes you probably realized that you could not void to get back up so you either had to savewarp and come back or go all the way around the dungeon again after getting the small key from the bottom.
+										<br /><br />
+										You could get the last key that is in the chest surrounded by flames without getting hit too.
+										<br /><br />
+										You had to roll in the flames once while invincible so Link would be on fire but would not get damaged and then you would do it again and savewarp after getting the small key over your head.
+										<br /><br />
+										Some people like MikeKatz did not know you could get this key without getting damaged so he got the underwater key with Iron Boots since he had them anyway.
+										<br /><br />
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=mikekatz45/RealChickenCmonBruh&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=whatthehellshappened/TalentedGoatUnSane&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table id="DeafeatGanonGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Finish by defeating Ganon</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										A long time ago, this used to be a regular bingo goal. That was before wrong warps were discovered so it required getting Light Arrows, defeating Ganondorf and going down the tower.
+										<br /><br />
+										Now, the fastest way to get to Ganon would be to wrong warp from Deku Tree or Fire Temple. Unless you had a Fire Temple goal, doing it from the Deku Tree was definitely faster.
+										<br /><br />
+										A tricky part about doing this in bingo is that you do not usually have a lot of hearts so you only have one or two tries at collapse skip.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="GetCowLinkHouseGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Milk the cow in Link’s house</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Cow in House has been a bingo objective forever but we never get to see the cow! How do they get the cow in Link’s room anyway? This is basically a combination of Epona’s Song and Cow in House.
+										<br /><br />
+										You had to wake up Talon as child and then get a time under 50 seconds in Malon’s minigame as adult.
+										<br /><br />
+										Once she tells you to go check out what is in your house, you could ride Epona to Kokiri Forest and play Epona’s Song to your new pet.
+										<br /><br />
+										You needed an Ocarina to play the song in your house since there is no way to do Ocarina Items in there. The hardest part of this goal was climbing the ladder to Link’s house without getting hit by the giant Deku Baba.
+									</h3>
+									<br /><br />
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=whatthehellshappened/ComfortableTapirDAESuppy&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table id="Defeat4BossesGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Defeat 4 bosses</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										The third OCS race was to defeat many enemies and bosses to accumulate points. People figured out what were the fastest bosses to kill in that race so they had to do a bit of the same thing here.
+										<br /><br />
+										It was also a bit of a reference to goals like 8 or 9 hearts where you would usually kill 2 to 4 bosses depending on your row. Without considering your other goals, the 5 fastest bosses would be Gohma, King Dodongo, Bongo Bongo, Phantom Ganon and Morpha.
+										<br /><br />
+										Bongo Bongo is faster than Phantom Ganon but it would require doing boat skip. Both col 1 and row 4 had a free boss (Barinade in c1 and King Dodongo in r4). Col 1 also had a bit of Forest Temple synergy as you could get the Fairy Bow at the same time you went there to defeat Phantom Ganon.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="16ChestGanonGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Open all 16 chests in Ganon’s Castle</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Ganon’s Castle chests :
+										<br /><br />
+										One in Forest Trial (defeat the Wolfos)
+										<br />
+										Two in Water Trial
+										<br />
+										Two in Shadow Trial (blue rupee and Golden Gauntlets)
+										<br />
+										Eight in Light Trial
+										<br />
+										Two in Spirit Trial (20 Bombchus and an invisible arrow chest)
+										<br />
+										One in Ganon’s Tower (Boss Key)
+										<br /><br />
+
+										The trial area has some of the most interesting rooms in the game so it was nice to have another goal that was not just to get to the end of a trial.
+										<br /><br />
+										Even if you did not know by memory where all the chests were you could just explore the castle and find all of them pretty fast. The only tricky one would be the invisible one in Spirit Trial that not everyone knows exists.
+										<br /><br />
+										It gives you arrows so it can also be useful in normal bingos if you have Get to the end of Spirit Trial as a goal. The only requirement for this was to have Zelda’s Lullaby to get one of the chests in Light Trial.
+										<br /><br />
+										You can clip through the block in front of the trial and just hover all the way to Golden Gauntlets. At first glance this could look like a very challenging objective but once you actually do it you would realize that it is fairly easy.
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=xanra/UnsightlyPonyJonCarnage&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br />
+								</td>
+							</tr>
+						</table>
+						<table id="Buy10BombchuGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Buy 10 Bombchus from the Bombchu shop</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										A lot of people are confused as to what triggers the Bombchu shop and the Bombchu Bowling minigame to open. It is to walk in the Dodongo’s Cavern blue warp, not having the Goron’s Ruby despite what some people think.
+										<br /><br />
+										RBA’ing the stone would not help you for this. This means that if you do not have a child 2 segment, you had to beat Dodongo’s Cavern as child, but also that you needed to get 10 Gold Skulltulas and the Adult’s Wallet since 10 Bombchus cost 100 rupees.
+										<br /><br />
+										Too bad you can’t bargain the price to 99 rupees with the owner. This goal was basically just a variation of the Bombchu Bowling prize but with the added 100 rupee factor.
+										<br /><br />
+										You needed an Ocarina to play the song in your house since there is no way to do Ocarina Items in there. The hardest part of this goal was climbing the ladder to Link’s house without getting hit by the giant Deku Baba.
+									</h3>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="4LizalfosSpirituGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Defeat all 4 Lizalfos in Spirit Temple</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Why should the Dodongo’s Cavern Lizalfos get all the love? This goal required a lot of Spirit Temple exploration and had many routes you could pick inside the dungeon (or even outside if you did Spirit Hover!) Something interesting with this goal was that your route would change depending on if you had Zelda’s Lullaby or not.
+										<br /><br />
+										If you went through the dungeon normally you needed 3 small keys but if you did Spirit Hover it was only one. The Spirit Hover route meant you would get the Lizalfos in the mirror room first but then you could actually solve the puzzle and jump down to the main room to get the other two.
+										<br /><br />
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=hyperion64/ElatedFinchOptimizePrime&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="MiddleWaterlvlGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Have the Water level in the Water Temple at the middle level</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										This is a shorter version of all the Water Temple goals that require Zelda’s Lullaby. It only requires one small key so you can get the one behind the bombable wall right after lowering the water.
+										<br /><br />
+										You could also access the middle tower by lighting the torch but it was faster to just get a key.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="500PoePointGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Get 500 points from the Poe collector</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Everytime you bring a Big Poe to the Poe collector he puts 100 points to your name. Many players were scared of this goal so they might have missed out on col 1 which had the Fairy Bow synergy.
+										<br /><br />
+										BL-TR had the Ice Arrow synergy but row 5 required you to go out of your way to have something to shoot arrows from. RBA’ing a second bottle was fast but you also had the option of RBA’ing a red potion to get a 3rd bottle slot since you can’t put Big Poes in fake bottles.
+										<br /><br />
+										With 3 bottles you could trade 5 poes in 2 trips but the time it took to buy a red potion and RBA it would end up taking the same amount of time or even be slower. A fast strategy could have been to get two Poes twice and then finish with the one that is near the sign right by the entrance to the castle.
+										<br /><br />
+										If you were scared of running out of arrows, you could RBA Cojiro with fish instead of bugs to get Quiver 30.
+										<br /><br />
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=runnerguy2489/GorgeousMonkeyTooSpicy&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="Skulltulas20Goal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>20 unique Skulltulas</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										The first OCS race was to get 60 Gold Skulltulas so for this goal you had to get one third of that amount. 15 Skulltulas is currently a goal in normal bingo and it has added a lot of creativity to some rows.
+										<br /><br />
+										Stone of Agony requires 20 Skulltulas but you can also dupe tokens to get that goal. Getting 20 Gold Skulltulas can be really fast especially if you’re not doing the early RBA cycle as adult.
+										<br /><br />
+										It turns night right around when you get to Goron City so you can quickly get Skulltulas in Death Mountain Trail, Goron City, Lost Woods and the Zora area.
+										<br /><br />
+									</h3>
+								</td>
+							</tr>
+						</table>
+						<table id="6UnusedKeysGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>6 unused keys in Water Temple</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										The Janitor challenge ended up being one of the most popular races and the players who did well in that race usually did well in Water Temple. 6 unused keys in Water Temple meant that you could not unlock any doors.
+										<br /><br />
+										Getting the first 5 require pretty basic Water Temple bingo knowledge but the last one needed a long hover that can be relatively precise.
+										<br /><br />
+										People who run 37 Water Temple keys would have an advantage here since they also cannot unlock any doors.
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=ostrealava02/ElatedBisonSoonerLater&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="BeatShadowTempleNoHoverGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Beat Shadow Temple (No Hover Boots)</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										If you ran Glitchless or Low% MST, this goal was nothing for you. The main roadblocks here were the truth spinner, the big gap after riding the boat and the room before Bongo Bongo.
+										<br /><br />
+										You could just megaflip in the first room but you could also truth spinner skip which does not require the Hover Boots. There are multiple strats to cross the gap but most of them involve blowing up the Bomb flowers on the other side.
+										<br /><br />
+										You could do that with a Bombchu or by shooting an arrow at them. The last room could be annoying because you could not see the platforms but with careful movement and a megaflip you could make it to the boss door.
+										<br /><br />
+										You could get the Hover Boots if you were doing a row with this goal but you could only use them outside the Shadow Temple.
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=dannyb21892/ImportantQuailFunRun&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=dannyb21892/ModernWolfJebaited&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=dannyb21892/CalmGrasshopperCmonBruh&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="Break6WallDCBlueFireGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Break 6 walls in Dodongo’s Cavern with Blue Fire</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										Ocarina of Time is an amazing game and people are still discovering new tricks all the time. This is not even a trick or a glitch though, dropping Blue Fire on these brown walls you find mostly in Dodongo’s Cavern will break them the same way if you used an explosive or the hammer.
+										<br /><br />
+										If this race was three months ago, this goal could not even have been an idea! 6 walls required a little bit of exploration in Dodongo’s Cavern but you could still find them without looking too far. The awkward part was having 6 bottles of Blue Fire.
+										<br /><br />
+										You could RBA to have three slots and then dupe over items you don’t need at that point anymore like Deku Nuts, Bombchus, Ocarina, Adult trade item or even the Megaton Hammer.
+										<br /><br />
+										If you really did not want to do that then you need two trips to Ice Cavern or Ganon’s Castle which was really slow.
+									</h3>
+									<div class="embedly-card text-center">
+										<iframe src="https://clips.twitch.tv/embed?clip=mikekatz45/JoyousAntSoBayed&autoplay=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+									</div>
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+						<table id="Break6WallDCBlueFireGoal" class="table table-bordered table-responsive">
+							<thead>
+								<tr class="table-header">
+									<th colspan="2"><h3 class="h-marginfix text-center title"><strong>Overall Leaderboards</strong></h3></th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="table-customstyle">
+									<h3>
+										The top 5 on the overall leaderboards did not lose or gain any new members.
+										<br /><br />
+										Exodus, Sniping, Marco, Amateseru and Hyperion finished in the first 5 places for this first OCS season.
+										<br /><br />
+										Marco’s win in the last race was his second win of the championship season 1.
+										<br /><br />
+										The first playoff race will be on February 19 but anyone can still join. The only difference is that commentary coverage will focus on the people who are still fighting to win the championship.
+									</h3>
+									<br /><br />
+									<img src="images/Challenges/Result10.png" style="margin-right:auto;margin-left: auto;" class="img-responsive center-block" alt="Result5.png">
+									<br /><br />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script>
+	$( "#square0" ).click(function() {
+		$(document).scrollTop( $("#JabuGoal").offset().top - 60 );
+	});
+	$( "#square1" ).click(function() {
+		$(document).scrollTop( $("#NoShieldGoal").offset().top - 60 );
+	});
+	$( "#square2" ).click(function() {
+		$(document).scrollTop( $("#4EyeSwitchesGoal").offset().top - 60 );
+	});
+	$( "#square3" ).click(function() {
+		$(document).scrollTop( $("#GoldenRupeeFireTempleGoal").offset().top - 60 );
+	});
+	$( "#square4" ).click(function() {
+		$(document).scrollTop( $("#ReDeadsShadowGoal").offset().top - 60 );
+	});
+	$( "#square5" ).click(function() {
+		$(document).scrollTop( $("#End1TrialGoal").offset().top - 60 );
+	});
+	$( "#square6" ).click(function() {
+		$(document).scrollTop( $("#IronBootAndBowGoal").offset().top - 60 );
+	});
+	$( "#square7" ).click(function() {
+		$(document).scrollTop( $("#OwlDesertColoGoal").offset().top - 60 );
+	});
+	$( "#square8" ).click(function() {
+		$(document).scrollTop( $("#4likelikeGoal").offset().top - 60 );
+	});
+	$( "#square9" ).click(function() {
+		$(document).scrollTop( $("#FireTempleNoTunicGoal").offset().top - 60 );
+	});
+	$( "#square10" ).click(function() {
+		$(document).scrollTop( $("#Plan6BeanGoal").offset().top - 60 );
+	});
+	$( "#square11" ).click(function() {
+		$(document).scrollTop( $("#PurpleRupeeGoal").offset().top - 60 );
+	});
+	$( "#square12" ).click(function() {
+		$(document).scrollTop( $("#8uniquekeysGoal").offset().top - 60 );
+	});
+	$( "#square13" ).click(function() {
+		$(document).scrollTop( $("#DeafeatGanonGoal").offset().top - 60 );
+	});
+	$( "#square14" ).click(function() {
+		$(document).scrollTop( $("#GetCowLinkHouseGoal").offset().top - 60 );
+	});
+	$( "#square15" ).click(function() {
+		$(document).scrollTop( $("#Defeat4BossesGoal").offset().top - 60 );
+	});
+	$( "#square16" ).click(function() {
+		$(document).scrollTop( $("#16ChestGanonGoal").offset().top - 60 );
+	});
+	$( "#square17" ).click(function() {
+		$(document).scrollTop( $("#Buy10BombchuGoal").offset().top - 60 );
+	});
+	$( "#square18" ).click(function() {
+		$(document).scrollTop( $("#4LizalfosSpirituGoal").offset().top - 60 );
+	});
+	$( "#square19" ).click(function() {
+		$(document).scrollTop( $("#MiddleWaterlvlGoal").offset().top - 60 );
+	});
+	$( "#square20" ).click(function() {
+		$(document).scrollTop( $("#500PoePointGoal").offset().top - 60 );
+	});
+	$( "#square21" ).click(function() {
+		$(document).scrollTop( $("#Skulltulas20Goal").offset().top - 60 );
+	});
+	$( "#square22" ).click(function() {
+		$(document).scrollTop( $("#6UnusedKeysGoal").offset().top - 60 );
+	});
+	$( "#square23" ).click(function() {
+		$(document).scrollTop( $("#BeatShadowTempleNoHoverGoal").offset().top - 60 );
+	});
+	$( "#square24" ).click(function() {
+		$(document).scrollTop( $("#Break6WallDCBlueFireGoal").offset().top - 60 );
+	});
+	</script>
+	</html>
