@@ -174,7 +174,13 @@ textarea {
 canvas {
 	display: block;
 }
-
+.greyimg {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%); 
+}
 .bingo-square {
   font-size: 93%;
   color: #ffffff;
