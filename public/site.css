@@ -181,6 +181,13 @@ canvas {
         -ms-filter: grayscale(100%);
             filter: grayscale(100%); 
 }
+.brightness {
+    background-color: white;
+    display: inline-block;
+	opacity: .5;
+   
+}
+
 .bingo-square {
   font-size: 93%;
   color: #ffffff;
