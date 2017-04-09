@@ -179,7 +179,7 @@ canvas {
        -moz-filter: grayscale(100%);
          -o-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
-            filter: grayscale(100%); 
+            filter: grayscale(100%);
 }
 .brightness {
    box-shadow: inset 0 0 5px 8px #4d86ea;
