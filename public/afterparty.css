@@ -105,6 +105,7 @@ textarea {
     background-repeat:no-repeat;
     background-size:cover;
     z-index:-100;
+    background-image:url(/images/AfterParty/Party.gif);
     background-color:black;
 }
 .BossImage{
@@ -267,4 +268,38 @@ div.bingo-info p.small {
   margin: 5px 0px;
   color: #777777;
   font-size: 85%;
+}
+.message-wrap-header
+{
+    background-color: rgba(0, 0, 0, 0.60);
+    border-bottom: 5px solid #000;
+    border-left: 5px solid  #000;
+    border-right: 5px solid  #000;
+    border-top: 5px solid  #000;
+}
+.message-wrap-header-text
+{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    opacity: 1;
+    color: white;
+    padding-left:20px;
+    overflow-x: hidden;
+}
+.message-wrap
+{
+    z-index: 1200;
+    margin: 0;
+    opacity: 0.85;
+    padding-top: 10px;
+    height: 100%;
+}
+.msg-wrap
+{
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: 1200;
+    overflow: auto;
+    height: 75vh;
+    border-right: 5px solid #000;
+    border-left: 5px solid #000;
+    border-bottom: 5px solid #000;
 }
