@@ -281,6 +281,14 @@ div.bingo-info p.small {
     border-right: 5px solid  #000;
     border-top: 5px solid  #000;
 }
+@Triforce {
+    font-family: 'Triforce'; /*a name to be used later*/
+    src: url('/fonts/Triforce.ttf'); /*URL to font*/
+}
+@FOT-ChiaroStd {
+    font-family: 'FOT-ChiaroStd'; /*a name to be used later*/
+    src: url('/fonts/FOT-ChiaroStd-B_0.otf'); /*URL to font*/
+}
 .message-wrap-header-text
 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -288,8 +296,8 @@ div.bingo-info p.small {
     color: white;
     padding-left:20px;
     overflow-x: hidden;
-    overflow-y: hidden; // hide vertical
-    overflow-x: hidden; // hide horizontal
+    overflow-y: hidden;
+    font-family: Triforce;
 }
 .message-wrap
 {
