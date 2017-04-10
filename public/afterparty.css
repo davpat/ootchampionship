@@ -1,11 +1,15 @@
 body {
     padding-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
 }
 
 /* Override the default bootstrap behavior where horizontal description lists
@@ -284,6 +288,8 @@ div.bingo-info p.small {
     color: white;
     padding-left:20px;
     overflow-x: hidden;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
 }
 .message-wrap
 {
@@ -298,8 +304,11 @@ div.bingo-info p.small {
     background-color: rgba(0, 0, 0, 0.60);
     z-index: 1200;
     overflow: auto;
-    height: 75vh;
     border-right: 5px solid #000;
     border-left: 5px solid #000;
     border-bottom: 5px solid #000;
+}
+.row
+{
+  overflow-x: hidden; // hide horizontal
 }
