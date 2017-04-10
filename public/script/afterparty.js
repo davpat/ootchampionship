@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     var audio = document.getElementById('audio');
     var source = document.getElementById('mp3Source');
+    audio.volume = 0.4;
 
     $('#ZeldaLullaby').click(function () {
         source.src = "sfx/Zelda's Lullaby.mp3";
@@ -23,7 +24,7 @@ $(document).ready(function(){
         audio.load(); //call this to just preload the audio without playing
         audio.play(); //call this to play the song right away
     });
-    $('#Song of Time').click(function () {
+    $('#SongofTime').click(function () {
         source.src = "sfx/Song of Time.mp3";
         audio.load(); //call this to just preload the audio without playing
         audio.play(); //call this to play the song right away
