@@ -1,15 +1,14 @@
 body {
     padding-bottom: 20px;
     overflow-x: hidden;
-    overflow-y: hidden;
+
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    overflow-y: hidden; // hide vertical
-    overflow-x: hidden; // hide horizontal
+	overflow-x: hidden;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists
@@ -182,13 +181,13 @@ table.bingo tr td {
   border: 1px #424242 solid;
   margin: 0px;
   background: #000000;
-  width: 100px;
-  height: 95px;
+  height: 120px;
 }
+
 table.bingo tr td:hover,
 table.bingo tr td.hover {
   background: #001a36;
-  color: #fff;
+  color: #fff;
 }
 table.bingo tr td.greensquare {
   background: #005511;
