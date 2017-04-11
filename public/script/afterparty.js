@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     var audio = document.getElementById('audio');
     var source = document.getElementById('mp3Source');
-    audio.volume = 0.2;
+    audio.volume = 0.1;
 
     $('#ZeldaLullaby').click(function () {
         source.src = "sfx/Zelda's Lullaby.mp3";
