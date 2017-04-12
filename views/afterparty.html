@@ -14,10 +14,10 @@
 		<div class="AfterParty"></div>
 		<div class="row">
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-        <table style="margin-left:15px; height:90vh;" class="bingo bingo-element col-centered">
+        <table style="margin-left:15px; height:90vh;" class="bingo bingoNormal bingo-element col-centered">
           <tbody>
           <tr>
-            <td class="square">
+            <td class="squareBoss">
               <img class="img-responsive" src="images/AfterParty/Gohma.png" class="BossImage" alt="Gohma.png"><span>Queen Gohma</span>
             </td>
             <td class="square" id="EponaSong">
@@ -26,7 +26,7 @@
           </tr>
 
           <tr>
-            <td class="square">
+            <td class="squareBoss">
               <img class="img-responsive" src="images/AfterParty/Dodongo.png" class="BossImage" alt="Dodongo.png"><span>King Dodongo</span>
             </td>
             <td class="square" id="SariasSong">
@@ -35,7 +35,7 @@
           </tr>
 
           <tr>
-            <td class="square">
+            <td class="squareBoss">
               <img class="img-responsive" src="images/AfterParty/Barinade.png" class="BossImage" alt="Barinade.png"><span>Barinade</span>
             </td>
             <td class="square" id="SunsSong">
@@ -44,7 +44,7 @@
           </tr>
 
           <tr>
-            <td class="square">
+            <td class="squareBoss">
               <img class="img-responsive" src="images/AfterParty/Phantom.png" class="BossImage" alt="Phantom.png"><span>Phantom Ganon</span>
             </td>
             <td class="square" id="SongofStorms">
@@ -53,7 +53,7 @@
           </tr>
 
           <tr>
-            <td class="square">
+            <td class="squareBoss">
               <img class="img-responsive" src="images/AfterParty/Volvagia.png" class="BossImage" alt="Volvagia.png"><span>Volvagia</span>
             </td>
             <td class="square" id="MinuetofForest" >
@@ -61,7 +61,7 @@
             </td>
           </tr>
           <tr>
-            <td class="square">
+            <td class="squareBoss">
               <img class="img-responsive" src="images/AfterParty/WhiteWolfos.png" class="BossImage" alt="WhiteWolfos.png"><span>White Wolfos</span>
             </td>
             <td class="square" id="NocturneofShadow">
@@ -72,41 +72,56 @@
       </table>
   </div>
   <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
-		<div class="col-lg-12 col-centered" style="padding-top:50px;">
-			<div class="media message-wrap-header">
-					<div>
-						<h1 class="message-wrap-header-text" align="center">OCS Afterparty - The Hyrule tour!</h1>
+		<div class="row">
+			<div class="col-lg-12 col-centered" style="padding-top:50px;">
+				<div class="media message-wrap-header">
+						<div>
+							<h1 class="message-wrap-header-text" align="center">OCS Afterparty - The Hyrule tour!</h1>
+						</div>
+				</div>
+				<div class="msg-wrap row">
+					<div class="col-lg-8">
+						<h1 class="message-wrap-header-text">Goal: </h1>
+						<h2 style="font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Earn 6 points by playing songs for bosses.</h2>
 					</div>
-			</div>
-			<div style="padding-bottom:20px;" class="msg-wrap">
-				<h1 class="message-wrap-header-text">Goal: </h1>
-				<h2 style="font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Earn 6 points by playing songs for bosses.</h2>
+					<div class="col-lg-4" style="padding-top:10px;">
+						<div class="box" >
+							<label class="box-text">Songs:</label>
+							<label class="box-text" id="qtyLabel">0 / 6</label>
+							<input id="qty" class="hidden" value="0" />
+						</div>
+					</div>
+				</div>
+				<div style="padding-bottom:20px;" class="msg-wrap">
+					<h1 class="message-wrap-header-text">Restrictions:</h1>
+						<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">You must use the web app to know which song you can play for each boss.</li>
+						<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">No oldies! <u>You may not play</u> for bosses as adult songs that you learned as child.</li>
+						<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Nocturne of Shadow and Song of Time are <u>worth double</u> each!</li>
+						<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">No Item manipulation. (No RBA)</li>
 
-				<h1 class="message-wrap-header-text">Restrictions:</h1>
-					<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">You must use the web app to know which song you can play for each boss.</li>
-					<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">No oldies! <u>You may not play</u> for bosses as adult songs that you learned as child.</li>
-					<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Nocturne of Shadow and Song of Time are <u>worth double</u> each!</li>
-					<li style="font-size:25px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">No Item manipulation. (No RBA)</li>
-
-				<h1 class="message-wrap-header-text">Reminders:</h1>
-					<li style="font-size:18px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Remember you’ll need to perform the ocarina items glitch to play songs inside boss rooms.</li>
-					<li style="font-size:18px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">If you defeat a boss before playing the song for it, you can go back to the boss room and play it, still counts.</li>
-					<li style="font-size:18px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Songs played for the bosses only count after watching the intro cutscenes of the corresponding bosses
-					<br>  &emsp;&emsp;or after they start attacking you in the case of mini-bosses.</li>
-					<li style="font-size:18px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">You can still play songs as adult that you got as child for everything else except playing for the bosses in the table.</li>
-					<li style="font-size:18px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Time stops when hearing the “success” sound effect upon playing the last song for the last boss.</li>
+					<h1 class="message-wrap-header-text">Reminders:</h1>
+						<li style="font-size:22px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Remember you’ll need to perform the ocarina items glitch to play songs inside boss rooms.</li>
+						<li style="font-size:22px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">If you defeat a boss before playing the song for it, you can go back to the boss room
+						<br>  &emsp;&emsp;and play it, still counts.</li>
+						<li style="font-size:22px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Songs played for the bosses only count after watching the intro cutscenes
+						<br>  &emsp;&emsp;of the corresponding bosses or after they start attacking you in the case of mini-bosses.</li>
+						<li style="font-size:22px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">You can still play songs as adult that you got as child for everything else except playing
+						<br>  &emsp;&emsp;for the bosses in the table.</li>
+						<li style="font-size:22px; font-family: FOT-ChiaroStd;" class="message-wrap-header-text">Time stops when hearing the “success” sound effect upon playing the last song
+						<br>  &emsp;&emsp;for the last boss.</li>
+				</div>
+				<br>
 			</div>
-			<br>
-	</div>
+		</div>
   </div>
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <table style="margin-right:15px; height:90vh;" class="bingo bingo-element col-centered">
+      <table style="margin-right:15px; height:90vh;" class="bingo bingoReverse bingo-element col-centered">
         <tbody>
               <tr>
                 <td class="square" id="PreludeofLight">
                   <img class="img-responsive" src="images/AfterParty/PreludeofLight.png" alt="PreludeofLight.png"><img style="padding-right:15px;" src="images/AfterParty/NoteY.gif"><span>Prelude of Light</span><img style="padding-left:15px;" src="images/AfterParty/NoteY.gif">
                 </td>
-								<td class="square">
+								<td class="squareBoss">
 									<img class="img-responsive" src="images/AfterParty/Morpha.png" class="BossImage" alt="Morpha.png"><span>Morpha</span>
 								</td>
               </tr>
@@ -115,7 +130,7 @@
                 <td class="square" id="SerenadeofWater" >
                   <img class="img-responsive" src="images/AfterParty/SerenadeofWater.png" alt="SerenadeofWater.png"><img style="padding-right:15px;" src="images/AfterParty/NoteB.gif"><span>Serenade of Water</span><img style="padding-left:15px;" src="images/AfterParty/NoteB.gif">
                 </td>
-								<td class="square">
+								<td class="squareBoss">
 									<img class="img-responsive" src="images/AfterParty/DarkLink.png" class="BossImage" alt="DarkLink.png"><span>Dark Link</span>
 								</td>
               </tr>
@@ -123,7 +138,7 @@
                 <td class="square" id="SongofTime">
                   <img class="img-responsive" src="images/AfterParty/SongofTime.png" alt="SongofTime.png"><img style="padding-right:15px;" src="images/AfterParty/NoteK.gif"><span>Song of Time</span><img style="padding-left:15px;" src="images/AfterParty/NoteK.gif">
                 </td>
-								<td class="square">
+								<td class="squareBoss">
 									<img class="img-responsive" src="images/AfterParty/DeadHand.png" class="BossImage" alt="DeadHand.png"><span>Death Hand</span>
 								</td>
               </tr>
@@ -131,7 +146,7 @@
                 <td class="square" id="ZeldaLullaby">
                   <img class="img-responsive" src="images/AfterParty/ZeldasLullaby.png" alt="ZeldasLullaby.png"><img style="padding-right:15px;" src="images/AfterParty/NoteK.gif"><span>Zelda’s Lullaby</span><img style="padding-left:15px;" src="images/AfterParty/NoteK.gif">
                 </td>
-								<td class="square">
+								<td class="squareBoss">
 									<img class="img-responsive" src="images/AfterParty/Bongo.png" class="BossImage" alt="Bongo.png"><span>Bongo Bongo</span>
 								</td>
               </tr>
@@ -140,7 +155,7 @@
                 <td class="square" id="BoleroofFire">
                   <img class="img-responsive" src="images/AfterParty/BoleroofFire.png" alt="BoleroofFire.png"><img style="padding-right:15px;" src="images/AfterParty/NoteR.gif"><span>Bolero of Fire</span><img style="padding-left:15px;" src="images/AfterParty/NoteR.gif">
                 </td>
-								<td class="square">
+								<td class="squareBoss">
 									<img class="img-responsive" src="images/AfterParty/Twinrova.png" class="BossImage" alt="Twinrova.png"><span>Twinrova</span>
 								</td>
               </tr>
@@ -149,7 +164,7 @@
                 <td class="square" id="RequiemofSpirit">
                   <img class="img-responsive" src="images/AfterParty/RequiemofSpirit.png" alt="RequiemofSpirit.png"><img style="padding-right:15px;" src="images/AfterParty/NoteO.gif"><span>Requiem of Spirit</span><img style="padding-left:15px;" src="images/AfterParty/NoteO.gif">
                 </td>
-								<td class="square">
+								<td class="squareBoss">
 									<img class="img-responsive" src="images/AfterParty/Ganondorf.png" class="BossImage" alt="Ganondorf.png"><span>Ganondorf</span>
 								</td>
               </tr>

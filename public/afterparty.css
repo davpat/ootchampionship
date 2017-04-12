@@ -126,26 +126,27 @@ textarea {
   text-align: center;
   border: 1px #424242 solid;
   margin: 0px;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.60);
 }
+
 .bingo-square:hover,
 .bingo-square.hover {
-  background: #001a36;
+  background: rgba(0, 26, 54, 0.60);
   color: #fff;
 }
 .bingo-square.greensquare {
-  background: #005511;
+  background: rgba(0, 85, 17, 0.60);
 }
 .bingo-square.greensquare:hover,
 .bingo-square.greensquare.hover {
-  background: #007722;
+  background: rgba(0, 119, 34, 0.60);
 }
 .bingo-square.redsquare {
-  background: #550011;
+  background: rgba(85, 0, 17, 0.60);
 }
 .bingo-square.redsquare:hover,
 .bingo-square.redsquare.hover {
-  background: #770022;
+  background: rgba(119, 0, 34, 0.60);
 }
 table.bingo {
   -webkit-user-select: none;
@@ -158,16 +159,16 @@ table.bingo {
   border-spacing: 0px;
 }
 table.bingo .rowcol {
-  background: #000811;
+  background: rgba(0, 0, 0, 0.60);
   font-size: 75%;
   color: #3c70df;
   font-weight: 700;
-  border: 1px #0a245a solid;
+  border: 5px solid #000;
   padding: 0px 5px;
 }
 table.bingo .rowcol:hover {
   color: #ffffff;
-  background: #1448b3;
+  background: rgba(20, 72, 179, 0.60);
 }
 table.bingo tr td {
   box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
@@ -178,30 +179,30 @@ table.bingo tr td {
   padding: 0px 6px;
   cursor: pointer;
   text-align: center;
-  border: 1px #424242 solid;
+  border: 5px solid #000;
   margin: 0px;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.60);
   height: 120px;
 }
 
 table.bingo tr td:hover,
 table.bingo tr td.hover {
-  background: #001a36;
+  background: rgba(0, 26, 54, 0.60);
   color: #fff;
 }
 table.bingo tr td.greensquare {
-  background: #005511;
+  background: rgba(0, 85, 17, 0.60);
 }
 table.bingo tr td.greensquare:hover,
 table.bingo tr td.greensquare.hover {
-  background: #007722;
+  background: rgba(0, 119, 34, 0.60);
 }
 table.bingo tr td.redsquare {
-  background: #550011;
+  background: rgba(85, 0, 17, 0.60);
 }
 table.bingo tr td.redsquare:hover,
 table.bingo tr td.redsquare.hover {
-  background: #770022;
+  background: rgba(119, 0, 34, 0.60);
 }
 
 table.bingo-popout {
@@ -274,7 +275,7 @@ div.bingo-info p.small {
 }
 .message-wrap-header
 {
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(0, 0, 0, 0.50);
     border-bottom: 5px solid #000;
     border-left: 5px solid  #000;
     border-right: 5px solid  #000;
@@ -317,5 +318,49 @@ div.bingo-info p.small {
 }
 .row
 {
+  margin-right: 0px;
+  margin-left: 0px;
   overflow-x: hidden; // hide horizontal
+}
+
+.box {
+	color: white;
+  text-align: center;
+  width: 8em;
+	margin: 0 auto;
+  z-index: 1200;
+  overflow: auto;
+  border: 5px solid rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.box-text
+{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    opacity: 1;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: FOT-ChiaroStd;
+    font-size:25px;
+}
+.mytable tbody tr:first-child td:nth-child(5) {
+   color: red;
+}
+table.bingoNormal tbody tr td:first-child{
+  font-size: 93%;
+  color: #ffffff;
+  padding: 0px 6px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0px;
+  background: rgba(0, 0, 80, 0.60);
+}
+table.bingoReverse tbody tr td:last-child{
+  font-size: 93%;
+  color: #ffffff;
+  padding: 0px 6px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0px;
+  background: rgba(0, 0, 80, 0.60);
 }
