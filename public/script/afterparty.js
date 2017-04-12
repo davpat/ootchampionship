@@ -178,6 +178,7 @@ function modify_qty(val) {
     document.getElementById('qty').value = new_qty;
 
     if (new_qty == 0) {
+      $('#qtyLabel').text("0 / 6");
       $('.box').css('background-color' , 'rgba(0, 0, 0, 0.60)');
     }
     if (new_qty <= 6 && new_qty > 0) {
