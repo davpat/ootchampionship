@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $('.box').css('background-color' , 'rgba(0, 0, 0, 0.60)');
+
     var audio = document.getElementById('audio');
     var source = document.getElementById('mp3Source');
     audio.volume = 0.1;
@@ -175,7 +177,10 @@ function modify_qty(val) {
 
     document.getElementById('qty').value = new_qty;
 
-    if (new_qty <= 6) {
+    if (new_qty == 0) {
+      $('.box').css('background-color' , 'rgba(0, 0, 0, 0.60)');
+    }
+    if (new_qty <= 6 && new_qty > 0) {
       $('#qtyLabel').text(new_qty + " / 6");
       $('.box').css('background-color' , 'rgba(0, 0, 80, 0.60)');
     }
