@@ -75,6 +75,10 @@ router.get("/afterparty",function(req,res){
   res.sendFile(path + "afterparty.html");
 });
 
+router.get("/season1",function(req,res){
+  res.sendFile(path + "season1.html");
+});
+
 app.use("/",router);
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.static('public'))
