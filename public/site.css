@@ -370,3 +370,26 @@ div.bingo-info p.small {
   color: #777777;
   font-size: 85%;
 }
+
+.LostPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+#Lostbackground{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:-100;
+    background-image:url(/images/Lost.png);
+    background-color:black;
+}

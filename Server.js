@@ -79,6 +79,14 @@ router.get("/season1",function(req,res){
   res.sendFile(path + "season1.html");
 });
 
+router.get("/bingo",function(req,res){
+  res.sendFile(path + "bingo.html");
+});
+
+router.get("/popout", function(req,res){
+	res.sendFile(path + "popout.html");
+});
+
 app.use("/",router);
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.static('public'))
