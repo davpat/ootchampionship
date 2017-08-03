@@ -97,6 +97,6 @@ app.use("*",function(req,res){
   res.sendFile(path + "404.html");
 });
 
-app.listen(80,function(){
+app.listen(process.env.PORT || 80,function(){
   console.log("Live at Port 80");
 });
