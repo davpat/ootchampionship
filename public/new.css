@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'FOT-Chiaro Std';
+  src: url('/fonts/FOT-ChiaroStd-B_0.otf');
+}
+
+@font-face {
+  font-family: 'Hylia Serif Beta';
+  src: url('/fonts/HyliaSerifBeta-Regular.otf');
+}
+
 .main-title {
   font-family: Hylia Serif Beta;
   font-size: 100px;
