@@ -1,102 +1,103 @@
-var express = require("express");
+var express = require('express');
 var app = express();
-var router = express.Router();
-var path = __dirname + '/views/';
+const path = require('path');
+var viewPath = path.resolve(__dirname, 'views');
 var favicon = require('serve-favicon');
+const season1Data = require('./data/season-1-challenges');
 
-router.use(function (req,res,next) {
-  console.log("/" + req.method);
+app.set('view engine', 'ejs');
+app.use(function (req, res, next) {
+  console.log('/' + req.method);
   next();
 });
 
-router.get("/",function(req,res){
-  res.sendFile(path + "index.html");
+app.get('/', function (req, res) {
+  res.render('index');
 });
 
-router.get("/challenges",function(req,res){
-  res.sendFile(path + "challenges.html");
+app.get('/challenges', function (req, res) {
+  res.render('challenges', { data: season1Data });
 });
-router.get("/information",function(req,res){
-  res.sendFile(path + "information.html");
-});
-
-router.get("/revision",function(req,res){
-  res.sendFile(path + "revision.html");
+app.get('/information', function (req, res) {
+  res.render('information');
 });
 
-router.get("/highlights",function(req,res){
-  res.sendFile(path + "highlights.html");
-});
-router.get("/about",function(req,res){
-  res.sendFile(path + "about.html");
-});
-router.get("/halloffame",function(req,res){
-  res.sendFile(path + "halloffame.html");
+app.get('/revision', function (req, res) {
+  res.render('revision');
 });
 
-router.get("/recap1",function(req,res){
-  res.sendFile(path + "recap1.html");
+app.get('/highlights', function (req, res) {
+  res.render('highlights');
 });
-router.get("/recap2",function(req,res){
-  res.sendFile(path + "recap2.html");
+app.get('/about', function (req, res) {
+  res.render('about');
 });
-router.get("/recap3",function(req,res){
-  res.sendFile(path + "recap3.html");
-});
-router.get("/recap4",function(req,res){
-  res.sendFile(path + "recap4.html");
-});
-router.get("/recap5",function(req,res){
-  res.sendFile(path + "recap5.html");
-});
-router.get("/recap6",function(req,res){
-  res.sendFile(path + "recap6.html");
-});
-router.get("/recap7",function(req,res){
-  res.sendFile(path + "recap7.html");
-});
-router.get("/recap8",function(req,res){
-  res.sendFile(path + "recap8.html");
-});
-router.get("/recap9",function(req,res){
-  res.sendFile(path + "recap9.html");
-});
-router.get("/recap10",function(req,res){
-  res.sendFile(path + "recap10.html");
+app.get('/halloffame', function (req, res) {
+  res.render('halloffame');
 });
 
-router.get("/clue5",function(req,res){
-  res.sendFile(path + "clue5.html");
+app.get('/recap1', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap1.html'));
 });
-router.get("/clue8",function(req,res){
-  res.sendFile(path + "clue8.html");
+app.get('/recap2', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap2.html'));
 });
-router.get("/afterparty",function(req,res){
-  res.sendFile(path + "afterparty.html");
+app.get('/recap3', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap3.html'));
+});
+app.get('/recap4', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap4.html'));
+});
+app.get('/recap5', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap5.html'));
+});
+app.get('/recap6', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap6.html'));
+});
+app.get('/recap7', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap7.html'));
+});
+app.get('/recap8', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap8.html'));
+});
+app.get('/recap9', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap9.html'));
+});
+app.get('/recap10', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'recap10.html'));
 });
 
-router.get("/season1",function(req,res){
-  res.sendFile(path + "season1.html");
+app.get('/clue5', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'clue5.html'));
+});
+app.get('/clue8', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'clue8.html'));
+});
+app.get('/afterparty', function (req, res) {
+  res.render('afterparty');
 });
 
-router.get("/bingo",function(req,res){
-  res.sendFile(path + "bingo.html");
+app.get('/season1', function (req, res) {
+  res.render('season1');
 });
 
-router.get("/popout", function(req,res){
-	res.sendFile(path + "popout.html");
+app.get('/bingo', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'bingo.html'));
 });
 
-app.use("/",router);
+app.get('/popout', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'popout.html'));
+});
+
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.static('public'))
 app.use(express.static('files'))
 
 
-app.use("*",function(req,res){
-  res.sendFile(path + "404.html");
+app.use('*', function (req, res) {
+  res.render('404');
 });
 
-app.listen(process.env.PORT || 80,function(){
-  console.log("Live at Port 80");
+app.listen(process.env.PORT || 80, function () {
+  console.log('Live at Port 80');
 });

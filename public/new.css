@@ -20,6 +20,11 @@
 }
 
 .main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30vh;
   font-family: Hylia Serif Beta;
   font-size: 100px;
   color: white;
@@ -37,6 +42,5 @@
   font-size: 24px;
   color: white;
   font-family: FOT-Chiaro Std;
-  text-align: center;
   margin: 100px 150px 0;
 }
