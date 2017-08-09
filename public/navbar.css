@@ -1,0 +1,109 @@
+.navibar {
+  font-family: FOT-Chiaro Std;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  color: white;
+  height: 56px;
+  transition: 0.2s ease-in-out;
+}
+@media (min-width: 880px) {
+  .navibar.opaque {
+    background: #222;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26)
+  }
+}
+
+.navibar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navibar a:hover {
+  text-shadow: 0px 0px 3px white;
+}
+
+.navibar-container {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  height: 100%;
+}
+
+.navibar-collapse {
+  display: flex;
+}
+
+.navibar-collapse>div {
+  padding: 0 8px;
+  height: 100%;
+}
+
+.navibar-header {
+  font-size: 24px;
+  font-family: Hylia Serif Beta;
+  margin: 0 24px;
+}
+
+.icon-bar {
+  background: white;
+  width: 20px;
+  height: 2px;
+  display:block;
+  margin: 4px auto;
+}
+
+.navibar button {
+  display: none;
+  background: transparent;
+  border: 0;
+  height: 48px;
+  width: 48px;
+  outline: none;
+  margin: 8px;
+}
+
+.navibar-header, .navibar-collapse>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 880px) {
+  .navibar {
+    box-shadow: none;
+  }
+  .navibar-collapse {
+    flex-direction: column;
+    position: fixed;
+    margin-top: 56px;
+    z-index: -1;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    background: #222;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26)
+  }
+  .navibar-collapse.collapse {
+    transform: translateY(-100%);
+  }
+  .navibar button {
+    display: block;
+  }
+
+  .navibar-header {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    background: #222;
+    z-index: 100;
+  }
+
+  .navibar-collapse>div {
+    justify-content: flex-start;
+    padding: 10px 16px;
+  }
+
+}
