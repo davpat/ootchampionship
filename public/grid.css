@@ -1,0 +1,43 @@
+.cfull {
+  width: 100%;
+}
+
+.content {
+  margin: 0 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+}
+
+@media(max-width: 480px) {
+  .c1 {
+    width: 25%;
+  }
+  .c2 {
+    width: 50%;
+  }
+  .c3 {
+    width: 75%;
+  }
+  .c4 {
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 840px) {
+  .c1 {
+    width: 16.6667%;
+  }
+  .c2 {
+    width: 33.3333%;
+  }
+  .c3 {
+    width: 50%;
+  }
+  .c4 {
+    width: 66.6667%;
+  }
+}

@@ -1,0 +1,55 @@
+.secondary-dark {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.secondary-light {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+body {
+  font-family: Roboto;
+  color: white;
+}
+
+.display1 {
+  font-size: 34px;
+  font-family: Hylia Serif Beta;
+}
+
+.display2 {
+  font-size: 45px;
+  font-family: Hylia Serif Beta;
+}
+
+.display3 {
+  font-size: 56px;
+  font-family: Hylia Serif Beta;
+}
+
+.display4 {
+  font-size: 112px;
+  font-family: Hylia Serif Beta;
+}
+
+.headline {
+  font-size: 24px;
+  font-family: FOT-Chiaro Std;
+}
+
+.title {
+  font-size: 20px;
+  font-family: FOT-Chiaro Std;
+}
+
+.subheading {
+  font-size: 16px;
+}
+
+.body2 {
+  font-size:14px;
+  font-weight: 500;
+}
+
+.body1 {
+  font-size:14px;
+}
