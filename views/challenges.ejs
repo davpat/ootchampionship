@@ -17,7 +17,7 @@
     <div class="container">
       <div class="title">
         <span class="display2">
-          Season 1 Challenges
+          Season 2 Challenges
         </span>
       </div>
       <div class="challenges">
@@ -29,58 +29,45 @@
               <div class="flex-grow">
                 <div class="date secondary-dark"><%= challenge.date %></div>
                 <div class="headline name flex flex-center"><%- challenge.title %></div>
-                <div class="winner secondary-dark flex flex-center">Winner:&nbsp;<a href="<%=challenge.winner.link%>" style="margin: 0 10px"><%= challenge.winner.name %></a>&nbsp;
-                  <span><%= challenge.time %></span>
-                </div>
+                <% if (challenge.winner.name) { %>
+					<div class="winner secondary-dark flex flex-center">Winner:&nbsp;
+						<a href="<%=challenge.winner.link%>" style="margin: 0 10px"><%= challenge.winner.name %></a>&nbsp;
+						<span><%= challenge.time %></span>
+					</div>
+				 <% } else{ %>  
+				    <div class="winner secondary-dark flex flex-center">
+					</div>
+				<% } %>
               </div>
             </div>
             <div class="flex-row space-around">
-              <div class="flex flex-grow flex-center"><a href="<%= challenge.rules %>">Rules</a></div>
-              <div class="flex flex-grow flex-center"><a href="<%= challenge.results %>">Results</a></div>
-              <div class="flex flex-grow flex-center"><a href="<%= challenge.recap %>">Recap</a></div>
               <div class="flex flex-grow flex-center">
-              <% if (challenge.clue) { %>
-                <a href="<%= challenge.clue %>">Clue</a>
-              <% } %>
+				<% if (challenge.rules) { %>
+					<a href="<%= challenge.rules %>">Rules</a>
+				<% } %>
+			  </div>
+              
+			  <div class="flex flex-grow flex-center">
+			  	<% if (challenge.results) { %>
+					<a href="<%= challenge.results %>">Results</a>
+				<% } %>
+			  </div>
+              
+			  <div class="flex flex-grow flex-center">
+				<% if (challenge.recap) { %>
+					<a href="<%= challenge.recap %>">Recap</a>
+				<% } %>
+			  </div>
+			  <div class="flex flex-grow flex-center">
+				  <% if (challenge.clue) { %>
+				  <a href="<%= challenge.clue %>">Clue</a>
+				  <% } %>
               </div>
             </div>
           </div>
         </div>
       <% }); %>
       </div>
-      <div class="title">
-        <span class="display2">
-          Season 1 Playoffs
-        </span>
-      </div>
-      <div class="challenges">
-      <% data.playoffs.forEach((challenge, i) => { %>
-        <div class="challenge-card c4 flex" style="background-image: url(<%= challenge.background %>)">
-          <div class="gradient flex-grow">
-            <div class="flex-row">
-              <div class="number"><%= i + 1 %></div>
-              <div class="flex-grow">
-                <div class="date secondary-dark"><%= challenge.date %></div>
-                <div class="headline name flex flex-center"><%- challenge.title %></div>
-                <div class="winner2 secondary-dark flex flex-center">
-                  Winner:&nbsp;<a href="<%=challenge.winner.link%>" style="margin: 0 10px"><%= challenge.winner.name %></a>
-                </div>
-                <div class="winner2 secondary-dark flex flex-center">
-                  Loser:&nbsp;<a href="<%=challenge.loser.link%>" style="margin: 0 10px"><%= challenge.loser.name %></a>
-                </div>
-              </div>
-            </div>
-            <div class="flex-row space-around">
-              <div class="flex flex-grow flex-center"><a href="<%= challenge.rules %>">Rules</a></div>
-              <div class="flex flex-grow flex-center">
-              <% if (challenge.clue) { %>
-                <a href="<%= challenge.clue %>">Clue</a>
-              <% } %>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% }); %>
       </div>
     </div>
   </div>

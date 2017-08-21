@@ -5,20 +5,112 @@
   <meta charset="UTF-8">
   <title>OCS - Leaderboard</title>
   <% include partials/head %>
+  <link rel="stylesheet" href="/challenges.css">
+	<link rel="stylesheet" href="/flex.css">
+	<link rel="stylesheet" href="/grid.css">
+	<link rel="stylesheet" href="/typography.css">
 </head>
 
 <body>
   <div>
     <div id="backgroundDiv"></div>
     <% include partials/header %>
-
+	  <div class="content flex flex-center">
+    <div class="container">
+      <div class="title">
+        <span class="display2">
+          Season 1 Challenges
+        </span>
+      </div>
+      <div class="challenges">
+      <% data.main.forEach((challenge, i) => { %>
+        <div class="challenge-card c4 flex" style="background-image: url(<%= challenge.background %>)">
+          <div class="gradient flex-grow">
+            <div class="flex-row">
+              <div class="number"><%= i + 1 %></div>
+              <div class="flex-grow">
+                <div class="date secondary-dark"><%= challenge.date %></div>
+                <div class="headline name flex flex-center"><%- challenge.title %></div>
+                <% if (challenge.winner.name) { %>
+					<div class="winner secondary-dark flex flex-center">Winner:&nbsp;
+						<a href="<%=challenge.winner.link%>" style="margin: 0 10px"><%= challenge.winner.name %></a>&nbsp;
+						<span><%= challenge.time %></span>
+					</div>
+				 <% } else{ %>  
+				    <div class="winner secondary-dark flex flex-center">
+					</div>
+				<% } %>
+              </div>
+            </div>
+            <div class="flex-row space-around">
+              <div class="flex flex-grow flex-center">
+				<% if (challenge.rules) { %>
+					<a href="<%= challenge.rules %>">Rules</a>
+				<% } %>
+			  </div>
+              
+			  <div class="flex flex-grow flex-center">
+			  	<% if (challenge.results) { %>
+					<a href="<%= challenge.results %>">Results</a>
+				<% } %>
+			  </div>
+              
+			  <div class="flex flex-grow flex-center">
+				<% if (challenge.recap) { %>
+					<a href="<%= challenge.recap %>">Recap</a>
+				<% } %>
+			  </div>
+			  <div class="flex flex-grow flex-center">
+				  <% if (challenge.clue) { %>
+				  <a href="<%= challenge.clue %>">Clue</a>
+				  <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+      </div>
+	  <div class="title">
+        <span class="display2">
+          Season 1 Playoffs
+        </span>
+      </div>
+      <div class="challenges">
+      <% data.playoffs.forEach((challenge, i) => { %>
+        <div class="challenge-card c4 flex" style="background-image: url(<%= challenge.background %>)">
+          <div class="gradient flex-grow">
+            <div class="flex-row">
+              <div class="number"><%= i + 1 %></div>
+              <div class="flex-grow">
+                <div class="date secondary-dark"><%= challenge.date %></div>
+                <div class="headline name flex flex-center"><%- challenge.title %></div>
+                <div class="winner2 secondary-dark flex flex-center">
+                  Winner:&nbsp;<a href="<%=challenge.winner.link%>" style="margin: 0 10px"><%= challenge.winner.name %></a>
+                </div>
+                <div class="winner2 secondary-dark flex flex-center">
+                  Loser:&nbsp;<a href="<%=challenge.loser.link%>" style="margin: 0 10px"><%= challenge.loser.name %></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-row space-around">
+              <div class="flex flex-grow flex-center"><a href="<%= challenge.rules %>">Rules</a></div>
+              <div class="flex flex-grow flex-center">
+              <% if (challenge.clue) { %>
+                <a href="<%= challenge.clue %>">Clue</a>
+              <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+      </div>
+	  </br></br>
+	  <div class="updiv row hidden-xs text-center">
+			<span class="display2">
+			  Season 1 - Finalists
+			</span>
+      </div>
       <div class="container body-content">
-        <div class="updiv row hidden-xs text-center">
-          <h1 class="title">OoT Championship Series - Winner S1 - The Bingo God Exodus</h1>
-        </div>
-        <div class="updiv row hidden-xs text-center">
-          <h1 class="title">OoT Championship Series - S1 - Playoff</h1>
-        </div>
         <div class="updiv row">
           <div>
             <table class="table table-bordered table-responsive table-striped">
@@ -49,8 +141,11 @@
           </div>
         </div>
         <div class="updiv row hidden-xs text-center">
-          <h1 class="title">OoT Championship Series - S1 - Leaderboard</h1>
+			<span class="display2">
+			  Season 1 Leaderboard
+			</span>
         </div>
+		</br></br>
         <div class="updiv row">
           <div>
             <table class="table table-bordered table-responsive table-striped">
@@ -69,6 +164,11 @@
             </table>
           </div>
         </div>
+      </div>
+	  <div class="updiv row hidden-xs text-center">
+		<span class="display2">
+			<a href="/highlights" style="color:white;">Highlights</a>
+		</span>
       </div>
   </div>
 </body>

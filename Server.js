@@ -3,12 +3,14 @@ var app = express();
 const path = require('path');
 var viewPath = path.resolve(__dirname, 'views');
 var favicon = require('serve-favicon');
+
 const season1Data = require('./data/season-1-challenges');
+const season2Data = require('./data/season-2-challenges');
 
 app.set('view engine', 'ejs');
 app.use(function (req, res, next) {
   console.log('/' + req.method);
-  next();
+  next();	
 });
 
 app.get('/', function (req, res) {
@@ -16,7 +18,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/challenges', function (req, res) {
-  res.render('challenges', { data: season1Data });
+  res.render('challenges', { data: season2Data });
 });
 app.get('/information', function (req, res) {
   res.render('information');
@@ -78,7 +80,7 @@ app.get('/afterparty', function (req, res) {
 });
 
 app.get('/season1', function (req, res) {
-  res.render('season1');
+  res.render('season1', { data: season1Data });
 });
 
 app.get('/bingo', function (req, res) {
