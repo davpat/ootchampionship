@@ -20,13 +20,13 @@
 
 }
 
-a {
+.challenge-card-link {
   color: #ffd54f;
   text-decoration: inherit;
   font-weight: bold;
 }
 
-a:hover {
+.challenge-card-link:hover {
   color: #ffd54f;
   text-decoration: inherit;
   text-shadow: 0px 0px 3px #ffd54f;

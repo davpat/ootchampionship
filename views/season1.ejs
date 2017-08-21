@@ -33,7 +33,7 @@
                 <div class="headline name flex flex-center"><%- challenge.title %></div>
                 <% if (challenge.winner.name) { %>
 					<div class="winner secondary-dark flex flex-center">Winner:&nbsp;
-						<a href="<%=challenge.winner.link%>" style="margin: 0 10px"><%= challenge.winner.name %></a>&nbsp;
+						<a href="<%=challenge.winner.link%>" class="challenge-card-link" style="margin: 0 10px"><%= challenge.winner.name %></a>&nbsp;
 						<span><%= challenge.time %></span>
 					</div>
 				 <% } else{ %>  
@@ -45,24 +45,24 @@
             <div class="flex-row space-around">
               <div class="flex flex-grow flex-center">
 				<% if (challenge.rules) { %>
-					<a href="<%= challenge.rules %>">Rules</a>
+					<a href="<%= challenge.rules %>" class="challenge-card-link">Rules</a>
 				<% } %>
 			  </div>
               
 			  <div class="flex flex-grow flex-center">
 			  	<% if (challenge.results) { %>
-					<a href="<%= challenge.results %>">Results</a>
+					<a href="<%= challenge.results %>" class="challenge-card-link">Results</a>
 				<% } %>
 			  </div>
               
 			  <div class="flex flex-grow flex-center">
 				<% if (challenge.recap) { %>
-					<a href="<%= challenge.recap %>">Recap</a>
+					<a href="<%= challenge.recap %>" class="challenge-card-link">Recap</a>
 				<% } %>
 			  </div>
 			  <div class="flex flex-grow flex-center">
 				  <% if (challenge.clue) { %>
-				  <a href="<%= challenge.clue %>">Clue</a>
+				  <a href="<%= challenge.clue %>" class="challenge-card-link">Clue</a>
 				  <% } %>
               </div>
             </div>
@@ -85,18 +85,18 @@
                 <div class="date secondary-dark"><%= challenge.date %></div>
                 <div class="headline name flex flex-center"><%- challenge.title %></div>
                 <div class="winner2 secondary-dark flex flex-center">
-                  Winner:&nbsp;<a href="<%=challenge.winner.link%>" style="margin: 0 10px"><%= challenge.winner.name %></a>
+                  Winner:&nbsp;<a href="<%=challenge.winner.link%>" style="margin: 0 10px" class="challenge-card-link"><%= challenge.winner.name %></a>
                 </div>
                 <div class="winner2 secondary-dark flex flex-center">
-                  Loser:&nbsp;<a href="<%=challenge.loser.link%>" style="margin: 0 10px"><%= challenge.loser.name %></a>
+                  Loser:&nbsp;<a href="<%=challenge.loser.link%>" style="margin: 0 10px" class="challenge-card-link"><%= challenge.loser.name %></a>
                 </div>
               </div>
             </div>
             <div class="flex-row space-around">
-              <div class="flex flex-grow flex-center"><a href="<%= challenge.rules %>">Rules</a></div>
+              <div class="flex flex-grow flex-center"><a href="<%= challenge.rules %>" class="challenge-card-link">Rules</a></div>
               <div class="flex flex-grow flex-center">
               <% if (challenge.clue) { %>
-                <a href="<%= challenge.clue %>">Clue</a>
+                <a href="<%= challenge.clue %>" class="challenge-card-link">Clue</a>
               <% } %>
               </div>
             </div>
@@ -168,6 +168,9 @@
 	  <div class="updiv row hidden-xs text-center">
 		<span class="display2">
 			<a href="/highlights" style="color:white;">Highlights</a>
+		</span>
+		<span class="display2">
+			<div><a href="/revision" style="color:white;">Race Revision</a></div>
 		</span>
       </div>
   </div>
