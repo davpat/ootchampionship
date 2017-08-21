@@ -43,24 +43,24 @@
             <div class="flex-row space-around">
               <div class="flex flex-grow flex-center">
 				<% if (challenge.rules) { %>
-					<a href="<%= challenge.rules %>">Rules</a>
+					<a href="<%= challenge.rules %>" class="challenge-card-link">Rules</a>
 				<% } %>
 			  </div>
               
 			  <div class="flex flex-grow flex-center">
 			  	<% if (challenge.results) { %>
-					<a href="<%= challenge.results %>">Results</a>
+					<a href="<%= challenge.results %>" class="challenge-card-link">Results</a>
 				<% } %>
 			  </div>
               
 			  <div class="flex flex-grow flex-center">
 				<% if (challenge.recap) { %>
-					<a href="<%= challenge.recap %>">Recap</a>
+					<a href="<%= challenge.recap %>" class="challenge-card-link">Recap</a>
 				<% } %>
 			  </div>
 			  <div class="flex flex-grow flex-center">
 				  <% if (challenge.clue) { %>
-				  <a href="<%= challenge.clue %>">Clue</a>
+				  <a href="<%= challenge.clue %>" class="challenge-card-link">Clue</a>
 				  <% } %>
               </div>
             </div>
