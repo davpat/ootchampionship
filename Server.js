@@ -17,6 +17,10 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/leaderboard', function (req, res) {
+  res.render('leaderboard');
+});
+
 app.get('/challenges', function (req, res) {
   res.render('challenges', { data: season2Data });
 });
