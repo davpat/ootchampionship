@@ -1,7 +1,7 @@
 module.exports = {
   mode: [
     {
-      title: null,
+      title: 'Bingo!',
       rules: null,
       clue: null,
       date: null,
@@ -12,7 +12,7 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/QuestionMark.png',
+      background: '/images/bingo.png',
     }, 
 	{
       title: null,
