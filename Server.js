@@ -6,6 +6,7 @@ var favicon = require('serve-favicon');
 
 const season1Data = require('./data/season-1-challenges');
 const season2Data = require('./data/season-2-challenges');
+const season2BattleMode = require('./data/season-2-battlemode');
 
 app.set('view engine', 'ejs');
 app.use(function (req, res, next) {
@@ -15,6 +16,10 @@ app.use(function (req, res, next) {
 
 app.get('/', function (req, res) {
   res.render('index');
+});
+
+app.get('/battlemode', function (req, res) {
+  res.render('battlemode', { data: season2BattleMode });
 });
 
 app.get('/leaderboard', function (req, res) {

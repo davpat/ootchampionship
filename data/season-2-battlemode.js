@@ -1,0 +1,85 @@
+module.exports = {
+  mode: [
+    {
+      title: null,
+      rules: null,
+      clue: null,
+      date: null,
+      winner: {
+        name: null,
+        link: null,
+      },
+      time: null,
+      recap: null,
+      results: null,
+      background: '/images/QuestionMark.png',
+    }, 
+	{
+      title: null,
+      rules: null,
+      clue: null,
+      date: null,
+      winner: {
+        name: null,
+        link: null,
+      },
+      time: null,
+      recap: null,
+      results: null,
+      background: '/images/QuestionMark.png',
+    }, {
+      title: null,
+      rules: null,
+      clue: null,
+      date: null,
+      winner: {
+        name: null,
+        link: null,
+      },
+      time: null,
+      recap: null,
+      results: null,
+      background: '/images/QuestionMark.png',
+    }, {
+      title: null,
+      rules: null,
+      clue: null,
+      date: null,
+      winner: {
+        name: null,
+        link: null,
+      },
+      time: null,
+      recap: null,
+      results: null,
+      background: '/images/QuestionMark.png',
+    }, {
+      title: null,
+      rules: null,
+      clue: null,
+      date: null,
+      winner: {
+        name: null,
+        link: null,
+      },
+      time: null,
+      recap: null,
+      results: null,
+      background: '/images/QuestionMark.png',
+    }, 
+	{
+      title: null,
+      rules: null,
+      clue: null,
+      date: null,
+      winner: {
+        name: null,
+        link: null,
+      },
+      time: null,
+      recap: null,
+      results: null,
+      background: '/images/QuestionMark.png',
+    }
+  ],
+}
