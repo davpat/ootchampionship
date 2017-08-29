@@ -44,7 +44,7 @@ module.exports = {
       title: null,
       rules: null,
       clue: null,
-      date: 'Septemner 24, 2017',
+      date: 'September 24, 2017',
       winner: {
         name: null,
         link: null,
