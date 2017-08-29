@@ -1,7 +1,7 @@
 module.exports = {
   main: [
     {
-      title: 'Not Like Like This,
+      title: 'Not Like Like This',
       rules: '/images/Challenges/S2/C1.png',
       clue: '/clue/S2/C1.png',
       date: 'August 27, 2017',
