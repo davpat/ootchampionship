@@ -6,7 +6,7 @@ module.exports = {
       clue: '/clue/S2/C1.png',
       date: 'August 27, 2017',
       winner: {
-        name: Amateseru ,
+        name: 'Amateseru' ,
         link: 'https://www.twitch.tv/amateseru',
       },
       time: '01:17:28',
