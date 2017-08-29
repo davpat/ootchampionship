@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OoT Skullomizer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/skullomizer.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="script/skullomizer/skulls.js"></script>
+<script src="script/skullomizer/skullomizer.js"></script>
+<script src="script/skullomizer/skullomizer-seedrandom.js"></script>
+</head>
+<body onload="init_page();">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="text-center" style="background-color:salmon;padding:15px 0px 20px 0px;">
+			<h1><strong>Ocarina of Time Skullomizer</strong></h1>
+			<h3><strong><a href="javascript:toggle_rules();" style="text-decoration: none">Rules</a></strong></h3>
+			<div id="rules-text" class="text-left" style="display:none; padding: 0 30% 0 30%">
+				<h3><strong>How to play</strong></h3>
+				<p>There are 5 slots for golden skulltulas in the "skulls" part of this program. Upon starting, 5 randomly generated skulltulas can be found here, out of all 100. You may not receive any gold skulltulas, unless it is one of the five displayed in the Skulls menu. The objective is to get as many of these skulls as possible. Any time you receive one of the five gold skulltulas in the Skulls menu, you can click it's panel to mark it as completed. A new skulltula will be randomly generated in it's place and you will be given a point</p>
+				<p>The randomization of the golden skulltulas you receive are based on a seed, which can be changed under the Options menu. To play with your friends, use the same seed.</p>
+				<h3><strong>Modes of play</strong></h3>
+				There are many different ways to play the OoT Skullomizer. Listed here are two possible ways to enjoy it.
+				<h4><strong>Countdown Mode</strong></h4>
+				<p>In countdown mode (activated by checking the checkbox under the Timer menu), you will start at a set time, and the timer will tick down from there. In this timespan, you attempt to complete as many gold skulltulas as possible, before the timer runs out.</p>
+				<h4><strong>Race Mode</strong></h4>
+				<p>You can use race mode by simply leaving the aforementioned checkbox unchecked. In this mode, you will collect all skulls up until a set amount, specified in the Options menu. </p>
+				<h4><strong>Bonus</strong></h4>
+				<p>You can enable bonuses by checking the checkbox under the Options menu, and setting the bonus amount in the field next to the textbox. With bonuses enabled, any of the 5 goals completed leads to a check mark out of 5. If all 5 goals become checked, a bonus will be added to the players points.</p>
+				<p>Bonuses add extra fun to the game because they incentivize going farther for the extra skull, possibly one thats out of reach, making the gameplay less of a "shortest skull to get" chasing game.</p>
+				<h4><strong>Lockout</strong></h4>
+				<p> In lockout mode, only playable with more than 1 person, any time a person gets a skull, all other players must eliminate it from their board (and won't receive points for it) by right clicking on the goal. In this mode, all player goals are synced, and routing becomes crucial.</p>
+				<h4><strong>Swap</strong></h4>
+				<p> In swap mode, which you can enable by checking the checkbox in the Options menu, causes the 5 skulls to change every time a new skull is found. This removes some routing element, but adds a factor of choice for best skull in the mix, as a strategic element.</p>
+				<h3><strong>General Rules</strong></h3>
+				<ul>
+					<li>GIM, Hold R, and Stick as Adult are banned (not that they would help you much anyways...)</li>
+					<li>You can NOT click the goal until you have completed it. In lockout mode, you can not lockout goals you don't like. Someone must complete them.</li>
+					<li>If a countdown race with friends ends in a tie, the first person to get another skulltula wins. Don't stop playing until someone wins!</li>
+					<li>No retrieving any skulls besides the ones listed on the Skulls menu</li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<div class="row" style="background-color:#8998a6;">	
+		<div id="left-side" class="col-sm-4 text-center" style="background-color:#788795;">
+			<div class="row" style="background-color:#566573;">
+				<h2><strong>Options</strong></h2>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<div class="input-group col-sm-8">
+							<input type="number" class="form-control" id="seed" placeholder="Seed"  min="0">
+						</div>
+						<div class="input-group col-sm-8">
+							<div class="input-group-addon"><input type="checkbox" id="bonus_enabled"></div>
+							<input type="number" class="form-control" id="bonus" placeholder="Bonus"  min="0">
+						</div>
+						<div class="input-group col-sm-8">
+							<input type="number" class="form-control" id="skulls" placeholder="Skull Limit (100 for countdown)"  min="5" max="100">
+						</div>
+					</div>
+				</form>
+				<form class="form-group">
+					<div class="btn-group">
+						<label class="btn btn-info">
+							<input type="checkbox" id="lockout" autocomplete="off"> Lockout
+						</label>
+						<label class="btn btn-info">
+							<input type="checkbox" id="swap" autocomplete="off"> Swap
+						</label>
+					</div>
+				</form>
+				<form class="form-group">
+						<label class="btn btn-info">
+							<button id="start" type="button" autocomplete="off" onclick="start_race();">Start</button>
+						</label>
+				</form>
+			</div>	
+			<div class="row"  style="background-color:#677684; padding: 0px 0px 20px 0px">
+				<h2><strong>Timer</strong></h2>
+				<h1 id="timer">0h0m0s</h1>
+				<form class="form-inline">
+					<div class="input-group col-sm-6">
+						<div class="input-group-addon"><input type="checkbox" id="countdown_enabled"></div>
+						<input type="number" class="form-control" id="countdown" placeholder="Countdown Time (mins)" min="0">
+					</div>
+				</form>
+			</div>	
+			<div id="stats" class="row" style="background-color:#788795;">
+				<h2><strong>Stats</strong></h2>
+				<div class="col-sm-6 text-center">
+					<img src="/images/skullomizer/skull_icon.png" style="width:50%"><h1><span id="total_skulls_amt"></span></h1></img>
+				</div>
+				<div class="col-sm-6 text-center">
+					<img src="/images/skullomizer/rupee_icon.png" style="width:20%"><h1><span id="total_points_amt"></span></h1></img>
+				</div>
+			</div>
+		</div>
+		<div id="right-side" class="col-sm-8" style="background-color:#8998a6;">
+			<h2><strong>Skulls</strong></h2>
+			<div class="panel-group">
+				<div class="panel panel-default" onclick = "done_skull(0);" oncontextmenu="elim_skull(0); return false;" id="panel_1">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-1 text-center">
+								<h1 id="num_skulls_1">0</h1>
+							</div>
+							<div class="col-sm-1 text-center container" id="bonus_icon_1" style="visibility:hidden">
+								<span class="glyphicon glyphicon-ok glyphicon-center" style="font-size: 1.2em"></span>
+							</div>
+							<div class="col-sm-8" id="text_1">
+								
+							</div>
+							<div class="col-sm-2" id="image_1">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default" onclick = "done_skull(1);" oncontextmenu="elim_skull(1); return false;" id="panel_2">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-1 text-center">
+								<h1 id="num_skulls_2">0</h1>
+							</div>
+							<div class="col-sm-1 text-center container" id="bonus_icon_2" style="visibility:hidden">
+								<span class="glyphicon glyphicon-ok glyphicon-center" style="font-size: 1.2em"></span>
+							</div>
+							<div class="col-sm-8" id="text_2">
+								
+							</div>
+							<div class="col-sm-2" id="image_2">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default" onclick = "done_skull(2);" oncontextmenu="elim_skull(2); return false;" id="panel_3">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-1 text-center">
+								<h1 id="num_skulls_3">0</h1>
+							</div>
+							<div class="col-sm-1 text-center container" id="bonus_icon_3" style="visibility:hidden">
+								<span class="glyphicon glyphicon-ok glyphicon-center" style="font-size: 1.2em"></span>
+							</div>
+							<div class="col-sm-8" id="text_3">
+								
+							</div>
+							<div class="col-sm-2" id="image_3">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default" onclick = "done_skull(3);" oncontextmenu="elim_skull(3); return false;" id="panel_4">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-1 text-center">
+								<h1 id="num_skulls_4">0</h1>
+							</div>
+							<div class="col-sm-1 text-center" id="bonus_icon_4" style="visibility:hidden">
+								<span class="glyphicon glyphicon-ok glyphicon-center" style="font-size: 1.2em"></span>
+							</div>
+							<div class="col-sm-8" id="text_4">
+								
+							</div>
+							<div class="col-sm-2" id="image_4">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default" onclick = "done_skull(4);" oncontextmenu="elim_skull(4); return false;" id="panel_5">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-1 text-center">
+								<h1 id="num_skulls_5">0</h1>
+							</div>
+							<div class="col-sm-1 text-center container" id="bonus_icon_5" style="visibility:hidden">
+								<span class="glyphicon glyphicon-ok glyphicon-center" style="font-size: 1.2em"></span>
+							</div>
+							<div class="col-sm-8" id="text_5">
+								
+							</div>
+							<div class="col-sm-2" id="image_5">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="row text-center" style="padding: 20px; background-color: #d8d8d8;">
+		(C) Finappie 2017 <3. Images courtesy of zeldadungeon.net.
+	</div>
+</div>
+    
+</body>
+</html>

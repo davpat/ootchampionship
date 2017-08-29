@@ -12,7 +12,7 @@ module.exports = {
       time: '01:17:28',
       recap: null,
       results: 'http://www.speedrunslive.com/races/result/#!/202100',
-      background: '/images/QuestionMark.png',
+      background: '/images/LikeLike.png',
     }, 
 	{
       title: null,
