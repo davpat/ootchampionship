@@ -1,17 +1,17 @@
 module.exports = {
   main: [
     {
-      title: null,
-      rules: null,
+      title: 'Not Like Like This,
+      rules: '/images/Challenges/S2/C1.png',
       clue: '/clue/S2/C1.png',
       date: 'August 27, 2017',
       winner: {
-        name: null,
-        link: null,
+        name: Amateseru ,
+        link: 'https://www.twitch.tv/amateseru',
       },
-      time: null,
+      time: '01:17:28',
       recap: null,
-      results: null,
+      results: 'http://www.speedrunslive.com/races/result/#!/202100',
       background: '/images/QuestionMark.png',
     }, 
 	{
