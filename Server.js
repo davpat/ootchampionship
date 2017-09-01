@@ -97,7 +97,7 @@ app.get('/skullomizer', function (req, res) {
 });
 
 app.get('/season2/recap1', function (req, res) {
-  res.sendFile(path.resolve(viewPath, 'season2/recap1.html'));
+	res.render('season2/recap1');
 });
 
 app.get('/bingo', function (req, res) {
