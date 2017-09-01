@@ -18,6 +18,10 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/season2/recap1', function (req, res) {
+	res.render('recaps2c1');
+});
+
 app.get('/battlemode', function (req, res) {
   res.render('battlemode', { data: season2BattleMode });
 });
@@ -96,9 +100,6 @@ app.get('/skullomizer', function (req, res) {
   res.sendFile(path.resolve(viewPath, 'skullomizer/skullomizer.html'));
 });
 
-app.get('/season2/recap1', function (req, res) {
-	res.render('season2/recap1');
-});
 
 app.get('/bingo', function (req, res) {
   res.sendFile(path.resolve(viewPath, 'bingo.html'));
