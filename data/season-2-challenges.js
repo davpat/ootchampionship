@@ -10,7 +10,7 @@ module.exports = {
         link: 'https://www.twitch.tv/amateseru',
       },
       time: '01:17:28',
-      recap: null,
+      recap: '/recaps2c1',
       results: 'http://www.speedrunslive.com/races/result/#!/202100',
       background: '/images/LikeLike.png',
     }, 
