@@ -96,6 +96,10 @@ app.get('/skullomizer', function (req, res) {
   res.sendFile(path.resolve(viewPath, 'skullomizer/skullomizer.html'));
 });
 
+app.get('/season2/recap1', function (req, res) {
+  res.sendFile(path.resolve(viewPath, 'season2/recap1.html'));
+});
+
 app.get('/bingo', function (req, res) {
   res.sendFile(path.resolve(viewPath, 'bingo.html'));
 });
