@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
-app.get('/season2/recap1', function (req, res) {
+app.get('recaps2c1', function (req, res) {
 	res.render('recaps2c1');
 });
 
