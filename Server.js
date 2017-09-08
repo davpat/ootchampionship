@@ -7,6 +7,7 @@ var favicon = require('serve-favicon');
 const season1Data = require('./data/season-1-challenges');
 const season2Data = require('./data/season-2-challenges');
 const season2BattleMode = require('./data/season-2-battlemode');
+const halloffamedata = require('./data/hall-of-fame');
 
 app.set('view engine', 'ejs');
 app.use(function (req, res, next) {
@@ -48,7 +49,7 @@ app.get('/about', function (req, res) {
   res.render('about');
 });
 app.get('/halloffame', function (req, res) {
-  res.render('halloffame');
+  res.render('halloffame', { data: halloffamedata });
 });
 
 app.get('/recap1', function (req, res) {
