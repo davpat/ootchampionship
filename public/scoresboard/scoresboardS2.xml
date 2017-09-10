@@ -4,322 +4,451 @@
   <Score>
     <Player>Amateseru</Player>
     <Country>France</Country>
-    <PScore>100</PScore>
-    <NRace>1</NRace>
+    <PScore>375</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/amateseru</Twitch>
     <Rank>1</Rank>
+  </Score>
+    <Score>
+    <Player>Marco</Player>
+    <Country>France</Country>
+    <PScore>332</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/marco8641</Twitch>
+    <Rank>2</Rank>
   </Score>
   <Score>
     <Player>Bonooru</Player>
     <Country>France</Country>
-    <PScore>75</PScore>
-    <NRace>1</NRace>
+    <PScore>286</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/bonooru_</Twitch>
-    <Rank>2</Rank>
-  </Score>
-  <Score>
-    <Player>Runnerguy</Player>
-    <Country>USA</Country>
-    <PScore>60</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/runnerguy2489</Twitch>
     <Rank>3</Rank>
   </Score>
   <Score>
     <Player>RealTimeAttack64</Player>
     <Country>Finland</Country>
-    <PScore>50</PScore>
-    <NRace>1</NRace>
+    <PScore>275</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/realtimeattack64</Twitch>
     <Rank>4</Rank>
     </Score>
-  <Score>
-    <Player>Exodus</Player>
-    <Country>USA</Country>
-    <PScore>40</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/exodus122</Twitch>
-    <Rank>5</Rank>
-  </Score>
-    <Score>
-    <Player>Marco</Player>
-    <Country>France</Country>
-    <PScore>35</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/marco8641</Twitch>
-    <Rank>6</Rank>
-  </Score>
-  <Score>
-    <Player>Jenslang</Player>
-    <Country>USA</Country>
-    <PScore>30</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/jenslang</Twitch>
-    <Rank>7</Rank>
-  </Score>
-  <Score>
-    <Player>Hyperion64</Player>
-    <Country>Germany</Country>
-    <PScore>28</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/hyperion64</Twitch>
-    <Rank>8</Rank>
-  </Score>
-  <Score>
+	  <Score>
     <Player>Tob3000</Player>
     <Country>Austria</Country>
-    <PScore>26</PScore>
-    <NRace>1</NRace>
+    <PScore>271</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/tob3000</Twitch>
-    <Rank>9</Rank>
+    <Rank>5</Rank>
+  </Score>
+	<Score>
+    <Player>Hyperion64</Player>
+    <Country>Germany</Country>
+    <PScore>268</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/hyperion64</Twitch>
+    <Rank>6</Rank>
+  </Score>
+	<Score>
+    <Player>Exodus</Player>
+    <Country>USA</Country>
+    <PScore>245</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/exodus122</Twitch>
+    <Rank>7</Rank>
+  </Score>
+    <Score>
+    <Player>PhoenixFeather</Player>
+    <Country>USA</Country>
+    <PScore>240</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/phoenixfeather1</Twitch>
+    <Rank>8</Rank>
   </Score>
   <Score>
     <Player>Juwk</Player>
     <Country>Belgium</Country>
-    <PScore>24</PScore>
-    <NRace>1</NRace>
+    <PScore>237</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/juwk</Twitch>
+    <Rank>9</Rank>
+  </Score>
+    <Score>
+    <Player>Jenslang</Player>
+    <Country>USA</Country>
+    <PScore>225</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/jenslang</Twitch>
     <Rank>10</Rank>
   </Score>
   <Score>
-    <Player>PhoenixFeather</Player>
+    <Player>Runnerguy</Player>
     <Country>USA</Country>
-    <PScore>22</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/phoenixfeather1</Twitch>
+    <PScore>214</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/runnerguy2489</Twitch>
     <Rank>11</Rank>
+  </Score>
+    <Score>
+    <Player>Gregortixlkyns</Player>
+    <Country>USA</Country>
+    <PScore>203</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/gregortixlkyns</Twitch>
+	<Rank>12</Rank>
+  </Score>
+    <Score>
+    <Player>MrBubbleSkp</Player>
+    <Country>Canada</Country>
+    <PScore>160</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/mrbubbleskp</Twitch>
+    <Rank>13</Rank>
+  </Score>
+    <Score>
+    <Player>Blinkzy</Player>
+    <Country>Germany</Country>
+    <PScore>165</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/blinkzy</Twitch>
+    <Rank>14</Rank>
+  </Score>
+    <Score>
+    <Player>Scaramanga</Player>
+    <Country>Germany</Country>
+    <PScore>156</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/scaramangado</Twitch>
+    <Rank>15</Rank>
   </Score>
   <Score>
     <Player>DannyB</Player>
     <Country>USA</Country>
-    <PScore>20</PScore>
-    <NRace>1</NRace>
+    <PScore>153</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/dannyb21892</Twitch>
-    <Rank>12</Rank>
+    <Rank>16</Rank>
   </Score>
-  <Score>
-    <Player>MrBubbleSkp</Player>
-    <Country>Canada</Country>
-    <PScore>18</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/mrbubbleskp</Twitch>
-    <Rank>13</Rank>
+    <Score>
+	<Player>Chris7M</Player>
+    <Country>Spain</Country>
+    <PScore>153</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/chris7m</Twitch>
+    <Rank>17</Rank>
   </Score>
-  <Score>
-    <Player>Gregortixlkyns</Player>
-    <Country>USA</Country>
-    <PScore>16</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/gregortixlkyns</Twitch>
-	<Rank>14</Rank>
-  </Score>
-  <Score>
-    <Player>Blinkzy</Player>
-    <Country>Germany</Country>
-    <PScore>14</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/blinkzy</Twitch>
-    <Rank>15</Rank>
-  </Score>
-  <Score>
+    <Score>
     <Player>PsyMarth</Player>
     <Country>USA</Country>
-    <PScore>12</PScore>
-    <NRace>1</NRace>
+    <PScore>150</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/psymarth</Twitch>
-   <Rank>16</Rank>  
+   <Rank>18</Rank>  
   </Score>
   <Score>
     <Player>Acermax</Player>
     <Country>Spain</Country>
-    <PScore>10</PScore>
-    <NRace>1</NRace>
+    <PScore>136</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/acermax51</Twitch>
-    <Rank>17</Rank>
+    <Rank>19</Rank>
   </Score>
-  <Score>
-    <Player>Scaramanga</Player>
-    <Country>Germany</Country>
-    <PScore>8</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/scaramangado</Twitch>
-    <Rank>18</Rank>
+    <Score>
+    <Player>Gombill</Player>
+    <Country>USA</Country>
+    <PScore>126</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/gombill</Twitch>
+    <Rank>20</Rank>
+  </Score>
+    <Score>
+    <Player>Flanthis</Player>
+    <Country>USA</Country>
+    <PScore>88</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/flanthis</Twitch>
+    <Rank>21</Rank>
+  </Score>
+    <Score>
+    <Player>Xanra</Player>
+    <Country>Norway</Country>
+    <PScore>76</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/xanra</Twitch>
+    <Rank>22</Rank>
   </Score>
   <Score>
     <Player>TheCowness</Player>
     <Country>USA</Country>
-    <PScore>6</PScore>
-    <NRace>1</NRace>
+    <PScore>71</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/thecowness</Twitch>
-    <Rank>19</Rank>
+    <Rank>23</Rank>
   </Score>
-  <Score>
-	<Player>Chris7M</Player>
-    <Country>Spain</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/chris7m</Twitch>
-    <Rank>20</Rank>
-  </Score>
-  <Score>
-    <Player>Flanthis</Player>
-    <Country>USA</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/flanthis</Twitch>
-    <Rank>21</Rank>
+    <Score>
+    <Player>Bou*Frost</Player>
+    <Country>Germany</Country>
+    <PScore>60</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/bou_frost</Twitch>
+    <Rank>24</Rank>
   </Score>
   <Score>
     <Player>Menou</Player>
     <Country>France</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
+    <PScore>50</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/menou_</Twitch>
-    <Rank>21</Rank>
+    <Rank>25</Rank>
    </Score>
-  <Score>
-    <Player>Gombill</Player>
-    <Country>USA</Country>
-    <PScore>5</PScore>
+    <Score>
+    <Player>Flofloo</Player>
+    <Country>France</Country>
+    <PScore>50</PScore>
     <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/gombill</Twitch>
-    <Rank>21</Rank>
+    <Twitch>https://www.twitch.tv/flofloo2217</Twitch>
+    <Rank>25</Rank>
+  </Score>
+     <Score>
+    <Player>Thiefbug</Player>
+    <Country>Germany</Country>
+    <PScore>46</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/thiefbug</Twitch>
+    <Rank>26</Rank>
+  </Score>
+    <Score>
+    <Player>Mrjabujabu</Player>
+    <Country>Wales</Country>
+    <PScore>46</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/mrjabujabu</Twitch>
+    <Rank>26</Rank>
+  </Score>
+  <Score>
+    <Player>MatttInTheHat</Player>
+    <Country>Canada</Country>
+    <PScore>46</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/matttinthehat</Twitch>
+    <Rank>26</Rank>
   </Score>
   <Score>
     <Player>Sonfloro</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
+    <PScore>43</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/sonfloro</Twitch>
-    <Rank>21</Rank>
+    <Rank>27</Rank>
   </Score>
-  <Score>
-    <Player>Bou*Frost</Player>
-    <Country>Germany</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/bou_frost</Twitch>
-    <Rank>21</Rank>
+    <Score>
+    <Player>Moosecrap</Player>
+    <Country>USA</Country>
+    <PScore>41</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/moosecrap</Twitch>
+    <Rank>28</Rank>
+  </Score>
+    <Score>
+    <Player>ADEFGames</Player>
+    <Country>USA</Country>
+    <PScore>40</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/adefgames</Twitch>
+    <Rank>29</Rank>
   </Score>
   <Score>
     <Player>Seadan</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
+    <PScore>37</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/seadan</Twitch>
-    <Rank>21</Rank>
+    <Rank>30</Rank>
   </Score>
   <Score>
     <Player>MarshallObob</Player>
     <Country>France</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
+    <PScore>34</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/marshallobob</Twitch>
-    <Rank>21</Rank>
+    <Rank>31</Rank>
   </Score>
   <Score>
     <Player>Blanca</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
+    <PScore>31</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/blancalamb</Twitch>
-    <Rank>21</Rank>
+    <Rank>32</Rank>
+  </Score>
+    <Score>
+    <Player>Sloth</Player>
+    <Country>Germany</Country>
+    <PScore>31</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/elsloth90</Twitch>
+    <Rank>32</Rank>
+  </Score>
+    <Score>
+    <Player>Oxxyga</Player>
+    <Country>France</Country>
+    <PScore>31</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/matttinthehat</Twitch>
+    <Rank>32</Rank>
   </Score>
   <Score>
     <Player>Luigidude851</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
+    <PScore>28</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/luigidude851</Twitch>
-    <Rank>21</Rank>
+    <Rank>33</Rank>
+  </Score>
+    <Score>
+    <Player>Tasslehoff9566</Player>
+    <Country></Country>
+    <PScore>28</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/tasslehoff9566</Twitch>
+    <Rank>33</Rank>
+  </Score>
+  
+    <Score>
+    <Player>Kintefleush</Player>
+    <Country>France</Country>
+    <PScore>28</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/kintefleush</Twitch>
+    <Rank>33</Rank>
   </Score>
   <Score>
     <Player>ArmorySons</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
+    <PScore>25</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/armorysons</Twitch>
-    <Rank>21</Rank>
+    <Rank>34</Rank>
+  </Score>
+    <Score>
+    <Player>Aliensqueakytoy</Player>
+    <Country>USA</Country>
+    <PScore>22</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/aliensqueakytoy</Twitch>
+    <Rank>35</Rank>
   </Score>
   <Score>
     <Player>SilentKnight115</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
+    <PScore>22</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/silentknight115</Twitch>
-    <Rank>21</Rank>
+    <Rank>35</Rank>
   </Score>
-  <Score>
-    <Player>Tasslehoff9566</Player>
-    <Country></Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/tasslehoff9566</Twitch>
-    <Rank>21</Rank>
+    <Score>
+    <Player>Nkiller</Player>
+    <Country>Netherlands</Country>
+    <PScore>20</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/nkitten</Twitch>
+    <Rank>36</Rank>
   </Score>
-  <Score>
-    <Player>Thiefbug</Player>
-    <Country>Germany</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/thiefbug</Twitch>
-    <Rank>21</Rank>
-  </Score>
-  <Score>
-    <Player>Moosecrap</Player>
+    <Score>
+    <Player>Quickkiran</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/moosecrap</Twitch>
-    <Rank>21</Rank>
+    <PScore>20</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/quickkiran</Twitch>
+    <Rank>36</Rank>
   </Score>
-  <Score>
-    <Player>Xanra</Player>
-    <Country>Norway</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/xanra</Twitch>
-    <Rank>21</Rank>
+    <Score>
+    <Player>Trisscorp</Player>
+    <Country>Sweden</Country>
+    <PScore>16</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/trisscorp</Twitch>
+    <Rank>37</Rank>
   </Score>
-  <Score>
-    <Player>Sloth</Player>
-    <Country>Germany</Country>
-    <PScore>5</PScore>
+    <Score>
+    <Player>Ziranui</Player>
+    <Country>USA</Country>
+    <PScore>16</PScore>
     <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/elsloth90</Twitch>
-    <Rank>21</Rank>
+    <Twitch>https://www.twitch.tv/ziranui</Twitch>
+    <Rank>37</Rank>
+  </Score>
+      <Score>
+    <Player>DoctorKill</Player>
+    <Country>USA</Country>
+    <PScore>15</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/doctorkillmd</Twitch>
+    <Rank>36</Rank>
+  </Score>
+    <Score>
+    <Player>TitouKay</Player>
+    <Country>France</Country>
+    <PScore>14</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/titoukay</Twitch>
+    <Rank>37</Rank>
   </Score>
   <Score>
     <Player>Zebs</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
+    <PScore>12</PScore>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/cosmia_</Twitch>
-    <Rank>21</Rank>
+    <Rank>38</Rank>
   </Score>
-  <Score>
-    <Player>Nkiller</Player>
-    <Country>Netherlands</Country>
-    <PScore>5</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/nkitten</Twitch>
-    <Rank>21</Rank>
+    <Score>
+    <Player>Numberplay</Player>
+    <Country>Canada</Country>
+    <PScore>12</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/numberplay</Twitch>
+    <Rank>38</Rank>
   </Score>
-  <Score>
-    <Player>Quickkiran</Player>
+    <Score>
+    <Player>F1gure8</Player>
     <Country>USA</Country>
-    <PScore>5</PScore>
+    <PScore>11</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/f1gure8</Twitch>
+    <Rank>39</Rank>
+  </Score>
+    <Score>
+    <Player>Letsklay</Player>s
+    <Country>Germany</Country>
+    <PScore>10</PScore>
     <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/quickkiran</Twitch>
-    <Rank>21</Rank>
+    <Twitch>https://www.twitch.tv/letsklay</Twitch>
+    <Rank>40</Rank>
+  </Score>
+    <Score>
+    <Player>Jolin</Player>
+    <Country></Country>
+    <PScore>8</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/jolin012</Twitch>
+    <Rank>41</Rank>
+  </Score>
+    <Score>
+    <Player>Knighty</Player>s
+    <Country></Country>
+    <PScore>7</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/metaknight3000</Twitch>
+    <Rank>42</Rank>
   </Score>
   <Score>
-    <Player>Trisscorp</Player>
-    <Country>Sweden</Country>
-    <PScore>5</PScore>
+    <Player>CoffeeRunner1</Player>s
+    <Country></Country>
+    <PScore>7</PScore>
     <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/trisscorp</Twitch>
-    <Rank>21</Rank>
+    <Twitch>https://www.twitch.tv/coffeerunner1</Twitch>
+    <Rank>42</Rank>
   </Score>
   <Score>
     <Player>RoseWater</Player>
@@ -327,7 +456,7 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/rosewater0</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Tenari Irane</Player>
@@ -335,31 +464,23 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/tenari_iranet</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Cook99999</Player>
     <Country></Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/cook99999</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Smoker</Player>
     <Country>Australia</Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/smokercb</Twitch>
-    <Rank>22</Rank>
-  </Score>
-  <Score>
-    <Player>Jolin</Player>
-    <Country></Country>
-    <PScore>0</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/jolin012</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Elminster</Player>
@@ -367,7 +488,7 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/elminsterrta</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Spoo</Player>
@@ -375,15 +496,15 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/spoo3</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Akalster</Player>
     <Country></Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/akalster</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Sanzeau</Player>
@@ -391,7 +512,7 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/sanzeau</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Finap13</Player>
@@ -399,15 +520,15 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/finappie</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Linky628</Player>
     <Country>England</Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/linky628</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Lance47</Player>
@@ -415,39 +536,23 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/lance47</Twitch>
-    <Rank>22</Rank>
+    <Rank>42</Rank>
   </Score>
   <Score>
     <Player>Ostrealava02</Player>
     <Country>France</Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/ostrealava02</Twitch>
-    <Rank>22</Rank>
-  </Score>
-  <Score>
-    <Player>TitouKay</Player>
-    <Country></Country>
-    <PScore>0</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/titoukay</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Alaris Villain</Player>
     <Country>USA</Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/alaris_villain</Twitch>
-    <Rank>22</Rank>
-  </Score>
-  <Score>
-    <Player>ADEFGames</Player>
-    <Country>USA</Country>
-    <PScore>0</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/adefgames</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Gman</Player>
@@ -455,46 +560,78 @@
     <PScore>0</PScore>
     <NRace>1</NRace>
     <Twitch>https://www.twitch.tv/gmanxxxx</Twitch>
-    <Rank>22</Rank>
-  </Score>
-  <Score>
-    <Player>Numberplay</Player>
-    <Country>Canada</Country>
-    <PScore>0</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/numberplay</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>SpamminN</Player>
     <Country>USA</Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/spamminn</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Fig</Player>
     <Country>USA</Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/fig02</Twitch>
-    <Rank>22</Rank>
-  </Score>
-  <Score>
-    <Player>F1gure8</Player>
-    <Country>USA</Country>
-    <PScore>0</PScore>
-    <NRace>1</NRace>
-    <Twitch>https://www.twitch.tv/f1gure8</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
   </Score>
   <Score>
     <Player>Mephisto</Player>
     <Country>UK</Country>
     <PScore>0</PScore>
-    <NRace>1</NRace>
+    <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/mephisto_dcix</Twitch>
-    <Rank>22</Rank>
+    <Rank>43</Rank>
+  </Score>
+  <Score>
+    <Player>bloodduster</Player>s
+    <Country></Country>
+    <PScore>0</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/bloodduster</Twitch>
+    <Rank>43</Rank>
+  </Score>
+  <Score>
+    <Player>Zemorln</Player>
+    <Country></Country>
+    <PScore>0</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/zemorn</Twitch>
+    <Rank>43</Rank>
+  </Score>
+  <Score>
+    <Player>Fenyan</Player>
+    <Country></Country>
+    <PScore>0</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/fenyan</Twitch>
+    <Rank>43</Rank>
+  </Score>
+  <Score>
+    <Player>Sorec</Player>
+    <Country></Country>
+    <PScore>0</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/sjorec</Twitch>
+    <Rank>43</Rank>
+  </Score>
+  <Score>
+    <Player>Niamek</Player>
+    <Country></Country>
+    <PScore>0</PScore>
+    <NRace>1</NRace>
+    <Twitch></Twitch>
+    <Rank>43</Rank>
+  </Score>
+  <Score>
+    <Player>mrcodgrim</Player>
+    <Country></Country>
+    <PScore>0</PScore>
+    <NRace>1</NRace>
+    <Twitch>https://www.twitch.tv/mrcodgrim</Twitch>
+    <Rank>43</Rank>
   </Score>
 </Scoresboard>
