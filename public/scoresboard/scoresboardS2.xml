@@ -97,20 +97,20 @@
     <Twitch>https://www.twitch.tv/gregortixlkyns</Twitch>
 	<Rank>12</Rank>
   </Score>
+      <Score>
+    <Player>Blinkzy</Player>
+    <Country>Germany</Country>
+    <PScore>165</PScore>
+    <NRace>2</NRace>
+    <Twitch>https://www.twitch.tv/blinkzy</Twitch>
+    <Rank>13</Rank>
+  </Score>
     <Score>
     <Player>MrBubbleSkp</Player>
     <Country>Canada</Country>
     <PScore>160</PScore>
     <NRace>2</NRace>
     <Twitch>https://www.twitch.tv/mrbubbleskp</Twitch>
-    <Rank>13</Rank>
-  </Score>
-    <Score>
-    <Player>Blinkzy</Player>
-    <Country>Germany</Country>
-    <PScore>165</PScore>
-    <NRace>2</NRace>
-    <Twitch>https://www.twitch.tv/blinkzy</Twitch>
     <Rank>14</Rank>
   </Score>
     <Score>
