@@ -17,7 +17,24 @@
 				Season 2 Leaderboard
 			</span>
 	   </div>
-	      <div id="images"></div>
+	   	</br></br>
+        <div class="updiv row">
+          <div>
+            <table class="table table-bordered table-responsive table-striped">
+              <thead>
+                <tr class="table-header">
+				  <th ></th>
+                  <th ></th>
+				  <th ></th>
+                </tr>
+              </thead>
+              <tbody id="ScoresboardTable">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 </body>
 
 <script>
@@ -90,11 +107,11 @@ function race1() {
 			if(place > 50 && place < 9998 )
 				place = 50;
 				
-			Race1Score[k.player] = [ { name: k.player, value: pointsDistribution[place.toString()] } ];
+			Race1Score[k.player] =  { name: k.player, value: pointsDistribution[place.toString()] };
+			
 		});
 	});
 }
-
 
 function race2() {
     return $.ajax({
@@ -107,7 +124,8 @@ function race2() {
 			if(place > 50 && place < 9998)
 				place = 50;
 				
-			Race2Score[k.player] = [ { name: k.player, value: pointsDistribution[place.toString()] } ];
+			Race2Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
+			
 		});
 	});
 }
@@ -123,10 +141,11 @@ function race3() {
 			if(place > 50 && place < 9998)
 				place = 50;
 				
-			Race3Score[k.player] = [ { name: k.player, value: pointsDistribution[place.toString()] } ];
+			Race3Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
 		});
 	});
 }
+
 $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 {
 	
@@ -134,7 +153,7 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 	{
     	if(Leaderboard[key])
 		{
-			Leaderboard[key] = Leaderboard[key].value + Race1Score[key].value;
+			Leaderboard[key].value = Leaderboard[key].value + Race1Score[key].value;
 		}
 		else
 		{
@@ -145,7 +164,7 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 	{
     	if(Leaderboard[key])
 		{
-			Leaderboard[key] = Leaderboard[key].value + Race2Score[key].value;
+			Leaderboard[key].value = Leaderboard[key].value + Race2Score[key].value;
 		}
 		else
 		{
@@ -156,26 +175,44 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 	{
     	if(Leaderboard[key])
 		{
-			Leaderboard[key] = Leaderboard[key].value + Race3Score[key].value;
+			Leaderboard[key].value = Leaderboard[key].value + Race3Score[key].value;
 		}
 		else
 		{
 			Leaderboard[key] = Race3Score[key];
 		}
 	});
-	// sort by value
-	Leaderboard.sort(function (a, b) 
+	
+	var keys = [], k, i, len;
+	for (k in Leaderboard) 
 	{
-		return a.value - b.value;
+	  if (Leaderboard.hasOwnProperty(k)) 
+	  {
+		keys.push(k);
+	  }
+	}
+	keys.sort(function(a, b) {
+		return Leaderboard[b].value - Leaderboard[a].value;
 	});
-	
-	Object.keys(Leaderboard).forEach(function(key) 
-	{
-	
-	});
-	
 
-    return false;
+	len = keys.length;
+	var rank = 0;
+	var SameValue = -1;
+	for (i = 0; i < len; i++) 
+	{
+		
+		k = keys[i];
+		if(SameValue != Leaderboard[k].value)
+		{
+			rank++;
+		}
+			
+		$('#ScoresboardTable').append("<tr><td><b>" + rank + "</b></td><td><b>" + Leaderboard[k].name + "</b></td><td><b>" + Leaderboard[k].value + "</b></td></tr>");
+		
+		SameValue = Leaderboard[k].value;
+	}
+	
+	
 });
 
 
