@@ -98,7 +98,7 @@ var Leaderboard = {};
 
 function race1() {
     return $.ajax({
-		url: '/scoresboard/season2/race1.json',
+		url: '/scoresboard/Season2/Race1.json',
 		method: 'GET'
 	}).then(function(data) {
 		data.pastraces[0].results.forEach(function(k)
@@ -115,7 +115,7 @@ function race1() {
 
 function race2() {
     return $.ajax({
-		url: '/scoresboard/season2/race2.json',
+		url: '/scoresboard/Season2/Race2.json',
 		method: 'GET'
 	}).then(function(data) {
 		data.pastraces[0].results.forEach(function(k)
@@ -132,7 +132,7 @@ function race2() {
 
 function race3() {
     return $.ajax({
-		url: '/scoresboard/season2/race3.json',
+		url: '/scoresboard/Season2/Race3.json',
 		method: 'GET'
 	}).then(function(data) {
 		data.pastraces[0].results.forEach(function(k)
