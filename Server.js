@@ -110,6 +110,10 @@ app.get('/popout', function (req, res) {
   res.sendFile(path.resolve(viewPath, 'popout.html'));
 });
 
+app.get('/leaderboardNew', function (req, res) {
+  res.render('leaderboardNew');
+});
+
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.static('public'))
 app.use(express.static('files'))
