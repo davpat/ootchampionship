@@ -5,8 +5,10 @@
     "start": "node Server.js"
   },
   "dependencies": {
+    "asyncawait": "^1.0.6",
     "ejs": "^2.5.7",
     "express": "latest",
+    "node-fetch": "^1.7.3",
     "serve-favicon": "^2.4.3"
   }
 }
