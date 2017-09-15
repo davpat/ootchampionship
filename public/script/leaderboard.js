@@ -212,7 +212,6 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 				if(Info[Leaderboard[k].name].channel != '')
 				{
 					$('#ScoresboardTable').append("<tr><td><b>" + rank + "</b></td>" +
-												  '<td><b><img style="width:32px;height:32px;" src="images/PlayersIcone/exodus.png"></img></td>' +
 												  "<td><b>"+ '<a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</a></b></td>" + 
 												  "<td><b>" +  Info[Leaderboard[k].name].country 	   + "</b></td>" +
 												  "<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
@@ -220,8 +219,7 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 				}	
 				else
 				{
-					$('#ScoresboardTable').append('<tr style="width:32px;height:32px;"><td><b>' + rank + "</b></td>" +
-												  '<td><b><img style="width:32px;height:32px;" src="images/PlayersIcone/exodus.png"></img></td>' +
+					$('#ScoresboardTable').append('<tr><td><b>' + rank + "</b></td>" +
 												  '<td><b>'  +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</b></td>" + 
 												  "<td><b>" +  Info[Leaderboard[k].name].country 	   + "</b></td>" +
 												  "<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
@@ -230,9 +228,7 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 			}
 			else
 			{
-							$('#ScoresboardTable').append("<tr><td><b>" + rank + "</b></td>" +
-											'<td><b><img style="width:32px;height:32px;" src="images/PlayersIcone/exodus.png"></img></td>' +
-												"<td><b>" +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</b></td>" + 
+							$('#ScoresboardTable').append("<tr><td><b>" + rank + "</b></td>" +												"<td><b>" +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</b></td>" + 
 												"<td><b>" +  "" 	   							   + "</b></td>" +
 												"<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
 												"<td><b>" +  Leaderboard[k].nraces 				   + "</b></td></tr>");

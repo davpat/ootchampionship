@@ -12,8 +12,8 @@ const getAvatars = require('./getAvatars');
 
 (async function() {
 	
-	//const avatars = await getAvatars(['tdavpat', 'prettybigjoe']);
-
+	const avatars = await getAvatars(['tdavpat', 'prettybigjoe']);
+	
 	app.set('view engine', 'ejs');
 	app.use(function (req, res, next) {
 	  console.log('/' + req.method);
@@ -33,7 +33,7 @@ const getAvatars = require('./getAvatars');
 	});
 		
 	app.get('/leaderboard', function (req, res) {
-	  res.render('leaderboard');
+	  res.render('leaderboardNew', { data: avatars });
 	});
 
 	app.get('/challenges', function (req, res) {
@@ -112,11 +112,6 @@ const getAvatars = require('./getAvatars');
 
 	app.get('/popout', function (req, res) {
 	  res.sendFile(path.resolve(viewPath, 'popout.html'));
-	});
-
-	app.get('/leaderboardNew', function (req, res) {
-	  //res.render('leaderboardNew', { data: avatars });
-	  res.render('leaderboardNew' );
 	});
 
 	app.use(favicon(__dirname + '/public/images/favicon.ico'));
