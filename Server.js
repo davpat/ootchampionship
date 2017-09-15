@@ -33,7 +33,7 @@ const getAvatars = require('./getAvatars');
 	});
 		
 	app.get('/leaderboard', function (req, res) {
-	  res.render('leaderboardNew', { data: avatars });
+	  res.render('leaderboard', { data: avatars });
 	});
 
 	app.get('/challenges', function (req, res) {
