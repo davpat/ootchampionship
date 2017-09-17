@@ -32,8 +32,6 @@ const getAvatars = require('./getAvatars');
 		
 	app.get('/leaderboard', function (req, res) {
 	  res.render('leaderboard', { data: avatars });
-	  	  console.log(avatars);
-
 	});
 
 	app.get('/challenges', function (req, res) {
