@@ -11,9 +11,7 @@ const halloffamedata = require('./data/hall-of-fame');
 const getAvatars = require('./getAvatars');
 
 (async function() {
-	
-	const avatars = await getAvatars(['tdavpat', 'prettybigjoe']);
-	
+	const avatars = await getAvatars();
 	app.set('view engine', 'ejs');
 	app.use(function (req, res, next) {
 	  console.log('/' + req.method);
@@ -34,6 +32,8 @@ const getAvatars = require('./getAvatars');
 		
 	app.get('/leaderboard', function (req, res) {
 	  res.render('leaderboard', { data: avatars });
+	  	  console.log(avatars);
+
 	});
 
 	app.get('/challenges', function (req, res) {

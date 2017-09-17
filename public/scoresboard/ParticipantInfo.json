@@ -38,7 +38,7 @@
 		},
 		{
 			"name" : "Juwk",
-			"channel" : "Juwk",
+			"channel" : "juwk",
 			"twitter" : "Juwker",
 			"youtube" : "",
 			"country" : "Belgium"
@@ -164,7 +164,7 @@
 		},
 		{
 			"name" : "Acermax",
-			"channel" : "acermax51",
+			"channel" : "acermax",
 			"twitter" : "",
 			"youtube" : "",
 			"country" : "Spain"
@@ -458,7 +458,7 @@
 		},
 		{
 			"name" : "dank_as_dank",
-			"channel" : "dank_as_dank",
+			"channel" : "",
 			"twitter" : "",
 			"youtube" : "",
 			"country" : "Canada"

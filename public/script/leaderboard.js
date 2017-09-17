@@ -130,11 +130,34 @@ function info() {
 		url: '/scoresboard/ParticipantInfo.json',
 		method: 'GET'
 	}).then(function(data) {
+		console.log(Avatars);
 		data.participant.forEach(function(k)
 		{
-			Info[k.name] = { name: k.name, country: k.country, channel: k.channel , twitter: k.twitter , youtube: k.youtube};
+		
+			var TwitchData = search(k.channel, Avatars);
+			console.log(TwitchData);			
+			if(TwitchData)
+			{
+				if(TwitchData.logo)
+					Info[k.name] = { name: k.name, country: k.country, channel: k.channel , twitter: k.twitter , youtube: k.youtube, logo: TwitchData.logo};
+				else
+					Info[k.name] = { name: k.name, country: k.country, channel: k.channel , twitter: k.twitter , youtube: k.youtube, logo: 'images/default.png'};
+			}
+			else
+			{
+				Info[k.name] = { name: k.name, country: k.country, channel: k.channel , twitter: k.twitter , youtube: k.youtube, logo: 'images/default.png'};
+			}
+
 		});
 	});
+}
+
+function search(nameKey, myArray){
+    for (var i=0; i < myArray.length; i++) {
+        if ( myArray[i].name === nameKey || myArray[i].display_name === nameKey) {
+            return myArray[i];
+        }
+    }
 }
 
 $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
@@ -212,26 +235,27 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 				if(Info[Leaderboard[k].name].channel != '')
 				{
 					$('#ScoresboardTable').append("<tr><td><b>" + rank + "</b></td>" +
-												  "<td><b>"+ '<a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</a></b></td>" + 
-												  "<td><b>" +  Info[Leaderboard[k].name].country 	   + "</b></td>" +
-												  "<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
-												  "<td><b>" +  Leaderboard[k].nraces 				   + "</b></td></tr>");
+												  '<td><img src="' + Info[Leaderboard[k].name].logo + '" height="42" width="42" style="margin-right:10px;border-radius: 50%;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</a></b></td>" + 
+												  "<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
+												  "<td><b>" +  Leaderboard[k].value 			   + "</b></td>" + 
+												  "<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");
 				}	
 				else
 				{
 					$('#ScoresboardTable').append('<tr><td><b>' + rank + "</b></td>" +
-												  '<td><b>'  +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</b></td>" + 
-												  "<td><b>" +  Info[Leaderboard[k].name].country 	   + "</b></td>" +
-												  "<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
-												  "<td><b>" +  Leaderboard[k].nraces 				   + "</b></td></tr>");
+												  '<td><img src="images/default.png" height="42" width="42" style="margin-right:10px;border-radius: 50%;"><b>' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + 
+												  "<td><b>" +  Info[Leaderboard[k].name].country 	  + "</b></td>" +
+												  "<td><b>" +  Leaderboard[k].value 				  + "</b></td>" + 
+												  "<td><b>" +  Leaderboard[k].nraces 				  + "</b></td></tr>");
 				}	
 			}
 			else
 			{
-							$('#ScoresboardTable').append("<tr><td><b>" + rank + "</b></td>" +												"<td><b>" +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</b></td>" + 
-												"<td><b>" +  "" 	   							   + "</b></td>" +
-												"<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
-												"<td><b>" +  Leaderboard[k].nraces 				   + "</b></td></tr>");
+					$('#ScoresboardTable').append("<tr><td><b>" + rank + "</b></td>" +	
+												  '<td><img src="images/default.png" height="42" width="42"><b> style="margin-right:10px;border-radius: 50%;"' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</b></td>" + 
+												  "<td><b>" +  "" 	   							   + "</b></td>" +
+												  "<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
+												  "<td><b>" +  Leaderboard[k].nraces 				   + "</b></td></tr>");
 			}	
 			SameValue = Leaderboard[k].value;
 		}

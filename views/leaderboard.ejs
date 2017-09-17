@@ -6,7 +6,6 @@
   <title>OCS - Leaderboard</title>
   <% include partials/head %>
   <link rel="stylesheet" href="/index.css">
-  <script src="script/leaderboard.js"></script>
   <link rel="stylesheet" href="/afterparty.css">
 
 </head>
@@ -41,4 +40,8 @@
 			</div>
 		  </div>
 	</body>
-</html>
+	<script>
+		var Avatars = <%- JSON.stringify(data) %>;
+	</script>
+	<script src="script/leaderboard.js"></script>
+</html> 
