@@ -15,8 +15,8 @@ module.exports = {
       background: '/images/bingo.png',
     }, 
 	{
-      title: null,
-      rules: null,
+      title: 'Draft',
+      rules: '/images/BattleModeDraft.png',
       clue: null,
       date: null,
       winner: {
@@ -26,7 +26,7 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/QuestionMark.png',
+      background: '/images/draft.jpg',
     }, {
       title: null,
       rules: null,

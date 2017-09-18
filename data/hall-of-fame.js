@@ -140,6 +140,16 @@ module.exports = {
 		title: 'Redead Revenge',
 		image: 'oldpuzzle/ReDeadReVenge.png',
 		creator: 'DannyB21892',
+    },
+	{
+		title: 'Counter Commerce',
+		image: 'oldpuzzle/CounterCommerce.png',
+		creator: 'DannyB21892',
+    },
+	{
+		title: 'Majoras Masquerade',
+		image: 'oldpuzzle/MajorasMasquerade.png',
+		creator: 'DannyB21892',
     }
   ],
   Mrbubbleskp: 
@@ -225,6 +235,12 @@ module.exports = {
 		image: '',
 		creator: 'Cosmo',
 		number: '1'
+    },
+	 {
+		title: 'Obtain Fairy Slingshot.',
+		image: 'oldpuzzle/puzzlegoal2.jpg',
+		creator: 'Cosmo',
+		number: '2'
     },
 	{
 		title: 'Beat water Temple.',

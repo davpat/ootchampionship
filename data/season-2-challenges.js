@@ -43,7 +43,7 @@ module.exports = {
     }, {
       title: null,
       rules: null,
-      clue: null,
+      clue: '/clue/S2/C4.mp3',
       date: 'September 24, 2017',
       winner: {
         name: null,
