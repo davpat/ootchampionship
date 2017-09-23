@@ -22,10 +22,6 @@ const getAvatars = require('./getAvatars');
 	  res.render('index');
 	});
 
-	app.get('/recaps2c1', function (req, res) {
-		res.render('recaps2c1');
-	});
-
 	app.get('/battlemode', function (req, res) {
 	  res.render('battlemode', { data: season2BattleMode });
 	});
@@ -86,6 +82,14 @@ const getAvatars = require('./getAvatars');
 	  res.sendFile(path.resolve(viewPath, 'recap10.html'));
 	});
 
+	app.get('/recaps2c1', function (req, res) {
+		res.render('recaps2c1');
+	});
+	
+	app.get('/recaps2q1', function (req, res) {
+		res.render('recaps2q1');
+	});
+	
 	app.get('/clue5', function (req, res) {
 	  res.sendFile(path.resolve(viewPath, 'clue5.html'));
 	});
