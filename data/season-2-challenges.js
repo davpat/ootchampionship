@@ -37,7 +37,7 @@ module.exports = {
         link: 'https://www.twitch.tv/tob3000',
       },
       time: '01:30:42',
-      recap: '',
+      recap: '/recaps2q1',
       results: 'http://www.speedrunslive.com/races/result/#!/203214',
       background: '/images/KokiriSword.png',
     }, {
