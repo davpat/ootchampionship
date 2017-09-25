@@ -55,6 +55,7 @@ pointsDistribution["9998"] = 0;
 var Race1Score = {};
 var Race2Score = {};
 var Race3Score = {};
+var Race4Score = {};
 var Info = {};
 var Leaderboard = {};
 
@@ -124,6 +125,22 @@ function race3() {
 		});
 	});
 }
+
+function race4() {
+    return $.ajax({
+		url: '/scoresboard/Season2/Race4.json',
+		method: 'GET'
+	}).then(function(data) {
+		data.pastraces[0].results.forEach(function(k)
+		{
+			var place = k.place;
+			if(place > 50 && place < 9998)
+				place = 50;
+				
+			Race4Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
+		});
+	});
+}
 		
 function info() {
     return $.ajax({
@@ -171,7 +188,7 @@ function search(nameKey, myArray){
     }
 }
 
-$.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
+$.when(race1(), race2(), race3(), race4()).done(function(a1, a2, a3, a4, a5)
 {
 	
 	Object.keys(Race1Score).forEach(function(key) 
@@ -210,6 +227,19 @@ $.when(race1(), race2(), race3()).done(function(a1, a2, a3, a4)
 		else
 		{
 			Leaderboard[key] = Race3Score[key];
+			Leaderboard[key].nraces = 	1;
+		}
+	});
+	Object.keys(Race4Score).forEach(function(key) 
+	{
+    	if(Leaderboard[key])
+		{
+			Leaderboard[key].value = Leaderboard[key].value + Race4Score[key].value;
+			Leaderboard[key].nraces = Leaderboard[key].nraces + 1;
+		}
+		else
+		{
+			Leaderboard[key] = Race4Score[key];
 			Leaderboard[key].nraces = 	1;
 		}
 	});
