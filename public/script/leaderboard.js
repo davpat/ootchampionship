@@ -309,7 +309,7 @@ $.when(race1(), race2(), race3(), race4(), race5()).done(function(a1, a2, a3, a4
 						if(Info[Leaderboard[k].name].twitter != '')
 						{	
 							$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
-												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a target=”_blank” href="https://twitter.com/'+ Info[Leaderboard[k].name].twitter  + '" class="fa fa-twitter"><a  target=”_blank” href="https://www.youtube.com/user/' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
+												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a target=”_blank” href="https://twitter.com/'+ Info[Leaderboard[k].name].twitter  + '" class="fa fa-twitter"><a  target=”_blank” href="https://www.youtube.com' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
 												  "<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
 												  "<td><b>" +  Leaderboard[k].value 			   + "</b></td>" + 
 												  "<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");
@@ -317,7 +317,7 @@ $.when(race1(), race2(), race3(), race4(), race5()).done(function(a1, a2, a3, a4
 						else
 						{	
 							$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
-												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a  target=”_blank” href="https://www.youtube.com/user/' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
+												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a  target=”_blank” href="https://www.youtube.com' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
 												  "<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
 												  "<td><b>" +  Leaderboard[k].value 			   + "</b></td>" + 
 												  "<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");

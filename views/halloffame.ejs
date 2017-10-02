@@ -67,6 +67,23 @@
 		
 		<div class="title text-center">
 			<span class="display2">
+			  Dungeonfire Challenges
+			</span>
+		</div>
+		<ul id="rig">
+			<% data.Dungeonfire.forEach((challenge, i) => { %>
+				<li>
+					<a class="rig-cell" href="<%= challenge.image %>">
+						<img class="rig-img" src="<%= challenge.image %>">
+						<span class="rig-overlay"></span>
+						<span class="rig-text"><%= challenge.title %><br/><br/> by <%= challenge.creator %></span>
+					</a>
+				</li>
+			<% }); %>
+		</ul>
+		
+		<div class="title text-center">
+			<span class="display2">
 			  Mrbubbleskp Challenges
 			</span>
 		</div>

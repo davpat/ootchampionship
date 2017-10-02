@@ -5,14 +5,14 @@
 			"name" : "amateseru",
 			"channel" : "amateseru",
 			"twitter" : "Amateseru",
-			"youtube" : "Amateseru",
+			"youtube" : "/user/Amateseru",
 			"country" : "France"
 		},
 		{
 			"name" : "Marco",
 			"channel" : "marco8641",
 			"twitter" : "marco8641",
-			"youtube" : "8641Marco",
+			"youtube" : "/user/8641Marco",
 			"country" : "France"
 		},
 		{
@@ -26,14 +26,14 @@
 			"name" : "tob3000",
 			"channel" : "tob3000",
 			"twitter" : "",
-			"youtube" : "tob3000",
+			"youtube" : "/channel/UCr09V8j9NQVxVR-K06K8lvA",
 			"country" : "Austria"
 		},
 		{
 			"name" : "Exodus",
 			"channel" : "Exodus122",
 			"twitter" : "exodus_122",
-			"youtube" : "exodus122",
+			"youtube" : "/user/exodus122",
 			"country" : "USA"
 		},
 		{
@@ -47,42 +47,42 @@
 			"name" : "hyperion64",
 			"channel" : "hyperion64",
 			"twitter" : "",
-			"youtube" : "Hyperion64",
+			"youtube" : "/channel/UCpPdO4xLfja55dns8RDtnCg",
 			"country" : "Germany"
 		},
 		{
 			"name" : "Runnerguy2489",
 			"channel" : "runnerguy2489",
 			"twitter" : "@DrewEIT",
-			"youtube" : "Runnerguy2489",
+			"youtube" : "/user/Runnerguy2489",
 			"country" : "USA"
 		},
 		{
 			"name" : "realtimeattack64",
 			"channel" : "realtimeattack64",
 			"twitter" : "@RTAttack64",
-			"youtube" : "RTA 64",
+			"youtube" : "/channel/UCm66n6xR7EyKWzA9_-dFBGw",
 			"country" : "Finland"
 		},
 		{
 			"name" : "PhoenixFeather",
 			"channel" : "phoenixfeather1",
 			"twitter" : "PhoenixFeather6",
-			"youtube" : "DestroyPker",
+			"youtube" : "/user/DestroyPker",
 			"country" : "USA"
 		},
 		{
 			"name" : "scaramanga",
 			"channel" : "scaramangado",
 			"twitter" : "scaramangado",
-			"youtube" : "scaramangado",
+			"youtube" : "/user/scaramangado",
 			"country" : "Germany"
 		},
 		{
 			"name" : "PsyMarth",
 			"channel" : "psymarth",
 			"twitter" : "psymarth",
-			"youtube" : "psymarth",
+			"youtube" : "/user/psymarth",
 			"country" : "USA"
 		},
 		{
@@ -103,7 +103,7 @@
 			"name" : "Chris7M",
 			"channel" : "chris7m",
 			"twitter" : "chris7m_",
-			"youtube" : "Chris7M",
+			"youtube" : "/user/Chris7M",
 			"country" : "Spain"
 		},
 		{
@@ -131,7 +131,7 @@
 			"name" : "dannyb21892",
 			"channel" : "dannyb21892",
 			"twitter" : "dannyb21892",
-			"youtube" : "dannyb21892",
+			"youtube" : "/user/dannyb21892",
 			"country" : "USA"
 		},
 		{
@@ -145,21 +145,21 @@
 			"name" : "mrbubbleskp",
 			"channel" : "mrbubbleskp",
 			"twitter" : "mrbubbleskp",
-			"youtube" : "PetroliaK",
+			"youtube" : "/user/PetroliaK",
 			"country" : "Canada"
 		},
 		{
 			"name" : "armorysons",
 			"channel" : "armorysons",
 			"twitter" : "armorysons",
-			"youtube" : "armorysons",
+			"youtube" : "/user/armorysons",
 			"country" : "USA"
 		},
 		{
 			"name" : "flanthis",
 			"channel" : "flanthis",
 			"twitter" : "flanthis",
-			"youtube" : "flanthis",
+			"youtube" : "/user/flanthis",
 			"country" : "USA"
 		},
 		{
@@ -173,7 +173,7 @@
 			"name" : "adefgames",
 			"channel" : "adefgames",
 			"twitter" : "adefgames",
-			"youtube" : "adefgames",
+			"youtube" : "/user/adefgames",
 			"country" : "USA"
 		},
 		{
@@ -233,17 +233,10 @@
 			"country" : "France"
 		},
 		{
-			"name" : "Menou",
-			"channel" : "menou_",
-			"twitter" : "ymeric",
-			"youtube" : "",
-			"country" : "France"
-		},
-		{
 			"name" : "thiefbug",
 			"channel" : "thiefbug",
 			"twitter" : "",
-			"youtube" : "thiefbug2",
+			"youtube" : "/user/thiefbug2",
 			"country" : "Germany"
 		},
 		{
@@ -257,7 +250,7 @@
 			"name" : "marshallobob",
 			"channel" : "MarshallObob",
 			"twitter" : "MarshallObob",
-			"youtube" : "MarshallObob",
+			"youtube" : "/channel/UCuQcWYN27Nn09NKoLjTISMw",
 			"country" : "France"
 		},
 		{
@@ -285,14 +278,14 @@
 			"name" : "moosecrap",
 			"channel" : "moosecrap",
 			"twitter" : "crazyfarmsexy",
-			"youtube" : "moosecrap",
+			"youtube" : "/user/moosecrap",
 			"country" : "USA"
 		},
 		{
 			"name" : "Mrjabujabu",
 			"channel" : "mrjabujabu",
 			"twitter" : "",
-			"youtube" : "mrjabujabu",
+			"youtube" : "/channel/UCr-GPHTmq4jOwl_Rr5-ix4A",
 			"country" : "Wales"
 		},
 		{
@@ -327,7 +320,7 @@
 			"name" : "luigidude851",
 			"channel" : "luigidude851",
 			"twitter" : "",
-			"youtube" : "luigidude851",
+			"youtube" : "/user/luigidude851",
 			"country" : "USA"
 		},
 		{
@@ -348,7 +341,7 @@
 			"name" : "Nkiller",
 			"channel" : "nkitten",
 			"twitter" : "nkiller",
-			"youtube" : "nk1ller",
+			"youtube" : "/user/Nk1ller",
 			"country" : "Netherlands"
 		},
 		{
@@ -439,7 +432,7 @@
 			"name" : "nonsensebread",
 			"channel" : "nonsensebread",
 			"twitter" : "nonsensebread",
-			"youtube" : "nonsensebread",
+			"youtube" : "/user/nonsensebread",
 			"country" : "Canada"
 		},
 		{
@@ -467,7 +460,7 @@
 			"name" : "jolin012",
 			"channel" : "jolin012",
 			"twitter" : "",
-			"youtube" : "Jolin012",
+			"youtube" : "/user/MrJolin012",
 			"country" : "Sweden"
 		},
 		{
@@ -495,7 +488,7 @@
 			"name" : "Lauren07",
 			"channel" : "lauren07",
 			"twitter" : "x_lauren07",
-			"youtube" : "lauren07",
+			"youtube" : "",
 			"country" : "USA"
 		},
 		{
@@ -565,7 +558,7 @@
 			"name" : "Zemorln",
 			"channel" : "zemorn",
 			"twitter" : "moisynemorin",
-			"youtube" : "nemorin37",
+			"youtube" : "/user/nemorin37",
 			"country" : "France"
 		},
 		{
@@ -600,7 +593,7 @@
 			"name" : "mrcodgrim",
 			"channel" : "mrcodgrim",
 			"twitter" : "mrcodgrim",
-			"youtube" : "mrcodgrim",
+			"youtube" : "/user/mrcodgrim",
 			"country" : "Switzerland"
 		},
 		{
@@ -628,14 +621,14 @@
 			"name" : "linky628",
 			"channel" : "linky628",
 			"twitter" : "linkyspeedruns",
-			"youtube" : "linky628",
+			"youtube" : "/user/linky628",
 			"country" : "UK"
 		},
 		{
 			"name" : "xiosris",
 			"channel" : "",
 			"twitter" : "https://twitter.com/Xiosris",
-			"youtube" : "Le Xiosris :3",
+			"youtube" : "/channel/UCAFAlEVcAPu718r-qQTPexQ",
 			"country" : "France"
 		},
 		{
@@ -649,7 +642,7 @@
 			"name" : "Elminster",
 			"channel" : "crimtab",
 			"twitter" : "ElminsterRTA",
-			"youtube" : "ElminsterRTA",
+			"youtube" : "/user/Elminster219",
 			"country" : "Canada"
 		},
 		{
@@ -670,7 +663,7 @@
 			"name" : "RoseWater",
 			"channel" : "rosewater0",
 			"twitter" : "RoseWater_0",
-			"youtube" : "RoseWater",
+			"youtube" : "/user/EditVG",
 			"country" : "USA"
 		},
 		{
@@ -684,21 +677,21 @@
 			"name" : "Mindez",
 			"channel" : "mindezzy",
 			"twitter" : "Mindez",
-			"youtube" : "Mindez",
+			"youtube" : "/user/Mindez",
 			"country" : "UK"
 		},
 		{
 			"name" : "DLH112",
 			"channel" : "DLH112",
 			"twitter" : "DLH112",
-			"youtube" : "DLH112",
+			"youtube" : "/user/DLH112",
 			"country" : "USA"
 		},
 		{
 			"name" : "woawkoaw",
 			"channel" : "woawkoaw",
 			"twitter" : "",
-			"youtube" : "woawkoaw",
+			"youtube" : "/user/woawkoaw",
 			"country" : "Sweden"
 		},
 		{
@@ -737,17 +730,17 @@
 			"country" : ""
 		},
 		{
-			"name" : "Sniping117",
-			"channel" : "",
-			"twitter" : "",
-			"youtube" : "",
-			"country" : ""
+			"name" : "SNIPING117",
+			"channel" : "sniping117",
+			"twitter" : "Sniping117",
+			"youtube" : "/user/SnipinG1337",
+			"country" : "Netherlands"
 		},
 		{
 			"name" : "piticarus",
 			"channel" : "piti",
 			"twitter" : "Piticarus",
-			"youtube" : "Piticurus",
+			"youtube" : "/user/Piticurus",
 			"country" : ""
 		},
 		{
@@ -765,17 +758,10 @@
 			"country" : ""
 		},
 		{
-			"name" : "linky628",
-			"channel" : "linky628",
-			"twitter" : "linkyspeedruns",
-			"youtube" : "linky628",
-			"country" : "United Kingdom"
-		},
-		{
 			"name" : "forever4258",
 			"channel" : "forever4258",
 			"twitter" : "",
-			"youtube" : "forever6716",
+			"youtube" : "/user/forever6716",
 			"country" : "USA"
 		}
 	]

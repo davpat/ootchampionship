@@ -1,6 +1,11 @@
 module.exports = {
   Recent: 
   [
+	{
+		title: 'Dungeonfire Puzzle 2',
+		image: '/oldpuzzle/DungeonfirePuzzle2.png',
+		creator: 'Dungeonfire',
+    },
   	{
 		title: 'Dungeonfire Puzzle',
 		image: '/oldpuzzle/Dungeonfire.png',
@@ -10,14 +15,14 @@ module.exports = {
 		title: 'Link Vacantion Album',
 		image: '/oldpuzzle/gombilPreOcS2.png',
 		creator: 'Gombill',
-    },
+    }
+  ],
+  main: [
 	{
 		title: 'Meme Mastery',
 		image: 'oldpuzzle/Meme.png',
 		creator: 'Jolin012',
-    }
-  ],
-  main: [
+    },
   	{
 		title: 'Dont lose your way',
 		image: 'oldpuzzle/sydney.jpg',
@@ -150,6 +155,19 @@ module.exports = {
 		title: 'Majoras Masquerade',
 		image: 'oldpuzzle/MajorasMasquerade.png',
 		creator: 'DannyB21892',
+    }
+  ],
+  Dungeonfire:
+  [
+	{
+		title: 'Dungeonfire Puzzle',
+		image: '/oldpuzzle/Dungeonfire.png',
+		creator: 'Dungeonfire',
+    },
+  	{
+		title: 'Dungeonfire Puzzle 2',
+		image: '/oldpuzzle/DungeonfirePuzzle2.png',
+		creator: 'Dungeonfire',
     }
   ],
   Mrbubbleskp: 
