@@ -11,7 +11,7 @@ const halloffamedata = require('./data/hall-of-fame');
 const getAvatars = require('./getAvatars');
 
 (async function() {
-	//const avatars = await getAvatars();
+	const avatars = await getAvatars();
 	app.set('view engine', 'ejs');
 	app.use(function (req, res, next) {
 	  console.log('/' + req.method);
@@ -108,16 +108,12 @@ const getAvatars = require('./getAvatars');
 	  res.sendFile(path.resolve(viewPath, 'skullomizer/skullomizer.html'));
 	});
 
-	app.get('/bingo', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'bingo.html'));
+	app.get('/OCSR6', function (req, res) {
+	  res.sendFile(path.resolve(viewPath, 'OCSR6.html'));
 	});
 
 	app.get('/popout', function (req, res) {
 	  res.sendFile(path.resolve(viewPath, 'popout.html'));
-	});
-
-	app.get('/bingoadventure', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'bingoadventure.html'));
 	});
 	
 	app.use(favicon(__dirname + '/public/images/favicon.ico'));
