@@ -12,7 +12,7 @@ function bingosetup() {
         window.open('popout.html',"_blank","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=220, height=460");
     });
   
-    $("#bingo tr td:not(.popout), #selected td").toggle(
+    $("#bingo tr td:not(.popout1), #selected td").toggle(
 		function () {
 		  $(this).addClass("greensquare");
 		},

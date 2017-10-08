@@ -4,7 +4,7 @@
 	<title>Ocarina of Time Bingo</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="../bingo.css">
+	<link rel="stylesheet" type="text/css" href="../bingorace.css">
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script> <!-- google libraries API -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> <!-- jquery -->
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
@@ -24,76 +24,59 @@
 <body>
 <div id="wrap">
 	<div id="main">
-		<div class="container" id="pageContent">
+		<div class="container2" id="pageContent">
 		
-			<script src="../script/seedrandom-min.js" type="text/javascript"></script>
-			<script src="../script/goal-list.js" type="text/javascript"></script>
-			<script src="../script/generator.js" type="text/javascript"></script>
 			<script src="../script/bingosetup.js" type="text/javascript"></script>
 			
 			<div id="bingoPage">
 				<div id="results">
 					<table id="bingo">
 						<tr>
-							<td class="popout" id="tlbr">TL-BR</td>
-							<td class="popout" id="col1">COL1</td>
-							<td class="popout" id="col2">COL2</td>
-							<td class="popout" id="col3">COL3</td>
-							<td class="popout" id="col4">COL4</td>
-							<td class="popout" id="col5">COL5</td>
+							<td id="tlbr" class="popout1">TL-BR</td>
+							<td id="col1" class="popout1">COL1</td>
+							<td id="col2" class="popout1">COL2</td>
+							<td id="col3" class="popout1">COL3</td>
 						</tr>
 						<tr>
-							<td class="popout" id="row1">ROW1</td>
-							<td class="row1 col1 tlbr" id="slot1"></td> 
-							<td class="row1 col2" id="slot2"></td> 
-							<td class="row1 col3" id="slot3"></td> 
-							<td class="row1 col4" id="slot4"></td> 
-							<td class="row1 col5 bltr" id="slot5"></td> 
+							<td id="row1" class="popout1">ROW1</td>
+							<td class="row1 col1 tlbr" id="slot1">8 Songs</td> 
+							<td class="row1 col2" id="slot2">4 Boss Keys</td> 
+							<td class="row1 col3" id="slot3">7 Compasses</td> 
 						</tr>
 						<tr> 
-							<td class="popout" id="row2">ROW2</td>
-							<td class="row2 col1" id="slot6"></td> 
-							<td class="row2 col2 tlbr" id="slot7"></td> 
-							<td class="row2 col3" id="slot8"></td> 
-							<td class="row2 col4 bltr" id="slot9"></td> 
-							<td class="row2 col5" id="slot10"></td> 
+							<td id="row2" class="popout1">ROW2</td>
+							<td class="row2 col1" id="slot6">7 Maps</td> 
+							<td class="row2 col2 tlbr" id="slot7">20 Overworld Skulltulas</td> 
+							<td class="row2 col3" id="slot8">Clears 8 Silver Rupee Rooms</td> 
 						</tr>
 						<tr> 
-							<td class="popout" id="row3">ROW3</td>
-							<td class="row3 col1" id="slot11"></td> 
-							<td class="row3 col2" id="slot12"></td> 
-							<td class="row3 col3 tlbr bltr" id="slot13"></td> 
-							<td class="row3 col4" id="slot14"></td> 
-							<td class="row3 col5" id="slot15"></td> 
-						</tr>
-						<tr> 
-							<td class="popout" id="row4">ROW4</td>
-							<td class="row4 col1" id="slot16"></td> 
-							<td class="row4 col2 bltr" id="slot17"></td> 
-							<td class="row4 col3" id="slot18"></td> 
-							<td class="row4 col4 tlbr" id="slot19"></td> 
-							<td class="row4 col5" id="slot20"></td> 
-						</tr>
-						<tr> 
-							<td class="popout" id="row5">ROW5</td>
-							<td class="row5 col1 bltr" id="slot21"></td> 
-							<td class="row5 col2" id="slot22"></td> 
-							<td class="row5 col3" id="slot23"></td> 
-							<td class="row5 col4" id="slot24"></td> 
-							<td class="row5 col5 tlbr" id="slot25"></td> 
+							<td id="row3" class="popout1">ROW3</td>
+							<td class="row3 col1" id="slot11">10 Unused Keys From Dungeons</td> 
+							<td class="row3 col2" id="slot12">9 Hearts</td> 
+							<td class="row3 col3 tlbr bltr" id="slot13">7 Different Bottled Contents</td> 
 						</tr>
 						<tr>
-							<td class="popout" id="bltr">BL-TR</td>
+							<td id="bltr" class="popout1">BL-TR</td>
 						</tr>
 					</table>
 				</div>
 			</div>
-		</div>
-		<div id="about_bingo">
-			<select name="version">
-				<option value="v3.X">v3.X</option>
-				<option value="v9.2">v9.2</option>
-			</select>
+			<div>
+				<h1 style="font-size:30px;">Goal:</h1>
+				<h3>
+				Pick the row, column or diagonal that you will NOT complete. </br> </br>
+				Complete the remaining 6 goals.
+				<h3/>
+				<h1 style="font-size:30px;">Information:</h1>
+				<h3>
+				- A dungeon is an area that has a map and a compass. </br> </br> 
+				- The unused small keys must be obtained from inside a dungeon.  (Water Temple key RBA does not count towards the goal) </br> </br>
+				- Any gold skulltula that is not inside a dungeon is an overworld gold skulltula. </br></br>
+				- Ruto's Letter is a bottled content. </br> </br>
+				- An empty bottle is not a bottled content. </br> </br>
+				- For silver rupee puzzles the goal is completed once you get the last silver rupee in the room. </br> </br>
+				<h3>
+				</div>
 		</div>
 	</div>
 </div>

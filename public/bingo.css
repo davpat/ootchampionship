@@ -240,29 +240,23 @@ strong {
   font-weight: 700;
 }
 h1 {
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: Triforce;
   font-weight: 800;
-  font-size: 1.21em;
-  color: #e09456;
-  margin: 8px 0 0;
+  font-size: 15;
+  color: white;
   padding: 8px 0;
-  word-wrap: break-word;
   overflow: hidden;
-}
-h1 img {
-  position: absolute;
-  margin: 0 8px;
-}
-h1 a {
-  text-decoration: underline;
 }
 h2 {
   display: block;
   margin: 0 0 8px;
-  color: #f7e279;
+  color: white;
   font-weight: 700;
   clear: both;
   font-size: 100%;
+}
+h3 {
+  color: white;
 }
 h4 {
   display: block;
@@ -570,7 +564,7 @@ th {
 }
 #bingoPage #results {
   float: left;
-  width: 594px;
+  width: 500px;
   margin-right: 16px;
   text-align: right;
 }
@@ -695,14 +689,14 @@ th {
   -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
   padding: 0 5px;
   cursor: pointer;
-  width: 95px;
-  height: 90px;
+  width: 55px;
+  height: 100px;
   text-align: center;
   border: 1px #424242 solid;
   background: #000;
 }
 #bingoPage #bingo tr td:first-child {
-  width: 35px;
+  width: 10px;
   background: #000811;
   font-size: 75%;
   color: #3c70df;
@@ -731,9 +725,4 @@ th {
 #bingoPage #bingo tr td.redsquare:hover,
 #bingoPage #bingo tr td.redsquare.hover {
   background: #770022;
-}
-#bingoPage #about_bingo {
-  float: right;
-  width: 350px;
-  margin-right: 16px;
 }
