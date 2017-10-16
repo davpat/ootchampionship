@@ -57,6 +57,7 @@ var Race2Score = {};
 var Race3Score = {};
 var Race4Score = {};
 var Race5Score = {};
+var Race6Score = {};
 var Info = {};
 var Leaderboard = {};
 
@@ -157,6 +158,21 @@ function race5() {
 		});
 	});
 }
+function race6() {
+    return $.ajax({
+		url: '/scoresboard/Season2/Race6.json',
+		method: 'GET'
+	}).then(function(data) {
+		data.pastraces[0].results.forEach(function(k)
+		{
+			var place = k.place;
+			if(place > 50 && place < 9998)
+				place = 50;
+				
+			Race6Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
+		});
+	});
+}
 		
 function info() {
     return $.ajax({
@@ -169,6 +185,7 @@ function info() {
 		
 			var TwitchData = search(k.channel, Avatars);
 			console.log(TwitchData);			
+			
 			if(TwitchData)
 			{
 				if(TwitchData.logo)
@@ -204,7 +221,7 @@ function search(nameKey, myArray){
     }
 }
 
-$.when(race1(), race2(), race3(), race4(), race5()).done(function(a1, a2, a3, a4, a5 , a6)
+$.when(race1(), race2(), race3(), race4(), race5(),race6()).done(function(a1, a2, a3, a4, a5 , a6, a7)
 {
 	
 	Object.keys(Race1Score).forEach(function(key) 
@@ -272,10 +289,22 @@ $.when(race1(), race2(), race3(), race4(), race5()).done(function(a1, a2, a3, a4
 			Leaderboard[key].nraces = 	1;
 		}
 	});
+	Object.keys(Race6Score).forEach(function(key) 
+	{
+    	if(Leaderboard[key])
+		{
+			Leaderboard[key].value = Leaderboard[key].value + Race6Score[key].value;
+			Leaderboard[key].nraces = Leaderboard[key].nraces + 1;
+		}
+		else
+		{
+			Leaderboard[key] = Race6Score[key];
+			Leaderboard[key].nraces = 	1;
+		}
+	});
 	
 	$.when(info()).done(function(a1)
 	{
-		console.log(Info);
 			
 		var keys = [], k, i, len;
 		for (k in Leaderboard) 

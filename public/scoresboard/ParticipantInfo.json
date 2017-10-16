@@ -763,6 +763,20 @@
 			"twitter" : "",
 			"youtube" : "/user/forever6716",
 			"country" : "USA"
+		},
+		{
+			"name" : "Haru",
+			"channel" : "haru",
+			"twitter" : "DennisBalow",
+			"youtube" : "/user/DennisBalow",
+			"country" : "Germany"
+		},
+		{
+			"name" : "Lulz",
+			"channel" : "lulz334",
+			"twitter" : "",
+			"youtube" : "",
+			"country" : "Germany"
 		}
 	]
 }
