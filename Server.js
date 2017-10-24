@@ -90,6 +90,10 @@ const getAvatars = require('./getAvatars');
 		res.render('recaps2q1');
 	});
 	
+		app.get('/recaps2q2', function (req, res) {
+		res.render('recaps2q2');
+	});
+	
 	app.get('/clue5', function (req, res) {
 	  res.sendFile(path.resolve(viewPath, 'clue5.html'));
 	});

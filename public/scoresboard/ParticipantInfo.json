@@ -121,13 +121,6 @@
 			"country" : "USA"
 		},
 		{
-			"name" : "Gombill",
-			"channel" : "gombill",
-			"twitter" : "",
-			"youtube" : "",
-			"country" : "USA"
-		},
-		{
 			"name" : "dannyb21892",
 			"channel" : "dannyb21892",
 			"twitter" : "dannyb21892",
@@ -388,7 +381,7 @@
 		},
 		{
 			"name" : "Niamek",
-			"channel" : "",
+			"channel" : "niamek",
 			"twitter" : "",
 			"youtube" : "",
 			"country" : "Canada"
@@ -422,13 +415,6 @@
 			"country" : "Canada"
 		},
 		{
-			"name" : "Knighty",
-			"channel" : "metaknight3000",
-			"twitter" : "MetaKnighty",
-			"youtube" : "",
-			"country" : "Canada"
-		},
-		{
 			"name" : "nonsensebread",
 			"channel" : "nonsensebread",
 			"twitter" : "nonsensebread",
@@ -451,7 +437,7 @@
 		},
 		{
 			"name" : "dank_as_dank",
-			"channel" : "",
+			"channel" : "dank_as_dank",
 			"twitter" : "",
 			"youtube" : "",
 			"country" : "Canada"
@@ -466,13 +452,6 @@
 		{
 			"name" : "fenyan",
 			"channel" : "fenyan",
-			"twitter" : "",
-			"youtube" : "",
-			"country" : "Germany"
-		},
-		{
-			"name" : "sanzeau",
-			"channel" : "sanzeau",
 			"twitter" : "",
 			"youtube" : "",
 			"country" : "Germany"
@@ -497,13 +476,6 @@
 			"twitter" : "",
 			"youtube" : "",
 			"country" : "USA"
-		},
-		{
-			"name" : "revi",
-			"channel" : "revivaal_",
-			"twitter" : "",
-			"youtube" : "",
-			"country" : "France"
 		},
 		{
 			"name" : "revi",
@@ -569,13 +541,6 @@
 			"country" : "UK"
 		},
 		{
-			"name" : "kb17",
-			"channel" : "",
-			"twitter" : "",
-			"youtube" : "",
-			"country" : ""
-		},
-		{
 			"name" : "Sorec",
 			"channel" : "sjorec",
 			"twitter" : "SOrecki",
@@ -626,7 +591,7 @@
 		},
 		{
 			"name" : "xiosris",
-			"channel" : "",
+			"channel" : "xiosris",
 			"twitter" : "https://twitter.com/Xiosris",
 			"youtube" : "/channel/UCAFAlEVcAPu718r-qQTPexQ",
 			"country" : "France"
@@ -716,13 +681,6 @@
 			"country" : ""
 		},
 		{
-			"name" : "ARandomClown",
-			"channel" : "arandomclown",
-			"twitter" : "",
-			"youtube" : "",
-			"country" : ""
-		},
-		{
 			"name" : "arontoad99",
 			"channel" : "arontoad99",
 			"twitter" : "",
@@ -752,7 +710,7 @@
 		},
 		{
 			"name" : "spleff",
-			"channel" : "",
+			"channel" : "spleff",
 			"twitter" : "",
 			"youtube" : "",
 			"country" : ""
@@ -777,6 +735,13 @@
 			"twitter" : "",
 			"youtube" : "",
 			"country" : "Germany"
+		},
+		{
+			"name" : "Elgrigri",
+			"channel" : "elgrigri",
+			"twitter" : "",
+			"youtube" : "",
+			"country" : ""
 		}
 	]
 }

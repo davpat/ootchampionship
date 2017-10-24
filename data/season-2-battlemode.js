@@ -1,8 +1,8 @@
 module.exports = {
   mode: [
     {
-      title: 'Bingo!',
-      rules: null,
+      title: 'Bingo',
+      rules: '/images/BattleModeBingo.png',
       clue: null,
       date: null,
       winner: {
@@ -28,18 +28,18 @@ module.exports = {
       results: null,
       background: '/images/draft.jpg',
     }, {
-      title: null,
-      rules: null,
+      title: 'Category',
+      rules: '/images/BattleModeCategories.png',
       clue: null,
       date: null,
       winner: {
         name: null,
         link: null,
       },
-      time: null,
+      time: 'Category',
       recap: null,
       results: null,
-      background: '/images/QuestionMark.png',
+      background: '/images/category.jpg',
     }, {
       title: null,
       rules: null,

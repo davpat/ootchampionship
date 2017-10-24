@@ -58,27 +58,11 @@ var Race3Score = {};
 var Race4Score = {};
 var Race5Score = {};
 var Race6Score = {};
+var Race7Score = {};
 var Info = {};
 var Leaderboard = {};
 
 function race1() {
-    return $.ajax({
-		url: '/scoresboard/Season2/Race1.json',
-		method: 'GET'
-	}).then(function(data) {
-		data.pastraces[0].results.forEach(function(k)
-		{
-			var place = k.place;
-			if(place > 50 && place < 9998 )
-				place = 50;
-				
-			Race1Score[k.player] =  { name: k.player, value: pointsDistribution[place.toString()] };
-			
-		});
-	});
-}
-
-function moreInfo() {
     return $.ajax({
 		url: '/scoresboard/Season2/Race1.json',
 		method: 'GET'
@@ -173,18 +157,32 @@ function race6() {
 		});
 	});
 }
+function race7() {
+    return $.ajax({
+		url: '/scoresboard/Season2/Race7.json',
+		method: 'GET'
+	}).then(function(data) {
+		data.pastraces[0].results.forEach(function(k)
+		{
+			var place = k.place;
+			if(place > 50 && place < 9998)
+				place = 50;
+				
+			Race7Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
+		});
+	});
+}
 		
 function info() {
     return $.ajax({
 		url: '/scoresboard/ParticipantInfo.json',
 		method: 'GET'
 	}).then(function(data) {
-		console.log(Avatars);
 		data.participant.forEach(function(k)
 		{
 		
 			var TwitchData = search(k.channel, Avatars);
-			console.log(TwitchData);			
+			console.log(k.channel + TwitchData);			
 			
 			if(TwitchData)
 			{
@@ -221,9 +219,8 @@ function search(nameKey, myArray){
     }
 }
 
-$.when(race1(), race2(), race3(), race4(), race5(),race6()).done(function(a1, a2, a3, a4, a5 , a6, a7)
-{
-	
+$.when(race1(), race2(), race3(), race4(), race5(),race6(),race7()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8)
+{	
 	Object.keys(Race1Score).forEach(function(key) 
 	{
     	if(Leaderboard[key])
@@ -299,6 +296,19 @@ $.when(race1(), race2(), race3(), race4(), race5(),race6()).done(function(a1, a2
 		else
 		{
 			Leaderboard[key] = Race6Score[key];
+			Leaderboard[key].nraces = 	1;
+		}
+	});
+	Object.keys(Race7Score).forEach(function(key) 
+	{
+    	if(Leaderboard[key])
+		{
+			Leaderboard[key].value = Leaderboard[key].value + Race7Score[key].value;
+			Leaderboard[key].nraces = Leaderboard[key].nraces + 1;
+		}
+		else
+		{
+			Leaderboard[key] = Race7Score[key];
 			Leaderboard[key].nraces = 	1;
 		}
 	});
@@ -383,8 +393,9 @@ $.when(race1(), race2(), race3(), race4(), race5(),race6()).done(function(a1, a2
 			}
 			else
 			{
-					$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>" + rank + "</b></td>' +	
-												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="images/default.png" height="26" width="26"><b> style="margin-right:10px;"' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + "</b></td>" + 
+
+					$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + '</b></td>' +	
+												  '<td "><img src="images/default.png" height="26" width="26"><b><a' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a></b></td>' + 
 												  "<td><b>" +  "" 	   							   + "</b></td>" +
 												  "<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
 												  "<td><b>" +  Leaderboard[k].nraces 				   + "</b></td></tr>");
