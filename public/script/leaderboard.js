@@ -390,15 +390,6 @@ $.when(race1(), race2(), race3(), race4(), race5(),race6(),race7()).done(functio
 												  "<td><b>" +  Leaderboard[k].value 				  + "</b></td>" + 
 												  "<td><b>" +  Leaderboard[k].nraces 				  + "</b></td></tr>");
 				}	
-			}
-			else
-			{
-
-					$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + '</b></td>' +	
-												  '<td "><img src="images/default.png" height="26" width="26"><b><a' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a></b></td>' + 
-												  "<td><b>" +  "" 	   							   + "</b></td>" +
-												  "<td><b>" +  Leaderboard[k].value 				   + "</b></td>" + 
-												  "<td><b>" +  Leaderboard[k].nraces 				   + "</b></td></tr>");
 			}	
 			SameValue = Leaderboard[k].value;
 		}
