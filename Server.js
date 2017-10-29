@@ -33,6 +33,7 @@ const getAvatars = require('./getAvatars');
 	app.get('/challenges', function (req, res) {
 	  res.render('challenges', { data: season2Data });
 	});
+	
 	app.get('/information', function (req, res) {
 	  res.render('information');
 	});
@@ -110,6 +111,10 @@ const getAvatars = require('./getAvatars');
 
 	app.get('/OCSR6', function (req, res) {
 	  res.sendFile(path.resolve(viewPath, 'OCSR6.html'));
+	});
+	
+	app.get('/adventure', function (req, res) {
+	  res.sendFile(path.resolve(viewPath, 'bingoadventure.html'));
 	});
 
 	app.get('/popout', function (req, res) {
