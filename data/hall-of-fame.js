@@ -1,6 +1,11 @@
 module.exports = {
   Recent: 
   [
+  	{
+		title: 'Untwisting Time',
+		image: '/oldpuzzle/VerySydney5.png',
+		creator: 'VerySydney',
+    },
 	{
 		title: 'Dungeonfire Puzzle 2',
 		image: '/oldpuzzle/DungeonfirePuzzle2.png',
@@ -10,14 +15,14 @@ module.exports = {
 		title: 'Dungeonfire Puzzle',
 		image: '/oldpuzzle/Dungeonfire.png',
 		creator: 'Dungeonfire',
-    },
+    }
+  ],
+  main: [
 	{
 		title: 'Link Vacantion Album',
 		image: '/oldpuzzle/gombilPreOcS2.png',
 		creator: 'Gombill',
-    }
-  ],
-  main: [
+    },
 	{
 		title: 'Meme Mastery',
 		image: 'oldpuzzle/Meme.png',
