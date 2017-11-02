@@ -108,7 +108,7 @@ module.exports = {
     }, {
       title: null,
       rules: null,
-      clue: null,
+      clue: 'https://pastebin.com/PMS6e9Sf',
       date: 'November 5, 2017',
       winner: {
         name: null,
