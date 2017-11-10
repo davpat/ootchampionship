@@ -10,7 +10,7 @@ module.exports = {
         link: 'https://www.twitch.tv/amateseru',
       },
       time: '1:37:29',
-      recap: '/recap1',
+      recap: '/recap/season1/race1',
       results: 'http://www.speedrunslive.com/races/result/#!/180407',
       background: '/images/Gold-Skulltula-2.png',
     }, {
@@ -23,7 +23,7 @@ module.exports = {
         link: 'https://www.twitch.tv/sniping117',
       },
       time: '1:47:12',
-      recap: '/recap2',
+      recap: '/recap/season1/race2',
       results: 'http://www.speedrunslive.com/races/result/#!/181301',
       background: '/images/340px-Ganondorf.png',
     }, {
@@ -36,7 +36,7 @@ module.exports = {
         link: 'https://www.twitch.tv/exodus122',
       },
       time: '1:40:16',
-      recap: '/recap3',
+      recap: '/recap/season1/race3',
       results: 'http://www.speedrunslive.com/races/result/#!/182117',
       background: '/images/461px-OoT_Ganon.png',
     }, {
@@ -49,20 +49,20 @@ module.exports = {
         link: 'https://www.twitch.tv/sniping117',
       },
       time: '1:29:43',
-      recap: '/recap4',
+      recap: '/recap/season1/race4',
       results: 'http://www.speedrunslive.com/races/result/#!/182935',
       background: '/images/Link_MM_25Anny.png',
     }, {
       title: '<del>MS</del>T',
       rules: 'images/Challenges/Challenge5.png',
-      clue: '/clue5',
+      clue: '/clue/season1/clue5',
       date: 'November 13, 2016',
       winner: {
         name: 'Marco',
         link: 'https://www.twitch.tv/marco8641',
       },
       time: '1:27:19',
-      recap: '/recap5',
+      recap: '/recap/season1/race5',
       results: 'http://www.speedrunslive.com/races/result/#!/183772',
       background: '/images/322px-OoT_Link_Using_Fairy_Bow_Artwork.png',
     }, {
@@ -75,7 +75,7 @@ module.exports = {
         link: 'https://www.twitch.tv/tob3000',
       },
       time: '1:26:11',
-      recap: '/recap6',
+      recap: '/recap/season1/race6',
       results: 'http://www.speedrunslive.com/races/result/#!/184600',
       background: '/images/415px-OoT_Talon_art.png',
     }, {
@@ -88,20 +88,20 @@ module.exports = {
         link: 'https://www.twitch.tv/runnerguy2489',
       },
       time: '1:09:50',
-      recap: '/recap7',
+      recap: '/recap/season1/race7',
       results: 'http://www.speedrunslive.com/races/result/#!/185456',
       background: '/images/464px-OoT_Stalfos_Artwork.png',
     }, {
       title: 'A Kakariko Kristmas',
       rules: 'images/Challenges/Challenge8.png',
-      clue: '/clue8',
+      clue: '/clue/season1/clue8',
       date: 'December 18, 2016',
       winner: {
         name: 'Exodus',
         link: 'https://www.twitch.tv/exodus122',
       },
       time: '1:21:41',
-      recap: '/recap8',
+      recap: '/recap/season1/race8',
       results: 'http://www.speedrunslive.com/races/result/#!/185837',
       background: '/images/640px-OoT_Link_Riding_Epona_Artwork.png',
     }, {
@@ -114,7 +114,7 @@ module.exports = {
         link: 'https://www.twitch.tv/exodus122',
       },
       time: '1:27:42',
-      recap: '/recap9',
+      recap: '/recap/season1/race9',
       results: 'http://www.speedrunslive.com/races/result/#!/187615',
       background: '/images/Link_Treasure_OoT.png',
     }, {
@@ -127,7 +127,7 @@ module.exports = {
         link: 'https://www.twitch.tv/marco8641',
       },
       time: '1:28:04',
-      recap: '/recap10',
+      recap: '/recap/season1/race10',
       results: 'http://www.speedrunslive.com/races/result/#!/188647',
       background: '/images/Link_Block_OoT.png',
     }

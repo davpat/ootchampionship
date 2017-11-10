@@ -2,6 +2,14 @@ var express = require('express');
 var app = express();
 const path = require('path');
 var viewPath = path.resolve(__dirname, 'views');
+var challengeS1Path = path.resolve(__dirname, 'views/challenges/season1/');
+var challengeS2Path = path.resolve(__dirname, 'views/challenges/season2/');
+var recapS1Path = path.resolve(__dirname, 'views/recap/season1/');
+var recapS2Path = path.resolve(__dirname, 'views/recap/season2/');
+var clueS1Path = path.resolve(__dirname, 'views/clue/season1/');
+var clueS2Path = path.resolve(__dirname, 'views/clue/season2/');
+var resultS2Path = path.resolve(__dirname, 'views/result/season2/');
+var othersPath = path.resolve(__dirname, 'views/others/');
 var favicon = require('serve-favicon');
 
 const season1Data = require('./data/season-1-challenges');
@@ -14,30 +22,43 @@ const getAvatars = require('./getAvatars');
 	const avatars = await getAvatars();
 	app.set('view engine', 'ejs');
 	app.use(function (req, res, next) {
-	  console.log('/' + req.method);
 	  next();	
 	});
+    //////////////// Main Page ////////////////////
 
 	app.get('/', function (req, res) {
 	  res.render('index');
 	});
-
+	
+	app.get('/leaderboard', function (req, res) {
+	  res.render('leaderboard', { data: avatars });
+	});
+	
 	app.get('/battlemode', function (req, res) {
 	  res.render('battlemode', { data: season2BattleMode });
 	});
 		
-	app.get('/leaderboard', function (req, res) {
-	  res.render('leaderboard', { data: avatars });
-	});
-
 	app.get('/challenges', function (req, res) {
 	  res.render('challenges', { data: season2Data });
+	});
+	
+	app.get('/halloffame', function (req, res) {
+	  res.render('halloffame', { data: halloffamedata });
 	});
 	
 	app.get('/information', function (req, res) {
 	  res.render('information');
 	});
-
+	
+	app.get('/about', function (req, res) {
+	  res.render('about');
+	});
+	//////////////////////////////////////////////
+	///////////////Season 1 /////////////////////
+	app.get('/season1', function (req, res) {
+	  res.render('season1', { data: season1Data });
+	});
+	
 	app.get('/revision', function (req, res) {
 	  res.render('revision');
 	});
@@ -45,89 +66,80 @@ const getAvatars = require('./getAvatars');
 	app.get('/highlights', function (req, res) {
 	  res.render('highlights');
 	});
-	app.get('/about', function (req, res) {
-	  res.render('about');
+	
+	app.get('/recap/season1/race1', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race1.html'));
 	});
-	app.get('/halloffame', function (req, res) {
-	  res.render('halloffame', { data: halloffamedata });
+	app.get('/recap/season1/race2', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race2.html'));
 	});
-
-	app.get('/recap1', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap1.html'));
+	app.get('/recap/season1/race3', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race3.html'));
 	});
-	app.get('/recap2', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap2.html'));
+	app.get('/recap/season1/race4', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race4.html'));
 	});
-	app.get('/recap3', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap3.html'));
+	app.get('/recap/season1/race5', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race5.html'));
 	});
-	app.get('/recap4', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap4.html'));
+	app.get('/recap/season1/race6', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race6.html'));
 	});
-	app.get('/recap5', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap5.html'));
+	app.get('/recap/season1/race7', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race7.html'));
 	});
-	app.get('/recap6', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap6.html'));
+	app.get('/recap/season1/race8', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race8.html'));
 	});
-	app.get('/recap7', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap7.html'));
+	app.get('/recap/season1/race9', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race9.html'));
 	});
-	app.get('/recap8', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap8.html'));
+	app.get('/recap/season1/race10', function (req, res) {
+	  res.sendFile(path.resolve(recapS1Path, 'race10.html'));
 	});
-	app.get('/recap9', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap9.html'));
+	app.get('/clue/season1/clue5', function (req, res) {
+	  res.sendFile(path.resolve(clueS1Path, 'clue5.html'));
 	});
-	app.get('/recap10', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'recap10.html'));
+	app.get('/clue/season1/clue8', function (req, res) {
+	  res.sendFile(path.resolve(clueS1Path, 'clue8.html'));
 	});
-
-	app.get('/recaps2c1', function (req, res) {
-		res.render('recaps2c1');
+	app.get('/challenges/season1/afterparty', function (req, res) {
+		res.render(challengeS1Path + '/afterparty');
+	});
+	//////////////////////////////////////////////
+	////////////////  Season 2 ///////////////////
+	app.get('/recap/season2/race1', function(req, res) {
+		res.render(recapS2Path + '/race1'); 
+	});
+	app.get('/recap/season2/quarter1', function (req, res) {
+		res.render(recapS2Path + '/quarter1');
+	});
+	app.get('/recap/season2/quarter2', function (req, res) {
+		res.render(recapS2Path + '/quarter2');
+	});
+	app.get('/challenges/season2/R6', function (req, res) {
+	  res.sendFile(path.resolve(challengeS2Path, 'R6.html'));
 	});
 	
-	app.get('/recaps2q1', function (req, res) {
-		res.render('recaps2q1');
+	app.get('/result/season2/race9', function (req, res) {
+		res.render(resultS2Path + '/race9', { data: avatars });
 	});
 	
-		app.get('/recaps2q2', function (req, res) {
-		res.render('recaps2q2');
-	});
-	
-	app.get('/clue5', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'clue5.html'));
-	});
-	app.get('/clue8', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'clue8.html'));
-	});
-	app.get('/afterparty', function (req, res) {
-	  res.render('afterparty');
-	});
-
-	app.get('/season1', function (req, res) {
-	  res.render('season1', { data: season1Data });
-	});
-
+	//////////////////////////////////////////////
+	///////////////Others ///////////////////////
 	app.get('/skullomizer', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'skullomizer/skullomizer.html'));
+	  res.sendFile(path.resolve(othersPath, 'skullomizer/skullomizer.html'));
 	});
 
-	app.get('/OCSR6', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'OCSR6.html'));
-	});
-	
-	app.get('/OCSR8', function (req, res) {
-	  res.render('OCSR8');
-	});
-	
 	app.get('/adventure', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'bingoadventure.html'));
+	  res.sendFile(path.resolve(othersPath, 'bingoadventure.html'));
 	});
 
 	app.get('/popout', function (req, res) {
-	  res.sendFile(path.resolve(viewPath, 'popout.html'));
+	  res.sendFile(path.resolve(othersPath, 'popout.html'));
 	});
+	
+	//////////////////////////////////////////////
 	
 	app.use(favicon(__dirname + '/public/images/favicon.ico'));
 	app.use(express.static('public'))

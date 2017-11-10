@@ -10,7 +10,7 @@ module.exports = {
         link: 'https://www.twitch.tv/amateseru',
       },
       time: '01:17:28',
-      recap: '/recaps2c1',
+      recap: '/recap/season2/race1',
       results: 'http://www.speedrunslive.com/races/result/#!/202100',
       background: '/images/LikeLike.png',
     }, 
@@ -37,7 +37,7 @@ module.exports = {
         link: 'https://www.twitch.tv/tob3000',
       },
       time: '01:30:42',
-      recap: '/recaps2q1',
+      recap: '/recap/season2/quarter1',
       results: 'http://www.speedrunslive.com/races/result/#!/203214',
       background: '/images/KokiriSword.png',
     }, {
@@ -68,7 +68,7 @@ module.exports = {
       background: '/images/trial.jpg',
     }, {
       title: 'Reverse Bingo',
-      rules: 'http://www.ootchampionship.com/ocsr6',
+      rules: '/challenges/season2/R6',
       clue: null,
       date: 'October 8, 2017',
       winner: {
@@ -76,7 +76,7 @@ module.exports = {
         link: 'https://www.twitch.tv/Exodus122',
       },
       time: '01:38:08',
-      recap: '/recaps2q2',
+      recap: '/recap/season2/quarter2',
       results: 'http://www.speedrunslive.com/races/result/#!/205397',
       background: '/images/hp.png',
     }, {
@@ -106,18 +106,18 @@ module.exports = {
       results: 'http://www.speedrunslive.com/races/result/#!/206898',
       background: '/images/Gold-Skulltula-2.png',
     }, {
-      title: null,
-      rules: null,
+      title: 'OCS Countdown',
+      rules: 'http://zeldarace.com/ocs9/',
       clue: 'https://pastebin.com/PMS6e9Sf',
       date: 'November 5, 2017',
       winner: {
-        name: null,
-        link: null,
+        name: 'Amateseru',
+        link: 'https://www.twitch.tv/amateseru',
       },
       time: null,
       recap: null,
-      results: null,
-      background: '/images/QuestionMark.png',
+      results: '/result/season2/race9',
+      background: '/images/clock.png',
     }, {
       title: null,
       rules: null,
