@@ -117,6 +117,10 @@ const getAvatars = require('./getAvatars');
 	  res.sendFile(path.resolve(viewPath, 'OCSR6.html'));
 	});
 	
+	app.get('/OCSR8', function (req, res) {
+	  res.render('OCSR8');
+	});
+	
 	app.get('/adventure', function (req, res) {
 	  res.sendFile(path.resolve(viewPath, 'bingoadventure.html'));
 	});
