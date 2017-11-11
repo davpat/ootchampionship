@@ -14,7 +14,7 @@ function race9() {
 			if(place > 50 && place < 9998)
 				place = 50;
 				
-			Race9Score[k.player] = { name: k.player, value: k.points };
+			Race9Score[k.player] = { name: k.player, value: k.place , points: k.points };
 		});
 	});
 }
@@ -69,16 +69,8 @@ $.when(race9()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10)
 {	
 	Object.keys(Race9Score).forEach(function(key) 
 	{
-    	if(Leaderboard[key])
-		{
-			Leaderboard[key].value = Leaderboard[key].value + Race9Score[key].value;
-			Leaderboard[key].nraces = Leaderboard[key].nraces + 1;
-		}
-		else
-		{
-			Leaderboard[key] = Race9Score[key];
-			Leaderboard[key].nraces = 	1;
-		}
+		Leaderboard[key] = Race9Score[key];
+		Leaderboard[key].nraces = 	1;
 	});
 	$.when(info()).done(function(a1)
 	{
@@ -92,7 +84,7 @@ $.when(race9()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10)
 		  }
 		}
 		keys.sort(function(a, b) {
-			return Leaderboard[b].value - Leaderboard[a].value;
+			return Leaderboard[a].value - Leaderboard[b].value;
 		});
 
 		len = keys.length;
@@ -116,13 +108,13 @@ $.when(race9()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10)
 						{	
 							$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
 												  '<td><b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a></b></td>' + 												  "<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
-														  "<td><b>" +  Leaderboard[k].value 				  + "</b></td></tr>");
+														  "<td><b>" +  Leaderboard[k].points 				  + "</b></td></tr>");
 						}
 						else
 						{	
 							$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
 												  '<td><b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a></b></td>' + 												  "<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
-														  "<td><b>" +  Leaderboard[k].value 				  + "</b></td></tr>");
+														  "<td><b>" +  Leaderboard[k].points 				  + "</b></td></tr>");
 						}
 					}
 					else
@@ -131,14 +123,14 @@ $.when(race9()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10)
 						{	
 							$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
 												  '<td><b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a></b></td>' + 												  "<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
-														  "<td><b>" +  Leaderboard[k].value 				  + "</b></td></tr>");
+														  "<td><b>" +  Leaderboard[k].points 				  + "</b></td></tr>");
 						}
 						else
 						{
 							$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
 												  '<td><b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a></b></td>' + 
 														  "<td><b>" +  Info[Leaderboard[k].name].country 	  + "</b></td>" +
-														  "<td><b>" +  Leaderboard[k].value 				  + "</b></td></tr>");
+														  "<td><b>" +  Leaderboard[k].points 				  + "</b></td></tr>");
 						}
 					}	
 				}	
@@ -147,10 +139,10 @@ $.when(race9()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10)
 					$('#ScoresboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
 												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="images/default.png" height="26" width="26" style="margin-right:10px;"><b>' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + 
 												  "<td><b>" +  Info[Leaderboard[k].name].country 	  + "</b></td>" +
-											      "<td><b>" +  Leaderboard[k].value 				  + "</b></td></tr>");
+											      "<td><b>" +  Leaderboard[k].points 				  + "</b></td></tr>");
 				}	
 			}	
-			SameValue = Leaderboard[k].value;
+			SameValue = Leaderboard[k].points;
 		}
 	});
 });
