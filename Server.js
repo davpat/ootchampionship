@@ -117,6 +117,10 @@ const getAvatars = require('./getAvatars');
 	app.get('/recap/season2/quarter2', function (req, res) {
 		res.render(recapS2Path + '/quarter2');
 	});
+	app.get('/recap/season2/quarter3', function (req, res) {
+		res.render(recapS2Path + '/quarter3');
+	});
+	
 	app.get('/challenges/season2/R6', function (req, res) {
 	  res.sendFile(path.resolve(challengeS2Path, 'R6.html'));
 	});

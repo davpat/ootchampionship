@@ -41,7 +41,7 @@ module.exports = {
       results: null,
       background: '/images/category.jpg',
     }, {
-      title: null,
+      title: 'Countdown',
       rules: null,
       clue: null,
       date: null,
@@ -52,9 +52,9 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/QuestionMark.png',
+      background: '/images/countdown.gif',
     }, {
-      title: null,
+      title: 'Spin The Wheel',
       rules: null,
       clue: null,
       date: null,
@@ -65,7 +65,7 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/QuestionMark.png',
+      background: '/images/SpinTheWheel.png',
     }, 
 	{
       title: null,

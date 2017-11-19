@@ -115,7 +115,7 @@ module.exports = {
         link: 'https://www.twitch.tv/amateseru',
       },
       time: null,
-      recap: null,
+      recap: '/recap/season2/quarter3',
       results: '/result/season2/race9',
       background: '/images/clock.png',
     }, {
