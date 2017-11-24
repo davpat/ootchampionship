@@ -61,6 +61,7 @@ var Race6Score = {};
 var Race7Score = {};
 var Race8Score = {};
 var Race9Score = {};
+var Race10Score = {};
 
 var Info = {};
 var Leaderboard = {};
@@ -207,6 +208,22 @@ function race9() {
 		});
 	});
 }
+
+function race10() {
+    return $.ajax({
+		url: '/scoresboard/Season2/Race10.json',
+		method: 'GET'
+	}).then(function(data) {
+		data.pastraces[0].results.forEach(function(k)
+		{
+			var place = k.place;
+			if(place > 50 && place < 9998)
+				place = 50;
+				
+			Race10Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
+		});
+	});
+}
 		
 function info() {
     return $.ajax({
@@ -254,7 +271,7 @@ function search(nameKey, myArray){
     }
 }
 
-$.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10)
+$.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9(), race10()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10, a11)
 {	
 	Object.keys(Race1Score).forEach(function(key) 
 	{
@@ -374,6 +391,22 @@ $.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9
 			Leaderboard[key].nraces = 	1;
 		}
 	});
+	
+	Object.keys(Race10Score).forEach(function(key) 
+	{
+    	if(Leaderboard[key])
+		{
+			Leaderboard[key].value = Leaderboard[key].value + Race10Score[key].value;
+			Leaderboard[key].nraces = Leaderboard[key].nraces + 1;
+		}
+		else
+		{
+			Leaderboard[key] = Race10Score[key];
+			Leaderboard[key].nraces = 	1;
+		}
+	});
+	
+	
 	$.when(info()).done(function(a1)
 	{
 			
