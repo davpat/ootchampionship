@@ -742,6 +742,20 @@
 			"twitter" : "",
 			"youtube" : "",
 			"country" : ""
+		},
+		{
+			"name" : "The_TG",
+			"channel" : "the_tg",
+			"twitter" : "ThatGuy4878",
+			"youtube" : "/user/ThatGuy4878",
+			"country" : "Canada"
+		},
+		{
+			"name" : "DiamondFlash27",
+			"channel" : "DiamondFlash27",
+			"twitter" : "",
+			"youtube" : "",
+			"country" : ""
 		}
 	]
 }

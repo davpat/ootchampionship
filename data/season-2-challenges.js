@@ -118,7 +118,8 @@ module.exports = {
       recap: '/recap/season2/quarter3',
       results: '/result/season2/race9',
       background: '/images/clock.png',
-    }, {
+    }, 
+	{
       title: 'Link Odyssey',
       rules: '/images/Challenges/S2/C10.png',
       clue: '/clue/S2/C10.jpg',
@@ -133,18 +134,19 @@ module.exports = {
       background: '/images/Odyssey.png',
     },
 	{
-      title: null,
-      rules: null,
+      title: 'Wanted Link',
+      rules: '/images/Challenges/S2/C11.png',
       clue: null,
       date: 'November 26, 2017',
-      winner: {
-        name: null,
-        link: null,
+      winner: 
+	  {
+        name: 'Amateseru',
+        link: 'https://www.twitch.tv/amateseru',
       },
-      time: null,
+      time: '01:34:46',
       recap: null,
-      results: null,
-      background: '/images/QuestionMark.png',
+      results: 'http://www.speedrunslive.com/races/result/#!/208600',
+      background: '/images/Red_Bubble.png',
     },
 	{
       title: null,
