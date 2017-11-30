@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OCS - Battle Mode</title>
+<% include partials/head %>
+<link rel="stylesheet" href="/battlemoderoom.css">
+</head>
+<body>
+  <div class="backgroundDiv"></div>
+   <div class="row">
+	  <div class="column left ">
+		<div class="playerContainer">
+			<div class="BanLeft">
+				<h3>Ban</h3>
+			</div>
+			<div class="PlayerInfo">
+					<div class="Row-stats">
+						<img src="/images/PlayersIcone/ama.jpeg" alt="Amateseru" class="PlayersIcone Column-stats"  align="left">
+						<div class="PlayerName Column-stats">Ama</div>
+				    </div>
+				<div class="flex-row">
+					<div class="Row-stats">
+							<div class="Row-stats">
+								  <div class="Column-stats">
+									<h5 style="color:white; text-align:center;">Routing</h5>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+							 </div>
+							 <div class="Row-stats">
+								  <div class="Column-stats">
+									<h5 style="color:white; text-align:center;">Execution</h5>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+							 </div>
+							 <div class="Row-stats">
+								  <div class="Column-stats">
+									<h5 style="color:white; text-align:center;">Adaptation</h5>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+							 </div>
+					</div>
+				
+					<div class="PlayerBio">
+						<h3>Hello, I'm Amateseru (Call me Ama).<br> I'm a french speedrunner and I love pizza, I'm generally speedrunning Zelda Ocarina of Time.<br><br> I will probably try to speedrun other games in the future. Don't forget to leave a follow I really appreciate it !</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <div class="column middle ">
+		<div class="Timer">
+			<h3 class="TimerText">Timer</h3>
+		</div>
+		<div class="flex-row">
+			<div class="content flex flex-center">
+			<div class="container">
+			  <div class="challenges">
+				  <% data.mode.forEach((challenge, i) => { %>
+					<div class="challenge-card c4 flex" style="background-image: url(<%= challenge.background %>)">
+					  <div class="gradient flex-grow">
+						<div class="flex-row">
+						  <div class="number"><%= i + 1 %></div>
+						  <div class="flex-grow">
+							<div class="date secondary-dark"></div>
+							<div class="headline name flex flex-center"><%- challenge.title %></div>
+						  </div>
+						</div>
+						<div class="flex-row space-around">
+						  <div class="flex flex-grow flex-center"></div>
+						</div>
+					  </div>
+					</div>
+				  <% }); %>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="state">
+			<h3>State of the picks</h3>
+		</div>
+	  </div>
+
+	  <div class="column right ">
+		<div class="playerContainer">
+			<div class="BanRight">
+				<h3>Ban</h3>
+			</div>
+			<div class="PlayerInfo">
+					<div class="Row-stats">
+						<div class="PlayerName Column-stats"> Exodus</div>
+						<img src="/images/PlayersIcone/exodus.png" alt="Smiley face" class="PlayersIcone Column-stats"  align="right">
+				    </div>
+				<div class="flex-row">
+					<div class="Row-stats">
+							<div class="Row-stats">
+								  <div class="Column-stats">
+									<h5 style="color:white; text-align:center;">Routing</h5>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+							 </div>
+							 <div class="Row-stats">
+								  <div class="Column-stats">
+									<h5 style="color:white; text-align:center;">Execution</h5>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+								  </div>
+							 </div>
+							 <div class="Row-stats">
+								  <div class="Column-stats">
+									<h5 style="color:white; text-align:center;">Adaptation</h5>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+								  <div class="progress Column-stats">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+								  </div>
+							 </div>
+					</div>
+				</div>
+				<div class="PlayerBio">
+					<h3 class="PlayerBioText">Hi, I'm Exodus. I am an Ocarina of Time speedrunner and glitch-hunter. <br><br>I usually stream bingo races and speedruns for Ocarina of Time, Majora's Mask, Banjo-Tooie, or other N64 games. <br><br>Occasionally, I may play other games or categories, but I do not generally stream my glitch-hunting.</h3>
+				</div>
+			</div>
+		</div>
+	  </div>
+  </div>
+</div>
+</body>
+</html>

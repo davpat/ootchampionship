@@ -10,6 +10,7 @@ var clueS1Path = path.resolve(__dirname, 'views/clue/season1/');
 var clueS2Path = path.resolve(__dirname, 'views/clue/season2/');
 var resultS2Path = path.resolve(__dirname, 'views/result/season2/');
 var othersPath = path.resolve(__dirname, 'views/others/');
+var BattleModeRoomPath = path.resolve(__dirname, 'views/battlemode/');
 var favicon = require('serve-favicon');
 
 const season1Data = require('./data/season-1-challenges');
@@ -127,6 +128,13 @@ const getAvatars = require('./getAvatars');
 	
 	app.get('/result/season2/race9', function (req, res) {
 		res.render(resultS2Path + '/race9', { data: avatars });
+	});
+	
+	//////////////////////////////////////////////
+	///////////////BattleMode picker /////////////
+	
+	app.get('/battlemode/room', function (req, res) {
+	  res.render( BattleModeRoomPath + '/room', { data: season2BattleMode });
 	});
 	
 	//////////////////////////////////////////////
