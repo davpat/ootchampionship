@@ -34,6 +34,7 @@
   color: white;
   justify-content: center;
   font-size: 40px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 .TimerText
 {
@@ -47,6 +48,7 @@
   flex-wrap: wrap;
   color: white;
   justify-content: center;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 .challenges {
@@ -68,6 +70,7 @@
   background-size: cover;
   overflow: hidden;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  
 
 }
 
@@ -106,6 +109,7 @@ body {
   padding: 0;
   font-family: Roboto;
   overflow-x:hidden;
+  overflow-y:hidden;
 }
 
 .backgroundDiv {
@@ -113,9 +117,8 @@ body {
   width: 100%;
   height: 100%;
   background-size:cover;
-  background-position:center;
   z-index:-100;
-  background-image:url(/images/WindmillWinter.gif);
+  background-image:url(/images/blue.jpg);
 }
 
 #backgroundDiv {
@@ -165,22 +168,35 @@ body {
 }
 .PlayerInfo
 {
+	position: relative;
+	
+	
   height: 800px;
-  background: black;
   border-radius: 5px;
   margin: 30px;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+
   overflow: hidden;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  border: 5px groove #222;
+  background: rgba(23,31,63,1);
+  background: -moz-linear-gradient(-45deg, rgba(23,31,63,1) 0%, rgba(23,31,63,1) 1%, rgba(36,54,92,1) 17%, rgba(41,61,96,1) 34%, rgba(23,37,63,1) 51%, rgba(41,61,96,1) 71%, rgba(23,31,63,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,31,63,1)), color-stop(1%, rgba(23,31,63,1)), color-stop(17%, rgba(36,54,92,1)), color-stop(34%, rgba(41,61,96,1)), color-stop(51%, rgba(23,37,63,1)), color-stop(71%, rgba(41,61,96,1)), color-stop(100%, rgba(23,31,63,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(23,31,63,1) 0%, rgba(23,31,63,1) 1%, rgba(36,54,92,1) 17%, rgba(41,61,96,1) 34%, rgba(23,37,63,1) 51%, rgba(41,61,96,1) 71%, rgba(23,31,63,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(23,31,63,1) 0%, rgba(23,31,63,1) 1%, rgba(36,54,92,1) 17%, rgba(41,61,96,1) 34%, rgba(23,37,63,1) 51%, rgba(41,61,96,1) 71%, rgba(23,31,63,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(23,31,63,1) 0%, rgba(23,31,63,1) 1%, rgba(36,54,92,1) 17%, rgba(41,61,96,1) 34%, rgba(23,37,63,1) 51%, rgba(41,61,96,1) 71%, rgba(23,31,63,1) 100%);
+  background: linear-gradient(135deg, rgba(23,31,63,1) 0%, rgba(23,31,63,1) 1%, rgba(36,54,92,1) 17%, rgba(41,61,96,1) 34%, rgba(23,37,63,1) 51%, rgba(41,61,96,1) 71%, rgba(23,31,63,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171f3f', endColorstr='#171f3f', GradientType=1 );
+  color:white;
 }
 .PlayerName
 {
 	vertical-align: middle;
 	color:white;
 	font-size: 45px;
-	text-align:center;
 }
 
 .PlayersIcone
@@ -188,19 +204,44 @@ body {
 	height:125px;
 	width:125px;
 	opacity: 1.0;
+	border: 2px groove #222;
 }
 
 .PlayerBio
 {
 	margin: 15px;
-	height:500px;
+	font-family: FOT-Chiaro Std;
+    color:white;
 }
-.PlayerBio
+.buttonDiv
 {
+	position: absolute;
+	bottom:   0;
+		width:100%;
+
+}	
+.PlayerReadyButton
+{
+	width:100%;
+	margin-top:10px;
+	font-size:28px;
+	font-family: FOT-Chiaro Std;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	color:white;
+	border: 2px groove #222;
+	background: rgba(40,54,108,1);
+	background: -moz-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(40,54,108,1)), color-stop(1%, rgba(40,54,108,1)), color-stop(17%, rgba(60,91,154,1)), color-stop(34%, rgba(70,103,164,1)), color-stop(51%, rgba(40,64,108,1)), color-stop(71%, rgba(70,103,164,1)), color-stop(100%, rgba(40,54,108,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: linear-gradient(135deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28366c', endColorstr='#28366c', GradientType=1 );
+
 }
+
 .Row-stats
-{
+{	
     display: table;
     width: 100%; /*Optional*/
     table-layout: fixed; /*Optional*/
@@ -209,6 +250,7 @@ body {
 .Column-stats
 {
     display: table-cell;
+
 }
 .Column-image
 {
@@ -216,3 +258,29 @@ body {
 	float:left;
 }
 
+.progress
+{
+  background-color: rgba(50,50,40,1);
+  border: 2px groove #222;
+}
+.progress-bar
+{
+	background: rgba(40,54,108,1);
+	background: -moz-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(40,54,108,1)), color-stop(1%, rgba(40,54,108,1)), color-stop(17%, rgba(60,91,154,1)), color-stop(34%, rgba(70,103,164,1)), color-stop(51%, rgba(40,64,108,1)), color-stop(71%, rgba(70,103,164,1)), color-stop(100%, rgba(40,54,108,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	background: linear-gradient(135deg, rgba(40,54,108,1) 0%, rgba(40,54,108,1) 1%, rgba(60,91,154,1) 17%, rgba(70,103,164,1) 34%, rgba(40,64,108,1) 51%, rgba(70,103,164,1) 71%, rgba(40,54,108,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28366c', endColorstr='#28366c', GradientType=1 );
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
