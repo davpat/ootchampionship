@@ -63,6 +63,7 @@ var Race8Score = {};
 var Race9Score = {};
 var Race10Score = {};
 var Race11Score = {};
+var Race12Score = {};
 
 var Info = {};
 var Leaderboard = {};
@@ -238,6 +239,22 @@ function race11() {
 				place = 50;
 				
 			Race11Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
+		});
+	});
+}
+
+function race12() {
+    return $.ajax({
+		url: '/scoresboard/Season2/Race12.json',
+		method: 'GET'
+	}).then(function(data) {
+		data.pastraces[0].results.forEach(function(k)
+		{
+			var place = k.place;
+			if(place > 50 && place < 9998)
+				place = 50;
+				
+			Race12Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
 		});
 	});
 }
@@ -436,7 +453,19 @@ $.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9
 			Leaderboard[key].nraces = 	1;
 		}
 	});
-	
+	Object.keys(Race12Score).forEach(function(key) 
+	{
+    	if(Leaderboard[key])
+		{
+			Leaderboard[key].value = Leaderboard[key].value + Race12Score[key].value;
+			Leaderboard[key].nraces = Leaderboard[key].nraces + 1;
+		}
+		else
+		{
+			Leaderboard[key] = Race12Score[key];
+			Leaderboard[key].nraces = 	1;
+		}
+	});
 	
 	$.when(info()).done(function(a1)
 	{
