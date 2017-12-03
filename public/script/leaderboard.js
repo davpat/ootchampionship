@@ -305,7 +305,7 @@ function search(nameKey, myArray){
     }
 }
 
-$.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9(), race10(), race11()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10, a11, a12)
+$.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9(), race10(), race11(),race12()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10, a11, a12, a13)
 {	
 	Object.keys(Race1Score).forEach(function(key) 
 	{
