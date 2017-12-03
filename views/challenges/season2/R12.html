@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OCS - Season 2 - Bingo</title>
+	<link rel="icon" type="image/png" href="http://www.speedrunslive.com/favico.png">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/race12.css">
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script> <!-- google libraries API -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> <!-- jquery -->
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+	<script>
+	function getUrlParameter(name) {
+	    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	        results = regex.exec(location.search);
+	    return results == null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+</script>
+	<script type="text/javascript">
+		var srl = {}; // javascript holder
+		function setcolor() {
+			var pathArray = window.location.href.split('/');
+			if (pathArray[3].toLowerCase() == 'races') { return 'racesborder'}
+			else if (pathArray[3].toLowerCase() == 'leaderboards') { return 'leaderboardsborder' }
+			else if (pathArray[3].toLowerCase() == 'channel') { return 'channelborder' }
+			else if (!pathArray[3]) { return 'streamsborder' }
+			else { return 'defaultborder' }
+		}
+	</script>
+</head>
+<body>
+<div id="wrap"><div id="main">
+	<div class="container" id="pageContent">
+		<script>
+			var bingoList = [];
+			bingoList["info"] = {version: "9"};
+</script>
+
+		<script>
+		function bingosetup() {
+			 $('.popout').click(function() {
+		        var mode = null;
+		        var line = $(this).attr('id');
+		        var name = $(this).html();
+		        var items = [];
+		        var cells = $('#bingo .'+ line);
+		        for (var i = 0; i < 5; i++) {
+		          items.push($(cells[i]).html());
+		        };
+		        window.open('http://www.speedrunslive.com/tools/bingo-popout.html#'+ name +'='+ items.join(';;;'),"_blank","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=220, height=460");
+		    });
+
+		    $("#bingo tr td:not(.popout), #selected td").toggle(
+				function () {
+				  $(this).addClass("greensquare");
+				},
+				function () {
+				  $(this).addClass("redsquare").removeClass("greensquare");
+				},
+				function () {
+				  $(this).removeClass("redsquare");
+				}
+
+		  );
+
+			$("#row1").hover(function() { $(".row1").addClass("hover"); }, function() {	$(".row1").removeClass("hover"); });
+			$("#row2").hover(function() { $(".row2").addClass("hover"); }, function() {	$(".row2").removeClass("hover"); });
+			$("#row3").hover(function() { $(".row3").addClass("hover"); }, function() {	$(".row3").removeClass("hover"); });
+			$("#row4").hover(function() { $(".row4").addClass("hover"); }, function() {	$(".row4").removeClass("hover"); });
+			$("#row5").hover(function() { $(".row5").addClass("hover"); }, function() {	$(".row5").removeClass("hover"); });
+
+			$("#col1").hover(function() { $(".col1").addClass("hover"); }, function() {	$(".col1").removeClass("hover"); });
+			$("#col2").hover(function() { $(".col2").addClass("hover"); }, function() {	$(".col2").removeClass("hover"); });
+			$("#col3").hover(function() { $(".col3").addClass("hover"); }, function() {	$(".col3").removeClass("hover"); });
+			$("#col4").hover(function() { $(".col4").addClass("hover"); }, function() {	$(".col4").removeClass("hover"); });
+			$("#col5").hover(function() { $(".col5").addClass("hover"); }, function() {	$(".col5").removeClass("hover"); });
+
+			$("#tlbr").hover(function() { $(".tlbr").addClass("hover"); }, function() {	$(".tlbr").removeClass("hover"); });
+			$("#bltr").hover(function() { $(".bltr").addClass("hover"); }, function() {	$(".bltr").removeClass("hover"); });
+		}
+
+		$(bingosetup);
+</script>
+		<div id="bingoPage">
+			<div id="about_bingo">
+				<h1>OCS - Season 2 - Bingo</h1>
+				<div style="clear:both;"></div>
+				<p>This is a "Bingo" board for Ocarina of Time races.</p>
+				<p>To win, you must complete 5 of the tasks in a row horizontally, vertically, or diagonally.</p>
+				<p>The seed number is used to generate the board. Changing the seed will make a new board.</p>
+				<p>You can click on the squares to turn them green and red. This may help you organize your route planning.</p>
+				<p>For OOT-Bingo, there are some specific rules in place:</p>
+				<ul>
+					<li>Just to clarify, RBA is allowed.</li>
+					<li>If it says to have an item, you must actually keep it. For example, if it says to have "Blue Potion," you must not drink it, and you must still have it in your inventory at the time you finish getting all 5 objectives.</li>
+					<li>Sometimes there is a question of when to say you are finished. For dungeons, you are "finished" with the dungeon when you step into the blue warp after defeating the boss. For items, you are "finished" when you are holding the item above your head. For songs, when the text says "You have learned the..."</li>
+				</ul>
+			</div>
+			<div id="results">
+				<table id="bingo">
+					<tr>
+						<td class="popout" id="tlbr">TL-BR</td>
+						<td class="popout" id="col1">COL1</td>
+						<td class="popout" id="col2">COL2</td>
+						<td class="popout" id="col3">COL3</td>
+						<td class="popout" id="col4">COL4</td>
+						<td class="popout" id="col5">COL5</td>
+					</tr>
+					<tr>
+						<td class="popout" id="row1">ROW1</td>
+						<td class="row1 col1 tlbr" id="slot1">All Bottom<br/>Row Songs</td>
+						<td class="row1 col2" id="slot2">Defeat 10 Stalfos</td>
+						<td class="row1 col3" id="slot3">Summon Scarecrows in 6 Unique Zone</td>
+						<td class="row1 col4" id="slot4">Open 4 Gold Rupee Chests</td>
+						<td class="row1 col5 bltr" id="slot5">7 Different<br/>Bottled Contents</td>
+					</tr>
+					<tr>
+						<td class="popout" id="row2">ROW2</td>
+						<td class="row2 col1" id="slot6">Both Lakeside Laboratory HPs</td>
+						<td class="row2 col2 tlbr" id="slot7">10 Dungeon Skulltulas</td>
+						<td class="row2 col3" id="slot8">Defeat 3 bosses (No Shields)</td>
+						<td class="row2 col4 bltr" id="slot9">3 Fairy Rewards</td>
+						<td class="row2 col5" id="slot10">Press the Blue Switch in Fire Temple</td>
+					</tr>
+					<tr>
+						<td class="popout" id="row3">ROW3</td>
+						<td class="row3 col1" id="slot11">Open 8 chests inside Spirit Temple</td>
+						<td class="row3 col2" id="slot12">Get to the end <br/>of 2 Trials</td>
+						<td class="row3 col3 tlbr bltr" id="slot13">Iron Boots<br/>(no damages)</td>
+						<td class="row3 col4" id="slot14">Open 5 Recovery Heart Chests</td>
+						<td class="row3 col5" id="slot15">Defeat 8 Floormaster / Wallmaster</td>
+					</tr>
+					<tr>
+						<td class="popout" id="row4">ROW4</td>
+						<td class="row4 col1" id="slot16">Get the Skulltula in the Middle tower of Water temple</td>
+						<td class="row4 col2 bltr" id="slot17">Open 4 Boss doors</td>
+						<td class="row4 col3" id="slot18">8 Hearts<br/>(No HC)</td>
+						<td class="row4 col4 tlbr" id="slot19">Clear 8 Silver Rupee Rooms</td>
+						<td class="row4 col5" id="slot20">Exactly 333 Rupees</td>
+					</tr>
+					<tr>
+						<td class="popout" id="row5">ROW5</td>
+						<td class="row5 col1 bltr" id="slot21"> Ice Arrows<br/>(No Glitches)</td>
+						<td class="row5 col2" id="slot22">Open 5 Chests from Grottos</td>
+						<td class="row5 col3" id="slot23">20 Overworld Skulltulas</td>
+						<td class="row5 col4" id="slot24">Open 6 chests in Water Temple</td>
+						<td class="row5 col5 tlbr" id="slot25">Exactly 10 Unused Keys from Dungeons</td>
+					</tr>
+					<tr>
+						<td class="popout" id="bltr">BL-TR</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div></div>
+	<script type="text/javascript">
+	$('footer').addClass( setcolor());
+	</script>
+</body>
+</html>
