@@ -243,21 +243,6 @@ function race11() {
 	});
 }
 
-function race12() {
-    return $.ajax({
-		url: '/scoresboard/Season2/Race12.json',
-		method: 'GET'
-	}).then(function(data) {
-		data.pastraces[0].results.forEach(function(k)
-		{
-			var place = k.place;
-			if(place > 50 && place < 9998)
-				place = 50;
-				
-			Race12Score[k.player] = { name: k.player, value: pointsDistribution[place.toString()] };
-		});
-	});
-}
 		
 function info() {
     return $.ajax({
