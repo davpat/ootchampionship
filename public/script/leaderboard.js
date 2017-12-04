@@ -306,7 +306,7 @@ function search(nameKey, myArray){
     }
 }
 
-$.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9(), race10(), race11(),race12()).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10, a11, a12, a13)
+$.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9(), race10(), race11(), race12() ).done(function(a1, a2, a3, a4, a5 , a6, a7, a8, a9, a10, a11, a12, a13)
 {	
 	Object.keys(Race1Score).forEach(function(key) 
 	{
@@ -486,7 +486,92 @@ $.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9
 		len = keys.length;
 		var rank = 0;
 		var SameValue = -1;
-		for (i = 0; i < len; i++) 
+		
+		for (i = 0; i < 16; i++) 
+		{
+			Info[Leaderboard[k].name]
+			k = keys[i];
+			
+			rank++;
+
+			if(Info[Leaderboard[k].name])
+			{
+				if(Info[Leaderboard[k].name].channel != '')
+				{
+					if(Info[Leaderboard[k].name].youtube != '')
+					{
+						if(Info[Leaderboard[k].name].twitter != '')
+						{	
+							if(Leaderboard[k].name != "Exodus")
+							{	
+								$('#PlayoffboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
+									'<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a target=”_blank” href="https://twitter.com/'+ Info[Leaderboard[k].name].twitter  + '" class="fa fa-twitter"><a  target=”_blank” href="https://www.youtube.com' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
+									"<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
+									"<td><b>" +  Leaderboard[k].value 			   + "</b></td>" + 
+									 "<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");
+							}
+							else
+							{	
+								$('#PlayoffboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
+									'<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a target=”_blank” href="https://twitter.com/'+ Info[Leaderboard[k].name].twitter  + '" class="fa fa-twitter"><a  target=”_blank” href="https://www.youtube.com' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
+									"<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
+									"<td><b>" +  Leaderboard[k].value 			   + " *</b></td>" + 
+									 "<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");
+							}
+						}
+						else
+						{	
+								if(Leaderboard[k].name != "hyperion64")
+								{	
+									$('#PlayoffboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
+										'<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a  target=”_blank” href="https://www.youtube.com' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
+										"<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
+										"<td><b>" +  Leaderboard[k].value 			   + " </b></td>" + 
+										 "<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");
+								}
+								else
+								{				
+									$('#PlayoffboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
+									'<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a  target=”_blank” href="https://www.youtube.com' + Info[Leaderboard[k].name].youtube + '" class="fa fa-youtube"></a></b></td>' + 
+									"<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
+									"<td><b>" +  Leaderboard[k].value 			   + " *</b></td>" + 
+									"<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");
+								}
+						}
+					}
+					else
+					{
+						if(Info[Leaderboard[k].name].twitter != '')
+						{	
+							$('#PlayoffboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
+												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a><a target=”_blank” href="https://twitter.com/'+ Info[Leaderboard[k].name].twitter  + '" class="fa fa-twitter"></b></td>' + 
+												  "<td><b>" +  Info[Leaderboard[k].name].country   + "</b></td>" +
+												  "<td><b>" +  Leaderboard[k].value 			   + "</b></td>" + 
+												  "<td><b>" +  Leaderboard[k].nraces 			   + "</b></td></tr>");
+						}
+						else
+						{
+							$('#PlayoffboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
+												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="' + Info[Leaderboard[k].name].logo + '" height="26" width="26" style="margin-right:10px;">'+ '<b><a target="_blank" href="https://www.twitch.tv/'  + Info[Leaderboard[k].name].channel + '">' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + '</a></b></td>' + 
+														  "<td><b>" +  Info[Leaderboard[k].name].country 	  + "</b></td>" +
+														  "<td><b>" +  Leaderboard[k].value 				  + "</b></td>" + 
+														  "<td><b>" +  Leaderboard[k].nraces 				  + "</b></td></tr>");
+						}
+					}	
+				}	
+				else
+				{
+					$('#PlayoffboardTable').append('<tr><td class="leaderboard-td"><b>' + rank + "</b></td>" +
+												  '<td title="'+ Info[Leaderboard[k].name].bio +'"><img src="images/default.png" height="26" width="26" style="margin-right:10px;"><b>' +  Leaderboard[k].name[0].toUpperCase()  + Leaderboard[k].name.substring(1) + 
+												  "<td><b>" +  Info[Leaderboard[k].name].country 	  + "</b></td>" +
+												  "<td><b>" +  Leaderboard[k].value 				  + "</b></td>" + 
+												  "<td><b>" +  Leaderboard[k].nraces 				  + "</b></td></tr>");
+				}	
+			}	
+			SameValue = Leaderboard[k].value;
+		}
+		SameValue = -1;
+		for (i = 16; i < len; i++) 
 		{
 			Info[Leaderboard[k].name]
 			k = keys[i];
@@ -494,6 +579,7 @@ $.when(race1(), race2(), race3(), race4(), race5(),race6(),race7(),race8(),race9
 			{
 				rank++;
 			}
+
 			if(Info[Leaderboard[k].name])
 			{
 				if(Info[Leaderboard[k].name].channel != '')
