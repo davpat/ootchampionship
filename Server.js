@@ -126,7 +126,7 @@ const getAvatars = require('./getAvatars');
 	  res.sendFile(path.resolve(challengeS2Path, 'R6.html'));
 	});
 	
-	app.get('/challenges/season2/GLASSGANONTUTORIAL', function (req, res) {
+	app.get('/challenges/season2/R12', function (req, res) {
 	  res.sendFile(path.resolve(challengeS2Path, 'R12.html'));
 	});
 	
