@@ -12,7 +12,7 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: 'blue.jpg',
+      background: '/images/blue.jpg',
     }, 
 	{
       title: 'Draft',
@@ -28,7 +28,7 @@ module.exports = {
       results: null,
       background: '/images/blue.jpg',
     }, {
-      title: 'Category',
+      title: 'Categories',
       rules: '/images/Categories.png',
       clue: null,
       date: null,
@@ -68,7 +68,7 @@ module.exports = {
       background: '/images/blue.jpg',
     }, 
 	{
-      title: 'Short Blackout',
+      title: 'Short Lockout',
       rules: '/images/ShortLockout.png',
       clue: null,
       date: null,
