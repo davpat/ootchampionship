@@ -12,11 +12,11 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/bingo.png',
+      background: 'blue.jpg',
     }, 
 	{
       title: 'Draft',
-      rules: '/images/BattleModeDraft.png',
+      rules: '/images/Draft.png',
       clue: null,
       date: null,
       winner: {
@@ -26,10 +26,10 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/draft.jpg',
+      background: '/images/blue.jpg',
     }, {
       title: 'Category',
-      rules: '/images/BattleModeCategories.png',
+      rules: '/images/Categories.png',
       clue: null,
       date: null,
       winner: {
@@ -39,10 +39,10 @@ module.exports = {
       time: 'Category',
       recap: null,
       results: null,
-      background: '/images/category.jpg',
+      background: '/images/blue.jpg',
     }, {
       title: 'Countdown',
-      rules: null,
+      rules: '/images/Countdown.png',
       clue: null,
       date: null,
       winner: {
@@ -52,10 +52,10 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/countdown.gif',
+      background: '/images/blue.jpg',
     }, {
       title: 'Spin The Wheel',
-      rules: null,
+      rules: '/images/SpinTheWhell.png',
       clue: null,
       date: null,
       winner: {
@@ -65,11 +65,11 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/SpinTheWheel.png',
+      background: '/images/blue.jpg',
     }, 
 	{
-      title: null,
-      rules: null,
+      title: 'Short Blackout',
+      rules: '/images/ShortLockout.png',
       clue: null,
       date: null,
       winner: {
@@ -79,7 +79,7 @@ module.exports = {
       time: null,
       recap: null,
       results: null,
-      background: '/images/QuestionMark.png',
+      background: '/images/blue.jpg',
     }
   ],
 }
