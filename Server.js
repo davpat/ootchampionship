@@ -6,6 +6,7 @@ var challengeS1Path = path.resolve(__dirname, 'views/challenges/season1/');
 var challengeS2Path = path.resolve(__dirname, 'views/challenges/season2/');
 var recapS1Path = path.resolve(__dirname, 'views/recap/season1/');
 var recapS2Path = path.resolve(__dirname, 'views/recap/season2/');
+var recapRound1 = path.resolve(__dirname, 'views/recap/playoff/round1/');
 var clueS1Path = path.resolve(__dirname, 'views/clue/season1/');
 var clueS2Path = path.resolve(__dirname, 'views/clue/season2/');
 var resultS2Path = path.resolve(__dirname, 'views/result/season2/');
@@ -18,6 +19,8 @@ const season2Data = require('./data/season-2-challenges');
 const season2BattleMode = require('./data/season-2-battlemode');
 const halloffamedata = require('./data/hall-of-fame');
 const getAvatars = require('./getAvatars');
+
+const opn = require('opn');
 
 (async function() {
 	const avatars = await getAvatars();
@@ -130,12 +133,21 @@ const getAvatars = require('./getAvatars');
 		res.render(resultS2Path + '/race9', { data: avatars });
 	});
 	
+	app.get('/challenges/season2/R12', function (req, res) {
+	  res.sendFile(path.resolve(challengeS2Path, 'R12.html'));
+	});
+	
+	app.get('/challenges/season2/popout', function (req, res) {
+		opn(path.resolve(challengeS2Path, 'popout.html'));
+	});
+	
 	//////////////////////////////////////////////
 	///////////////BattleMode picker /////////////
 	
 	app.get('/battlemode/room', function (req, res) {
 	  res.render( BattleModeRoomPath + '/room', { data: season2BattleMode });
 	});
+	
 	
 	//////////////////////////////////////////////
 	///////////////Others ///////////////////////
@@ -151,6 +163,10 @@ const getAvatars = require('./getAvatars');
 	  res.sendFile(path.resolve(othersPath, 'popout.html'));
 	});
 	
+	///////Recap////
+	app.get('/recap/playoff/round1/Hyp64vsChrisG1', function (req, res) {
+		res.sendFile(path.resolve(recapRound1, 'Hyp64vsChrisG1.html'));
+	});
 	//////////////////////////////////////////////
 	
 	app.use(favicon(__dirname + '/public/images/favicon.ico'));
