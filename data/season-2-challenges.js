@@ -149,18 +149,18 @@ module.exports = {
       background: '/images/Red_Bubble.png',
     },
 	{
-      title: null,
-      rules: null,
+      title: 'OCS Bingo',
+      rules: '/challenges/season2/R12',
       clue: null,
       date: 'December 3, 2017',
       winner: {
-        name: null,
-        link: null,
+        name: 'hyperion64',
+        link: 'https://www.twitch.tv/hyperion64',
       },
-      time: null,
+      time: '01:13:49',
       recap: null,
-      results: null,
-      background: '/images/QuestionMark.png',
+      results: 'http://www.speedrunslive.com/races/result/#!/209173',
+      background: '/images/OCS_logo.png',
     }
   ],
 }

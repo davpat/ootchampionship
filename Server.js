@@ -129,6 +129,10 @@ const opn = require('opn');
 	  res.sendFile(path.resolve(challengeS2Path, 'R6.html'));
 	});
 	
+	app.get('/challenges/season2/R12', function (req, res) {
+	  res.sendFile(path.resolve(challengeS2Path, 'R12.html'));
+	});
+	
 	app.get('/result/season2/race9', function (req, res) {
 		res.render(resultS2Path + '/race9', { data: avatars });
 	});
