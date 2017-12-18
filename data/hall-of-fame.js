@@ -2,18 +2,18 @@ module.exports = {
   Recent: 
   [
   	{
-		title: 'Untwisting Time',
-		image: '/oldpuzzle/VerySydney5.png',
-		creator: 'VerySydney',
+		title: 'Jenslang Puzzle 2',
+		image: '/oldpuzzle/jenslang2.png',
+		creator: 'Jenslang',
     },
 	{
-		title: 'Dungeonfire Puzzle 2',
-		image: '/oldpuzzle/DungeonfirePuzzle2.png',
-		creator: 'Dungeonfire',
+		title: 'Sera1817 Puzzle 1',
+		image: '/oldpuzzle/sera1.png',
+		creator: 'Sera1817',
     },
   	{
-		title: 'Dungeonfire Puzzle',
-		image: '/oldpuzzle/Dungeonfire.png',
+		title: 'Dungeonfire Puzzle 3',
+		image: '/oldpuzzle/Dungeonfire3.png',
 		creator: 'Dungeonfire',
     }
   ],
@@ -166,12 +166,17 @@ module.exports = {
   [
 	{
 		title: 'Dungeonfire Puzzle',
-		image: '/oldpuzzle/Dungeonfire.png',
+		image: '/oldpuzzle/Dungeonfirefixed.png',
 		creator: 'Dungeonfire',
     },
   	{
 		title: 'Dungeonfire Puzzle 2',
-		image: '/oldpuzzle/DungeonfirePuzzle2.png',
+		image: '/oldpuzzle/Dungeonfire2v4.png',
+		creator: 'Dungeonfire',
+    },
+	{
+		title: 'Dungeonfire Puzzle 3',
+		image: '/oldpuzzle/Dungeonfire3.png',
 		creator: 'Dungeonfire',
     }
   ],

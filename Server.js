@@ -20,8 +20,6 @@ const season2BattleMode = require('./data/season-2-battlemode');
 const halloffamedata = require('./data/hall-of-fame');
 const getAvatars = require('./getAvatars');
 
-const opn = require('opn');
-
 (async function() {
 	const avatars = await getAvatars();
 	app.set('view engine', 'ejs');
