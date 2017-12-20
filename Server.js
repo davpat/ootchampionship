@@ -169,6 +169,12 @@ const getAvatars = require('./getAvatars');
 	app.get('/recap/playoff/round1/Hyp64vsChrisG1', function (req, res) {
 		res.sendFile(path.resolve(recapRound1, 'Hyp64vsChrisG1.html'));
 	});
+	app.get('/recap/playoff/round1/res1', function (req, res) {
+		res.sendFile(path.resolve(recapRound1, 'res1.html'));
+	});
+	app.get('/recap/playoff/round1/res2', function (req, res) {
+		res.sendFile(path.resolve(recapRound1, 'res1.html'));
+	});
 	//////////////////////////////////////////////
 	
 	app.use(favicon(__dirname + '/public/images/favicon.ico'));
