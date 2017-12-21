@@ -175,6 +175,9 @@ const getAvatars = require('./getAvatars');
 	app.get('/recap/playoff/round1/TobVsScara', function (req, res) {
 		res.sendFile(path.resolve(recapRound1, 'TobVsScara.html'));
 	});
+		app.get('/recap/playoff/round1/TobvsScaraM2', function (req, res) {
+		res.sendFile(path.resolve(recapRound1, 'TobvsScaraM2.html'));
+	});
 	//////////////////////////////////////////////
 	
 	app.use(favicon(__dirname + '/public/images/favicon.ico'));
