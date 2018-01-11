@@ -179,7 +179,7 @@ const getAvatars = require('./getAvatars');
 	app.get('/recap/playoff/round1/TobvsScaraM2', function (req, res) {
 		res.sendFile(path.resolve(recapRound1, 'TobvsScaraM2.html'));
 	});
-	app.get('/recap/playoff/round1/ScaraVSChrisL1M1', function (req, res) {
+	app.get('/recap/playoff/round2/ScaraVSChrisL1M1', function (req, res) {
 		res.sendFile(path.resolve(recapRound2, 'ScaraVSChrisL1M1.html'));
 	});
 	//////////////////////////////////////////////
