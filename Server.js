@@ -7,6 +7,7 @@ var challengeS2Path = path.resolve(__dirname, 'views/challenges/season2/');
 var recapS1Path = path.resolve(__dirname, 'views/recap/season1/');
 var recapS2Path = path.resolve(__dirname, 'views/recap/season2/');
 var recapRound1 = path.resolve(__dirname, 'views/recap/playoff/round1/');
+var recapRound2 = path.resolve(__dirname, 'views/recap/playoff/round2/');
 var clueS1Path = path.resolve(__dirname, 'views/clue/season1/');
 var clueS2Path = path.resolve(__dirname, 'views/clue/season2/');
 var resultS2Path = path.resolve(__dirname, 'views/result/season2/');
@@ -175,8 +176,11 @@ const getAvatars = require('./getAvatars');
 	app.get('/recap/playoff/round1/TobVsScara', function (req, res) {
 		res.sendFile(path.resolve(recapRound1, 'TobVsScara.html'));
 	});
-		app.get('/recap/playoff/round1/TobvsScaraM2', function (req, res) {
+	app.get('/recap/playoff/round1/TobvsScaraM2', function (req, res) {
 		res.sendFile(path.resolve(recapRound1, 'TobvsScaraM2.html'));
+	});
+	app.get('/recap/playoff/round1/ScaraVSChrisL1M1', function (req, res) {
+		res.sendFile(path.resolve(recapRound2, 'ScaraVSChrisL1M1.html'));
 	});
 	//////////////////////////////////////////////
 	
