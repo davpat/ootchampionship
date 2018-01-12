@@ -182,6 +182,9 @@ const getAvatars = require('./getAvatars');
 	app.get('/recap/playoff/round2/ScaraVSChrisL1M1', function (req, res) {
 		res.sendFile(path.resolve(recapRound2, 'ScaraVSChrisL1M1.html'));
 	});
+	app.get('/recap/playoff/round2/AmaVSJuwkW2M1', function (req, res) {
+		res.sendFile(path.resolve(recapRound2, 'AmaVSJuwkW2M1.html'));
+	});
 	//////////////////////////////////////////////
 	
 	app.use(favicon(__dirname + '/public/images/favicon.ico'));
